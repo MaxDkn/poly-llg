@@ -1,0 +1,2061 @@
+exercices:
+- num: 1
+  level: 2
+  content: |-
+    Montrer que
+
+    $$
+
+    \forall n\in\mathbb{N}^{*},\qquad 1^{3}+2^{3}+\dots+n^{3}= \left(\frac{n(n+1)}{2}\right)^{2}.
+    $$
+- num: 2
+  level: 2
+  content: |-
+    Montrer que, si $n\in\mathbb{N}^{*}$, il existe un entier impair $\lambda_{n}$ tel que
+
+    $$
+
+    5^{2^{n}} = 1 + \lambda_{n}\,2^{\,n+2}.
+    $$
+- num: 3
+  level: 1
+  content: |-
+    Soient $a$ et $b$ deux réels. Soit la suite réelle $(u_n)_{n\ge 0}$ définie par
+
+    $$
+    \forall n\in\mathbb{N},\qquad u_{n+1}=a u_n+b.
+    $$
+
+    On se propose de calculer $u_n$ en fonction de $n$ et $u_0$.
+
+    a) Traiter le cas $a=1$.
+
+    On suppose désormais $a\neq 1$.
+
+    b) Résoudre l’équation $x=a x+b$. On note $\ell$ la solution. Dans la question suivante, il est inutile (voire toxique) de remplacer $\ell$ par sa valeur ; seule est utile l’équation
+
+    $$
+    \ell = a\ell + b.
+    $$
+
+    c) On pose, pour $n\in\mathbb{N}$,
+
+    $$
+    v_n = u_n - \ell.
+    $$
+
+    Montrer que $(v_n)_{n\ge 0}$ est une suite géométrique. Conclure.
+
+    d) À quelles conditions portant sur $a$ et $u_0$ la suite $(u_n)_{n\ge 0}$ est-elle convergente ?
+- num: 4
+  level: 1
+  content: |-
+    La suite réelle $(t_n)_{n\ge0}$ est définie par $t_0=1$ et
+
+    $$
+    \forall n\in\mathbb{N},\qquad t_{n+1}=\frac{\sqrt{t_n}}{e}.
+    $$
+
+    En appliquant l’exercice précédent à la suite $(\ln(t_n))_{n\ge0}$, exprimer $t_n$ en fonction de $n$ et étudier la convergence de $(t_n)_{n>0}$.
+- num: 5
+  level: 1
+  content: |-
+    La suite $(x_n)_{n\ge0}$ est définie par $x_0=1$ et, pour chaque $n\in\mathbb{N}$,
+
+    $$
+    x_{n+1}=x_0+x_1+\dots+x_n.
+    $$
+
+    Pour $n\in\mathbb{N}$, exprimer $x_n$ en fonction de $n$.
+- num: 6
+  level: 1
+  content: |-
+    Soit $c\in\mathbb{R}_{>0}$. Pour $x\in\mathbb{R}$, définissons $f(x)=\frac{x}{\sqrt{1+c x^{2}}}$.
+    Calculer $f(f(x))$, $f(f(f(x)))$ et généraliser.
+- num: 7
+  level: 1
+  content: |-
+    Soit $(u_n)_{n\ge0}$ la suite définie par
+
+    $$
+
+    u_0 = 2,\; u_1 = 5,\qquad\text{et}\qquad \forall n\in\mathbb{N},\; u_{n+2}=5u_{n+1}-6u_n.
+    $$
+
+    Montrer que
+
+    $$
+
+    \forall n\in\mathbb{N},\qquad u_n = 2^{n}+3^{n}.
+    $$
+- num: 8
+  level: 2
+  content: |-
+    La suite $(u_n)_{n\in\mathbb{N}}$ est définie par
+
+    $$
+
+    u_0 = 1,\; u_1 = 2,\qquad\text{et}\qquad \forall n\in\mathbb{N}^{*},\; u_{n+1}= \frac{u_n^{2}}{u_{n-1}}.
+    $$
+
+    « Deviner » une formule donnant $u_n$ en fonction de $n$, puis la démontrer par récurrence.
+- num: 9
+  level: 1
+  content: |-
+    Soit $(u_n)_{n\ge 0}$ la suite définie par
+
+    $$
+
+    u_0 = 0.
+    $$
+
+    Pour $\forall n\in\mathbb{N}$, $u_{n+1}+u_n=n$.
+
+    Exprimer $u_n$ en fonction de $n$.
+- num: 10
+  level: 1
+  content: |-
+    La suite $(F_n)_{n\ge0}$ est celle de l’exemple 1. Pour $n\in\mathbb{N}$ on pose :
+
+    $$
+
+    \Delta_n = F_nF_{n+2} - F_{n+1}^2.
+    $$
+
+    a) Calculer $\Delta_n$ pour quelques valeurs de $n$, deviner une formule donnant $\Delta_n$ et la démontrer par récurrence.
+
+    b) Calculer directement $\Delta_n$ à partir de la formule obtenue dans l’exemple 1. Pour faciliter les calculs, mieux vaut ne pas remplacer immédiatement les constantes $\alpha$ et $\beta$ par leurs expressions.
+
+    Dans les deux exercices suivants, on donne une méthode générale pour expliciter les suites vérifiant une récurrence du type Fibonacci. Cette étude est complétée dans l exercice 435 de 11.4.
+- num: 11
+  level: 1
+  content: |-
+    Soient $a$ et $b$ deux nombres réels. On suppose que l’équation $x^{2}=a x+b$ admet deux racines réelles distinctes $\lambda$ et $\mu$. On se propose de déterminer l’ensemble $E$ des suites réelles $(u_n)_{n\ge0}$ telles que
+
+    $$
+    \forall n\in\mathbb{N},\qquad u_{n+2}=a u_{n+1}+b u_{n}.
+    $$
+
+    a) Montrer que, pour $\alpha,\beta\in\mathbb{R}$, la suite $(\alpha\lambda^{n}+\beta\mu^{n})_{n\ge0}$ appartient à $E$.
+
+    b) Soit $(u_n)_{n\ge0}\in E$. Vérifier qu’il existe deux nombres réels $\alpha$ et $\beta$ tels que
+
+    $$
+    \alpha+\beta = u_0,\qquad \alpha\lambda+\beta\mu = u_1.
+    $$
+
+    c) Avec les notations de b), montrer que
+
+    $$
+    \forall n\in\mathbb{N},\qquad u_n = \alpha\lambda^{n} + \beta\mu^{n}.
+    $$
+
+    d) Retrouver le résultat de l exercice 7.
+- num: 12
+  level: 1
+  content: |-
+    Soient $a$ et $b$ deux nombres réels. On suppose que l’équation $x^{2}=a x+b$ admet une unique racine réelle $\lambda$. On se propose de déterminer l’ensemble $E$ des suites réelles $(u_n)_{n\ge0}$ telles que
+
+    $$
+    \forall n\in\mathbb{N},\qquad u_{n+2}=a u_{n+1}+b u_{n}.
+    $$
+
+    a) Montrer que, pour $\alpha,\beta\in\mathbb{R}$, la suite $(\alpha\lambda^{n}+\beta n\lambda^{n})_{n\ge0}$ appartient à $E$.
+
+    b) En reprenant la méthode de l exercice précédent, montrer que, si la suite $(u_n)_{n\ge0}$ appartient à $E$, il existe deux nombres réels $\alpha$ et $\beta$ tels que
+
+    $$
+    \forall n\in\mathbb{N},\qquad u_n = \alpha\lambda^{n} + \beta n\lambda^{n}.
+    $$
+
+    L exercice suivant sera utilisé en 7.3.
+- num: 13
+  level: 1
+  content: |-
+    Soit $A\subseteq\mathbb{N}^{*}$ une partie contenant $1$ et telle que :
+    i) $\forall n\in A,\;2n\in A$, et
+    ii) $\forall n\in\mathbb{N}^{*},\;n+1\in A\Rightarrow n\in A$.
+    a) Montrer que
+
+    $$
+
+    \forall m\in\mathbb{N},\qquad 2^{m}\in A.
+    $$
+
+    b) Montrer que $A = \mathbb{N}^{*}$.
+- num: 14
+  level: 1
+  content: |-
+    On se propose de montrer que tout nombre rationnel de l’intervalle $(0,1)$ s’écrit comme somme d’inverses d’entiers naturels deux à deux distincts. Ce type d’écriture, utilisé par les Égyptiens dans l’Antiquité, n’a pas un très grand intérêt, mais la preuve du résultat est un bon exemple de raisonnement par récurrence.
+
+    a) Soit $x\in(0,1)$ un nombre rationnel. On peut alors écrire $x=\frac{m}{n}$ avec $m,n\in\mathbb{N}^{*}$ et $m<n$.
+
+    On effectue la division euclidienne de $n$ par $m$ : il existe $q\in\mathbb{N}^{*}$ et $r\in\{0,\dots,m-1\}$ tels que
+
+    $$
+
+    n = q m + r.
+    $$
+
+    On suppose que $x$ n’est pas l’inverse d’un entier, c’est-à-dire que $r\neq 0$.
+    Montrer que $x-\frac{1}{q}$ peut s’écrire sous la forme $\frac{m'}{n'}$ avec $n'\in\mathbb{N}^{*}$ et $1\le m' < m$.
+
+    b) En utilisant une hypothèse de récurrence judicieuse, démontrer la propriété voulue.
+
+    c) Constater que la démonstration précédente fournit en fait un algorithme de décomposition. Appliquer cet algorithme à $x=\frac{5}{17}$.
+- num: 15
+  level: 1
+  content: |-
+    La suite $(u_n)_{n\ge0}$ est définie par $u_0=1$ et, pour chaque $n\ge1$,
+
+    $$
+
+    u_n = u_{\lfloor n/2\rfloor} + u_{\lfloor n/3\rfloor} + u_{\lfloor n/6\rfloor}.
+    $$
+
+    a) Montrer que
+
+    $$
+
+    \forall n\in\mathbb{N},\qquad u_n\ge n+1.
+    $$
+
+    b) Trouver $C>0$ tel que
+
+    $$
+
+    \forall n\in\mathbb{N},\quad u_n < C\,(n+1).
+    $$
+- num: 16
+  level: 1
+  content: |-
+    Soit
+
+    $$
+
+    S = \{2^{k}3^{\ell} \mid (k,\ell)\in\mathbb{N}^{2}\}.
+    $$
+
+    Montrer que tout élément de $\mathbb{N}^{*}$ peut s’écrire $s_{1}+\dots+s_{m}$, où $m\in\mathbb{N}^{*}$, les $s_i$ appartiennent à $S$ et, pour tout couple d’indices distincts $(i,j)$, $s_i$ ne divise pas $s_j$.
+- num: 17
+  level: 2
+  content: |-
+    Soient $a,b,c,d$ des nombres rationnels tels que
+
+    $$
+
+    a + b\sqrt{2}=c + d\sqrt{2}.
+    $$
+
+    Montrer que $a=c$ et $b=d$.
+- num: 18
+  level: 2
+  content: |-
+    Montrer que $\sqrt{3}$ est irrationnel. Généraliser.
+- num: 19
+  level: 2
+  content: |-
+    Montrer que $\log_{2}3$ est irrationnel. Généraliser.
+- num: 20
+  level: 2
+  content: |-
+    a) Montrer que la somme d’un nombre rationnel et d’un nombre irrationnel est irrationnelle.
+    b) Montrer que le produit d’un nombre rationnel non nul et d’un nombre irrationnel est irrationnel.
+    c) Trouver deux nombres irrationnels dont la somme soit rationnelle, deux nombres irrationnels dont la somme soit irrationnelle. Même question avec le produit.
+- num: 21
+  level: 2
+  content: |-
+    Montrer que $\sqrt{6}$ est irrationnel, puis en déduire que $\sqrt{2}+\sqrt{3}$ est irrationnel.
+- num: 22
+  level: 1
+  content: |-
+    Trouver les fonctions dérivables $f:\mathbb{R}^{+}\to\mathbb{R}$ telles que
+
+    $$
+
+    f(xy)=f(x)+f(y)\qquad\text{pour tous }x>0,\;y>0.
+    $$
+- num: 23
+  level: 1
+  content: |-
+    On se propose de déterminer les fonctions $f:\mathbb{R}\to\mathbb{R}$ deux fois dérivables sur $\mathbb{R}$ telles que
+
+    $$
+
+    f(x+y)+f(x-y)=2\bigl(f(x)+f(y)\bigr)\qquad\forall (x,y)\in\mathbb{R}^{2}.
+    $$
+
+    Dans les parties a) et b), $f$ est une fonction solution.
+
+    a) Calculer $f(0)$. Montrer que $f$ est paire.
+
+    b) Montrer que $f''(x)$ est constante.
+
+    c) Conclure.
+- num: 24
+  level: 1
+  content: |-
+    Soit $f:\mathbb{R}\to\mathbb{R}$ une fonction continue telle que
+
+    $$
+
+    f(x+y)=f(x)+f(y)\qquad\forall (x,y)\in\mathbb{R}^{2}.
+    $$
+
+    a) Calculer $f(0)$ et montrer que $f$ est impaire (c’est-à-dire $f(-x)=-f(x)$).
+
+    b) Pour $n\in\mathbb{N}$ et $x\in\mathbb{R}$, calculer $f(nx)$ en fonction de $n$ et $f(x)$.
+
+    c) Soit $a=f(1)$. Montrer que
+
+    $$
+
+    \forall x\in\mathbb{Q},\qquad f(x)=a x.
+    $$
+
+    d) Expliquer pourquoi tout nombre réel est limite d’une suite de nombres rationnels.
+
+    e) Conclure que
+
+    $$
+
+    \forall x\in\mathbb{R},\qquad f(x)=a x.
+    $$
+- num: 25
+  level: 1
+  content: |-
+    Si $a, b, c, d$ sont des nombres réels non nuls, simplifier les fractions
+    $$A = \frac{\frac{a}{b}}{\frac{c}{d}}, \quad B = \frac{\frac{a}{b}}{c}, \quad C = \frac{a}{\frac{b}{c}}.$$
+- num: 26
+  level: 1
+  content: |-
+    a) Exprimer simplement $\ln(56) - \ln(7) + \ln(4)$ .
+    b) Montrer que $\ln(\sqrt{216}) = \frac{3}{2}\ln(6)$ .
+    c) Écrire le plus simplement possible $\ln(49) + \ln(21) - \ln(3\sqrt{7})$ .
+- num: 27
+  level: 1
+  content: Soient $n \in \mathbb{N}^*$ , $a_1, \ldots, a_n$ des nombres réels, $b_1, \ldots, b_n$ des nombres réels non nuls. On suppose que tous les nombres $\frac{a_i}{b_i}$ , $1 \le i \le n$, sont égaux. Montrer que ces nombres sont également égaux à $\frac{a_1 + \cdots + a_n}{b_1 + \cdots + b_n}$ .
+- num: 28
+  level: 1
+  content: Montrer que $2\sqrt{2+\sqrt{3}} = \sqrt{2} + \sqrt{6}$ .
+- num: 29
+  level: 1
+  content: Soit $\mathbb{K}$ l'ensemble des nombres réels de la forme $a+b\sqrt{2}$ avec $(a,b)\in\mathbb{Q}^2$ . Montrer que, si x et y sont dans $\mathbb{K}$ , il en est de même de x-y, xy et, si $x\neq 0$ , de $\frac{1}{x}$ .
+- num: 30
+  level: 1
+  content: |-
+    Soient x, y, z trois nombres réels. Vérifier que
+    $$(x+y+z)^3 - (x^3+y^3+z^3) = 3(x+y)(y+z)(z+x).$$
+- num: 31
+  level: 2
+  content: Soit n le produit de quatre éléments de  $\mathbb{N}^*$  consécutifs. Montrer que n-1 est le carré d'un entier.
+- num: 32
+  level: 2
+  content: Soient x et y deux nombres réels. En complétant un carré, donner une factorisation de  $x^4 + 4y^4$ .
+- num: 33
+  level: 3
+  content: |-
+    Soit
+    $$a = \sqrt[3]{1 + \sqrt{\frac{152}{27}}} - \sqrt[3]{-1 + \sqrt{\frac{152}{27}}}.$$
+    Montrer que $a^3 + 5a$  est un nombre entier.
+- num: 34
+  level: 3
+  content: |-
+    Pour $(x, y, z) \in \mathbb{R}^3$ , soit
+    $$E = x^4 + y^4 + z^4 - 2x^2y^2 - 2y^2z^2 - 2z^2x^2.$$
+    Factoriser $E$ en un produit de quatre facteurs.
+- num: 35
+  level: 4
+  content: |-
+    a) Pour $x \in \mathbb{R}$ , calculer $(x+3)^2 + x^2 - (x+1)^2 - (x+2)^2$ .
+    b) En déduire que, pour tout $x \in \mathbb{Z}$ , il existe $m \in \mathbb{N}^*$  et $(\varepsilon_1, \dots, \varepsilon_m) \in \{-1, 1\}^m$  tel que
+    $$x = \sum_{i=1}^{m} \varepsilon_i i^2.$$
+    Le lecteur trouvera une explication satisfaisante dans l'exercice 440 de 11.5.
+- num: 36
+  level: 1
+  content: Soit $n$ dans $\mathbb{N}^*$. Donner une expression simple de la somme $\sum_{k=1}^{n} (2k - 1)$ des $n$ premiers entiers impairs.
+- num: 37
+  level: 2
+  content: |-
+    Soit $(u_n)_{n \geq 0}$ une suite réelle. On suppose que
+    $$\forall n \in \mathbb{N}, \qquad \sum_{k=0}^{n} u_k = \frac{n^2 + n}{3}.$$
+    Pour $n \in \mathbb{N}$, calculer $u_n$.
+- num: 38
+  level: 3
+  content: Soit $n \in \mathbb{N}^*$. On trace la table de multiplication des entiers entre 1 et $n$. On obtient donc un tableau carré comportant $n^2$ entiers naturels. Quelle est la moyenne de ces entiers ?
+- num: 39
+  level: 1
+  content: |-
+    Soit $x \in ]{-1}, 1[$. Pour $n \in \mathbb{N}$, soit $S_n = \sum_{k=0}^{n} x^k$.
+    Montrer que
+    $$S_n \underset{n \to +\infty}{\longrightarrow} \frac{1}{1-x}.$$
+- num: 40
+  level: 3
+  content: |-
+    a) En utilisant la formule de la progression géométrique et la dérivation, calculer, pour $x$ réel et $n$ dans $\mathbb{N}^*$ :
+    $$\sum_{k=0}^{n} kx^{k}.$$
+    On distinguera le cas $x = 1$.
+    b) Si $x \in ]{-1}, 1[$, déterminer la limite de la somme précédente lorsque $n$ tend vers $+\infty$.
+- num: 41
+  level: 2
+  content: On pose, pour $n$ dans $\mathbb{N}^*$ : $u_n = \sum_{k=n}^{2n} \frac{1}{k}$. Simplifier $u_{n+1} - u_n$ et en déduire la monotonie de $(u_n)_{n \geq 1}$.
+- num: 42
+  level: 3
+  content: Pour $n \in \mathbb{N}^*$, exprimer en fonction de $n$ la somme $S_n = \sum_{k=1}^{n^2} \lfloor\sqrt{k}\rfloor$.
+- num: 43
+  level: 3
+  content: |-
+    On note $H_n$ le $n$-ième nombre harmonique, introduit dans l'exemple 5 ci-dessus. Montrer que, pour tout entier $n \geq 2$,
+    $$\sum_{k=1}^{n-1} H_k = nH_n - n.$$
+- num: 44
+  level: 4
+  content: |-
+    Trouver les suites $(u_n)_{n \geq 1}$ de nombres réels strictement positifs telles que
+    $$\forall n \in \mathbb{N}^*, \qquad \sum_{k=1}^n u_k^3 = \left(\sum_{k=1}^n u_k\right)^2.$$
+- num: 45
+  level: 3
+  content: |-
+    a) Si $n$ est dans $\mathbb{N}^*$, simplifier la somme
+    $$\sum_{k=1}^{n} \ln \left( 1 + \frac{1}{k} \right).$$
+    Quelle est la limite de cette expression lorsque $n$ tend vers $+\infty$ ?
+    b) Si $n$ est un entier $\geq 2$, simplifier la somme
+    $$\sum_{k=2}^{n} \ln \left( 1 - \frac{1}{k^2} \right).$$
+    Quelle est la limite de cette expression lorsque $n$ tend vers $+\infty$ ?
+- num: 46
+  level: 4
+  content: |-
+    Déterminer trois réels $a, b, c$ tels que
+    $$\forall x \in \mathbb{R} \setminus \{0, -1, -2\}, \qquad \frac{1}{x(x+1)(x+2)} = \frac{a}{x} + \frac{b}{x+1} + \frac{c}{x+2}.$$
+    En déduire, pour $n$ dans $\mathbb{N}^*$, une expression simple de
+    $$U_n = \sum_{k=1}^n \frac{1}{k(k+1)(k+2)}.$$
+    Quelle est la limite de $(U_n)_{n \geq 1}$ lorsque $n$ tend vers $+\infty$ ?
+- num: 47
+  level: 3
+  content: |-
+    a) Trouver trois réels a, b, c tels que, si :
+    $$P : x \in \mathbb{R} \mapsto ax^3 + bx^2 + cx,$$
+    on ait
+    $$\forall x \in \mathbb{R}, \qquad P(x) - P(x-1) = x^2.$$
+    En déduire une expression simple de $\sum_{k=1}^{n} k^2$.
+    b) Adapter cette méthode pour calculer $\sum_{k=1}^{n} k^3$.
+    
+    **Remarque** Somme des puissances $p$-ièmes des $n$ premiers entiers naturels. On a rencontré dans les pages précédentes les trois formules :
+    $$\sum_{k=1}^{n} k = \frac{n(n+1)}{2}, \qquad \sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}, \qquad \sum_{k=1}^{n} k^3 = \left(\frac{n(n+1)}{2}\right)^2.$$
+    Pour $p$ et $n$ dans $\mathbb{N}^*$, soit plus généralement
+    $$S_{p,n} = \sum_{k=1}^{n} k^p$$
+    la somme des puissances $p$-ièmes des $n$ premiers entiers. Au début du dix-septième siècle, Johann Faulhaber a généralisé les formules précédentes et prouvé que, pour tout $p \in \mathbb{N}$, il existe un polynôme $F_p$ tel que :
+    $$\forall n \in \mathbb{N}^*, \qquad S_{p,n} = F_p(n).$$
+    Le terme de plus haut degré de $F_p$ est $\frac{x^{p+1}}{p+1}$, ce qui est cohérent avec les résultats obtenus pour $p = 1$, $p = 2$, $p = 3$. Nous démontrerons ces résultats en **11.2**. Nous définirons à cet effet les polynômes de Bernoulli, introduits par Jacob Bernoulli vers 1650, qui interviennent dans beaucoup d'autres questions mathématiques.
+- num: 48
+  level: 3
+  content: |-
+    Soient $(v_n)_{n \geq 0}$ une suite réelle, $a$ un réel différent de 0 et de 1, $(u_n)_{n \geq 0}$ une suite telle que
+    $$\forall n \in \mathbb{N}, \qquad u_{n+1} = au_n + v_n.$$
+    On pose
+    $$\forall n \in \mathbb{N}, \qquad u_n' = \frac{u_n}{a^n}.$$
+    - a) Si $n \in \mathbb{N}$, simplifier $u'_{n+1} - u'_n$.
+    - b) En déduire une expression sommatoire de $u'_n$, puis de $u_n$.
+- num: 49
+  level: 2
+  content: |-
+    Donner une forme simple de $\sum_{k=1}^{n} (k \times k!)$. On pourra utiliser l'égalité :
+    $$k \times k! = (k+1)! - k!$$
+- num: 50
+  level: 2
+  content: Par une méthode analogue à celle de l'exercice précédent, donner une forme simple de $\sum_{k=1}^{n} \frac{k}{(k+1)!}$.
+- num: 51
+  level: 3
+  content: |-
+    Pour $j$ dans $\mathbb{N}^*$ et $x$ dans $\mathbb{R}$, on pose :
+    $$H_j(x) = x(x+1)\dots(x+j-1).$$
+    - a) Pour $j$ dans $\mathbb{N}^*$ et $x$ dans $\mathbb{R}$, calculer $H_{j+1}(x) - H_{j+1}(x-1)$.
+    - b) En déduire, pour $j$ et $n$ dans $\mathbb{N}^*$, la somme $\sum_{k=1}^{n} H_j(k)$.
+    - c) Retrouver les sommes $\sum_{k=1}^{n} k^2$ et $\sum_{k=1}^{n} k^3$ à l'aide de la question b).
+    
+    Vous pouvez vous y essayer seul en écrivant un système et en identifiant les coefficients des polynômes.
+- num: 52
+  level: 4
+  content: |-
+    Une somme de coefficients binomiaux. Soient r et n deux entiers naturels tels que $r \le n$ ,
+    $$S_{k,n} = \sum_{k=r}^{n} \binom{k}{r}.$$
+    a) En utilisant la relation de Pascal :
+    $$\binom{k+1}{r+1} = \binom{k}{r} + \binom{k}{r+1},$$
+    valable pour k et n dans $\mathbb{N}$  avec $r+1 \leq k$ , exprimer $S_{k,n}$  comme un coefficient binomial.
+    b) Retrouver le résultat obtenu en employant un raisonnement combinatoire.
+- num: 53
+  level: 1
+  content: |-
+    a) Pour n dans $\mathbb{N}^*$ , simplifier le produit
+    $$A_n = \prod_{k=1}^n 4^{k^2 + 1}.$$
+    b) Pour n dans $\mathbb{N}^*$ , simplifier le produit
+    $$B_n = \prod_{k=0}^n \frac{k+4}{k+3}.$$
+- num: 54
+  level: 2
+  content: Soit $n \in \mathbb{N}^*$ . Quel est le produit des $n^2$  entiers apparaissant dans la table de multiplication des entiers entre 1 et n?
+- num: 55
+  level: 3
+  content: |-
+    Pour $n \geq 2$ , donner une expression simple de
+    $$C_n = \prod_{k=2}^n \left(1 - \frac{1}{k^2}\right)$$
+    et trouver la limite de $(C_n)_{n\geq 1}$  lorsque n tend vers $+\infty$ .
+- num: 56
+  level: 1
+  content: |-
+    Soient a, b deux nombres réels, a', b', m, n quatre nombres réels strictement positifs tels que $\frac{a}{a'} > \frac{b}{b'}$ . Montrer que
+    $$\frac{b}{b'} < \frac{ma + nb}{ma' + nb'} < \frac{a}{a'}.$$
+- num: 57
+  level: 2
+  content: |-
+    Soient a, b, c des éléments de $[0, 1]$.
+    - a) Montrer que $(ab - 1)(bc - 1)(ca - 1) \le 0$ .
+    - b) En déduire que
+    $$a + b + c + \frac{1}{abc} \ge \frac{1}{a} + \frac{1}{b} + \frac{1}{c} + abc.$$
+- num: 58
+  level: 2
+  content: Soient x et y deux éléments de $]{-1},1[$. Montrer que le nombre réel $z=\frac{x+y}{1+xy}$  appartient à $]{-1},1[$.
+- num: 59
+  level: 2
+  content: |-
+    a) Quels ensembles décrivent respectivement $x^2$  et $x^3$  lorsque x décrit l'intervalle $[-2, +\infty[$ ?
+    b) Quel ensemble décrit $\frac{1}{x}$ lorsque $x$ décrit $]{-4},5]\setminus\{0\}$  ?
+- num: 60
+  level: 2
+  content: |-
+    a) Quels ensembles décrivent respectivement x + y, xy, $\frac{x}{y}$  lorsque $x$ décrit  $[-2, +\infty[$  et y décrit  $[2, +\infty[$  ?
+    b) Même question lorsque x décrit  $[-1, +\infty[$  et y décrit $]{-\infty}, 3]$ .
+    
+    On a $a \le b \iff |a| \le |b|$ si $a$ et $b$ sont des réels positifs. Par exemple, si a et b sont deux éléments de $\mathbb{R}^+$ , on a
+    $$|a| \le |b| \iff a^2 \le b^2.$$
+- num: 61
+  level: 2
+  content: |-
+    Inégalité triangulaire dans $\mathbb{R}$. Soit $(x,y) \in \mathbb{R}^2$ . Montrer que
+    $$|x+y| \le |x| + |y|,$$
+    et que cette inégalité est une égalité si et seulement si x et y ont même signe (au sens large).
+- num: 62
+  level: 2
+  content: |-
+    Résoudre dans $\mathbb{R}$  l'équation
+    $$\sqrt{x^2} + \sqrt{(x-1)^2} = 1.$$
+- num: 63
+  level: 2
+  content: |-
+    Soit $n \in \mathbb{N}^*$ . Montrer que
+    $$\sum_{k=n+1}^{2n} \frac{1}{k} \ge \frac{1}{2}.$$
+- num: 64
+  level: 2
+  content: |-
+    Soient n dans $\mathbb{N}^*$ , a dans $]1, +\infty[$ . Montrer que
+    $$\frac{a^n-1}{a-1} \le n \, a^{n-1}.$$
+- num: 65
+  level: 2
+  content: |-
+    Soient a et b deux éléments de $\mathbb{R}^+$ . Montrer que
+    $$\left|\sqrt{a} - \sqrt{b}\right| \le \sqrt{|a - b|}.$$
+- num: 66
+  level: 3
+  content: |-
+    Déterminer le plus petit entier $n \in \mathbb{N}^*$  tel que
+    $$\sum_{k=1}^{n} \frac{1}{\sqrt{k} + \sqrt{k+1}} \ge 2022.$$
+- num: 67
+  level: 3
+  content: Déterminer les triplets $(x, y, z) \in \mathbb{N}^{*3}$  tels que $x \leq y \leq z$  et $\frac{1}{x} + \frac{1}{y} + \frac{1}{z} = 1$ .
+- num: 68
+  level: 3
+  content: |-
+    Monotonie des coefficients binomiaux. Soit $n \in \mathbb{N}^*$ .
+    - a) Pour $0 \le m \le n-1$ , comparer le quotient $\frac{\binom{n}{m+1}}{\binom{n}{m}}$  à 1.
+    - b) En déduire que
+    $$\binom{n}{0} \le \binom{n}{1} \le \dots \le \binom{n}{\left\lfloor \frac{n}{2} \right\rfloor}.$$
+    c) En considérant la somme $\sum_{k=0}^{n} {n \choose k}$ , montrer que
+    $$\frac{2^n}{n+1} \le \binom{n}{\left\lfloor \frac{n}{2} \right\rfloor} \le 2^n.$$
+    Compte tenu de la propriété de symétrie $\binom{n}{k} = \binom{n}{n-k}$ , la suite d'inégalités ci-dessus donne, si n est fixé, le sens de variation de la suite $\left(\binom{n}{m}\right)_{0 \le m \le n}$. Cette suite est croissante jusqu'à $\lfloor \frac{n}{2} \rfloor$ , puis décroissante.
+    On trouvera une estimation plus précise du coefficient binomial central $\binom{2m}{m}$  dans l'exercice 249 de **8.6**.
+- num: 69
+  level: 4
+  content: |-
+    Soit, pour $x \in \mathbb{R}$, $f(x) = \sum_{k=1}^{2022} |x - k|$.
+    - a) Étudier les variations de f. On remarquera que f est affine par morceaux, donc strictement croissante (resp. strictement décroissante, resp. constante) sur tout intervalle où sa pente est strictement positive (resp. strictement négative, resp. nulle).
+      - b) Quel est le minimum de f sur $\mathbb{R}$ ?
+- num: 70
+  level: 1
+  content: Montrer que, si $x \in \mathbb{R}$ , $\lfloor 2x \rfloor - 2\lfloor x \rfloor \in \{0, 1\}$ .
+- num: 71
+  level: 2
+  content: Si $n \in \mathbb{N}$ , donner une expression simple de $\lfloor(\sqrt{n+1} + \sqrt{n})^2\rfloor$ .
+- num: 72
+  level: 3
+  content: |-
+    Montrer que, si $(x,y) \in \mathbb{R}^2$,
+    $$\lfloor 2x \rfloor + \lfloor 2y \rfloor - \lfloor x + y \rfloor - \lfloor x \rfloor - \lfloor y \rfloor \in \{0, 1\}.$$
+- num: 73
+  level: 1
+  content: Résoudre dans $\mathbb{R}$  l'inéquation $|x+3| \geq 4$ .
+- num: 74
+  level: 2
+  content: Résoudre dans $\mathbb{R}$  l'inéquation $|2x-4| \leq |x-1|$ .
+- num: 75
+  level: 1
+  content: |-
+    Quels sont les réels x tels que
+    $$(x^2-3) (1-\sqrt{x}) (|x|-6) |4x+3| \in \mathbb{R}^{+*}$$
+    ?
+- num: 76
+  level: 2
+  content: Quels sont les entiers naturels n tels que $\sqrt{n+1} - \sqrt{n} \le \frac{1}{10}$ ?
+- num: 77
+  level: 2
+  content: |-
+    Selon la valeur de x, déterminer le signe de :
+    - a) $f(x) = \sqrt{x-1} \cdot \sqrt{2x-3}$ ,
+    - b) $g(x) = \sqrt{|x-1|} \cdot \sqrt{|2x-3|}$
+    - c) $h(x) = \ln(x+3) + \ln(x+2) - 2\ln(x+11)$ .
+- num: 78
+  level: 3
+  content: |-
+    Soient a, b, c des éléments de $\mathbb{R}^+$ .
+    a) Montrer que
+    $$(a+b)(b+c)(c+a) \ge 8abc.$$
+    b) Montrer que
+    $$9abc \le (a+b+c)(ab+bc+ca).$$
+    On peut reformuler le théorème 1 des deux manières suivantes :
+    - la somme de deux réels positifs x et y de produit p donné est minimale lorsque $x = y = \sqrt{p}$ ;
+    - le produit de deux réels positifs x et y de somme donnée S est maximal lorsque x = y = S/2.
+- num: 79
+  level: 1
+  content: On se donne un rectangle de demi-périmètre p. Montrer que son aire est majorée par $\frac{p^2}{4}$ . Pour quels rectangles y a-t-il égalité?
+- num: 80
+  level: 3
+  content: |-
+    Si x et y sont deux éléments de $\mathbb{R}^{+*}$ , leur moyenne arithmétique est $m = \frac{x+y}{2}$ , leur moyenne géométrique $g = \sqrt{xy}$ , leur moyenne harmonique $h = \frac{2xy}{x+y}$ . Montrer que
+    $$h \leq g \leq m.$$
+    Étudier les cas d'égalité.
+    
+    La moyenne harmonique est la « bonne » dans certaines situations. Soit un trajet de longueur d ; on parcourt la moitié de cette distance à vitesse $v_1$, l'autre avec la vitesse $v_2$. La vitesse moyenne est alors la moyenne harmonique de $v_1$ et $v_2$. En revanche, si on roule la moitié du temps à la vitesse $v_1$ et l'autre moitié du temps à la vitesse $v_2$, la vitesse moyenne est la moyenne arithmétique de $v_1$ et $v_2$.
+- num: 81
+  level: 3
+  content: |-
+    Moyenne arithmético-géométrique. On se donne deux nombres réels strictement positifs a et b et on considère les suites  $(a_n)_{n\geq 0}$  et  $(b_n)_{n\geq 0}$  définies par  $a_0=a,b_0=b$  et
+    $$\forall n \in \mathbb{N}, \quad a_{n+1} = \frac{1}{2} (a_n + b_n), \quad b_{n+1} = \sqrt{a_n b_n}.$$
+    - a) Pour  $n \geq 1$ , comparer  $a_n$  et  $b_n$ . En déduire la monotonie des suites  $(a_n)_{n\geq 1}$  et  $(b_n)_{n\geq 1}$ .
+    - b) Montrer que les deux suites  $(a_n)_{n\geq 0}$  et  $(b_n)_{n\geq 0}$  convergent et ont même limite. Cette limite, appelée moyenne arithmético-géométrique de a et b, possède de très intéressantes propriétés.
+- num: 82
+  level: 3
+  content: Soient a,b,c trois éléments de [0,1]. Montrer que l'un au moins des trois nombres réels $a'=a(1-b)$, $b'=b(1-c)$, $c'=c(1-a)$ est inférieur ou égal à  $\frac{1}{4}$ . On pourra considérer le produit $a'b'c'$.
+- num: 83
+  level: 1
+  content: |-
+    Pour $m$ dans $\mathbb{R}$, soit $p_m$ le trinôme du second degré :
+    $$p_m: x \in \mathbb{R} \longmapsto x^2 + mx + 1.$$
+    Déterminer, selon la valeur de $m$, le nombre de racines réelles de $p_m$.
+- num: 84
+  level: 2
+  content: |-
+    Résoudre dans $\mathbb{R}$ les équations
+    $$\ln(x+1) + \ln(x+5) = \ln(96)$$
+    et  $\ln(|x+1|) + \ln(|x+5|) = \ln(96)$ .
+- num: 85
+  level: 2
+  content: |-
+    Soit $(u_n)_{n \geq 0}$ une suite géométrique de raison $q$ positive telle que
+    $$u_0 + u_1 = \frac{13}{2}$$
+    et  $u_0 u_2 = \frac{25}{4}$ .
+    Déterminer $u_0$ et $q$.
+- num: 86
+  level: 3
+  content: |-
+    Soit $a$ dans $\mathbb{R}$. Déterminer le nombre de nombres réels x tels que :
+    $$x^3 - x = a^3 - a.$$
+    La mise sous forme canonique et la factorisation entraînent la discussion suivante.
+    - Si $\Delta < 0$, alors :
+    $$\forall x \in \mathbb{R}, \qquad f(x) > 0.$$
+    - Si $\Delta = 0$ et si $x_1$ est la racine double, alors :
+    $$\forall x \in \mathbb{R} \setminus \{x_1\}, \qquad f(x) > 0.$$
+    - Si $\Delta > 0$ et si on note $x_1 < x_2$ les deux racines réelles, alors :
+    $$\forall x \in ]{-\infty}, x_1[\cup]x_2, +\infty[, \quad f(x) > 0 \quad \text{et} \quad \forall x \in ]x_1, x_2[, \quad f(x) < 0.$$
+    La discussion est analogue si $a < 0$. Si $a = 0$, la fonction $f$ est constante si $b = 0$, affine non constante si $b \neq 0$.
+- num: 87
+  level: 1
+  content: |-
+    Pour $m$ dans $\mathbb{R}$, soit $p_m$ le trinôme du second degré :
+    $$p_m: x \in \mathbb{R} \longmapsto x^2 + mx + 1.$$
+    Déterminer, selon les valeurs des réels $m$ et $x$, le signe de $p_m(x)$.
+- num: 88
+  level: 2
+  content: |-
+    Résoudre les inéquations :
+    $$x+1 < \sqrt{x+4}$$
+    et  $\sqrt{x^2+5x+4} \le 2x-1$ .
+- num: 89
+  level: 2
+  content: |-
+    Résoudre les inéquations
+    $$|x^2 - 5x + 6| \le x^2 - 4x + 3$$
+    et  $x^2 - 5x + 6 \le |x^2 - 4x + 3|$ .
+- num: 90
+  level: 3
+  content: |-
+    Déterminer les nombres réels m tels que
+    $$\forall x \in \mathbb{R}, \qquad (m+1)x^2 - 2(m-1)x + 3m + 6 \le 0.$$
+    Revenons à l'équation $f(x) = 0$ et notons-en  $x_1$  et  $x_2$  les racines, avec  $x_1 = x_2$  si  $\Delta = 0$ . On a alors les formules :
+    $$x_1 + x_2 = \frac{-b}{a}, \quad x_1 x_2 = \frac{c}{a}.$$
+    Ainsi, la lecture des coefficients d'une équation de degré 2 donne immédiatement la somme et le produit des racines. Inversement si  $x_1$  et  $x_2$  sont deux nombres réels, l'équation du second degré
+    $$x^2 - (x_1 + x_2)x + x_1x_2 = 0$$
+    admet pour racines  $x_1$  et  $x_2$ .
+- num: 91
+  level: 1
+  content: |-
+    Soient  $x_1$  et  $x_2$  les deux racines (éventuellement confondues) du trinôme
+    $$p: x \longmapsto ax^2 + bx + c.$$
+    Calculer  $x_1^2 + x_2^2$  et  $(x_1 - x_2)^2$  en fonction de a, b, c.
+- num: 92
+  level: 4
+  content: |-
+    Soient  $\Gamma$  le cercle de centre O et de rayon R du plan, A un point du plan. On mène par A une droite  $\Delta$  coupant  $\Gamma$  en deux points  $M_1$  et  $M_2$ .
+    a) Soit  $\vec{u}$  un vecteur de norme 1. Montrer que la relation
+    $$\|\overrightarrow{OA} + t\vec{u}\|^2 = R^2$$
+    définit une équation du second degré en t dont on déterminera les coefficients.
+    b) En déduire que le produit scalaire  $\overrightarrow{AM_1} \cdot \overrightarrow{AM_2}$  est indépendant de  $\Delta$ .
+    
+    Si on sait que l'équation admet deux racines réelles (éventuellement confondues)  $x_1$  et  $x_2$ , on détermine immédiatement leur signe avec les formules de Viète. En effet, le signe du quotient  $\frac{c}{a}$  permet de dire si  $x_1$  et  $x_2$  sont ou non de même signe. Dans le cas où  $x_1$  et  $x_2$  sont de même signe, c'est-à-dire si  $\frac{c}{a} > 0$ , le signe commun de  $x_1$  et  $x_2$  est celui de leur somme  $\frac{-b}{a}$ .
+    Notons enfin que si  $\frac{c}{a} < 0$ , alors
+    $$\Delta = b^2 - 4ac = a^2 \left( \frac{b^2}{a^2} - 4\frac{c}{a} \right) > 0.$$
+    La condition  $\frac{c}{a} < 0$  équivaut donc à l'existence de deux racines réelles non nulles de signes opposés.
+- num: 93
+  level: 3
+  content: |-
+    Soient u et v deux nombres réels. À quelles conditions l'équation  $x^4 + ux^2 + v = 0$  admet-elle quatre racines réelles distinctes?
+    
+    Cette quantité est la puissance du point A par rapport au cercle  $\Gamma$.
+    On peut également retrouver l'existence de deux racines réelles non nulles de signes opposés en considérant le signe de $f(0) = c$ et les limites de f en $\pm \infty$.
+- num: 94
+  level: 2
+  content: Soit  $n \in \mathbb{N}^*$ . Montrer, en utilisant le théorème 2, que, si  $x_1, \ldots, x_n$  sont des nombres réels tels que  $\sum_{i=1}^n x_i^2 = 1$ , alors  $\left| \sum_{i=1}^n x_i \right| \leq \sqrt{n}$ . Caractériser le cas d'égalité.
+- num: 95
+  level: 1
+  content: |-
+    Vérifier l'égalité :
+    $$\frac{\pi}{12} = \frac{\pi}{3} - \frac{\pi}{4}.$$
+    En déduire les valeurs du cosinus et du sinus de $\frac{\pi}{12}$.
+- num: 96
+  level: 1
+  content: |-
+    Calculer $\cos\frac{\pi}{8}$ en utilisant la formule de duplication pour le cosinus.
+    
+    Le lecteur connaissant les nombres complexes peut retrouver rapidement les formules d'addition à partir des relations
+    $$e^{ix} \times e^{iy} = e^{i(x+y)}$$
+    et  $e^{ix} \times e^{-iy} = e^{i(x-y)}$
+    (développer et prendre parties réelles et imaginaires des deux membres), mais il est à peu près indispensable de les connaître par cœur.
+- num: 97
+  level: 2
+  content: |-
+    Déterminer sans calcul le maximum et le minimum sur  $\mathbb{R}$  de :
+    $$x \mapsto \sin(x)\cos(x).$$
+- num: 98
+  level: 2
+  content: |-
+    Déterminer le maximum et le minimum sur  $\mathbb{R}$  de :
+    $$x \mapsto \cos(x) - \cos^2(x).$$
+- num: 99
+  level: 3
+  content: Soit  $\Gamma$  un cercle de rayon R > 0. On considère des points  $A_0, \ldots, A_6$  de  $\Gamma$ , rangés dans cet ordre pour le sens trigonométrique, tels que, pour tout  $i \in \{0, \ldots, 5\}$ ,  $A_i A_{i+1} = R$ . Montrer que  $A_6 = A_0$ .
+- num: 100
+  level: 2
+  content: Pour x dans  $\mathbb{R}$ , exprimer  $\cos(3x)$  en fonction de  $\cos(x)$.
+- num: 101
+  level: 3
+  content: |-
+    Pour x dans  $\mathbb{R}$ , montrer que
+    $$2\cos(2x) + 4\cos(x) + 3 > 0$$
+    et déterminer le cas d'égalité.
+- num: 102
+  level: 3
+  content: |-
+    Soit  $\alpha$  l'unique élément de  $[0,\pi]$  tel que  $\cos(\alpha) = \frac{\sqrt{5}-1}{4}$ .
+    - a) Calculer  $\cos(2\alpha)$ , puis  $\cos(4\alpha)$ .
+    - b) En déduire que  $4\alpha$  est congru à  $\alpha$  ou à  $-\alpha$  modulo  $2\pi$ .
+    - c) Conclure que  $\alpha = \frac{2\pi}{5}$ .
+- num: 103
+  level: 1
+  content: |-
+    Déterminer les réels x de  $[0, 2\pi]$  tels que :
+    $$\cos(x) \ge \sin(x).$$
+- num: 104
+  level: 4
+  content: |-
+    Montrer que
+    $$\forall x \in \mathbb{R}, \quad \cos((\sin(x))) > \sin(\cos(x)).$$
+- num: 105
+  level: 2
+  content: |-
+    Radicaux itérés et trigonométrie. Pour $n$ dans $\mathbb{N}^*$, soit :
+    $$u_n = \sqrt{2 + \sqrt{2 + \sqrt{2 + \dots + \sqrt{2}}}}$$
+    ($n$ radicaux).
+    Montrer que
+    $$\forall n \in \mathbb{N}^*, \qquad u_n = 2\cos\left(\frac{\pi}{2^{n+1}}\right).$$
+- num: 106
+  level: 3
+  content: |-
+    Soit x un nombre réel non multiple entier de  $\pi$ . En utilisant la formule de duplication de sin, simplifier, pour n dans  $\mathbb{N}^*$ , le produit :
+    $$P_n(x) = \prod_{k=1}^n \cos\left(\frac{x}{2^k}\right).$$
+- num: 107
+  level: 4
+  content: |-
+    a) Soit  $y \in \mathbb{R} \setminus \pi\mathbb{Z}$ . Exprimer  $\frac{\sin(3y)}{\sin(y)}$  en fonction de  $\cos(2y)$ .
+    b) Soit  $x \in \mathbb{R}$ . Simplifier, pour  $n \in \mathbb{N}^*$ , le produit :
+    $$P_n(x) = \prod_{k=1}^{n} \frac{1 + 2\cos\left(\frac{2x}{3^k}\right)}{3}.$$
+- num: 108
+  level: 3
+  content: |-
+    Montrer que
+    $$\forall n \in \mathbb{N}, \quad \forall x \in \mathbb{R}, \quad |\sin(nx)| \le n |\sin x|.$$
+- num: 109
+  level: 1
+  content: Résoudre dans  $\mathbb{R}$  les équations  $\cos(x) = \frac{1}{2}$  et  $\sin(2x) = \frac{\sqrt{2}}{2}$ .
+- num: 110
+  level: 1
+  content: Soit $n \in \mathbb{N}^*$. Résoudre dans $\mathbb{R}$ l'équation $|\sin(nx)| = 1$.
+- num: 111
+  level: 1
+  content: Résoudre l'inéquation $|\sin(x)| \leq \frac{1}{2}$ dans $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$, puis dans $[-\pi, \pi]$.
+- num: 112
+  level: 2
+  content: Résoudre dans $\mathbb{R}$ l'équation $\cos(x) = \cos\left(3x + \frac{\pi}{3}\right)$.
+- num: 113
+  level: 3
+  content: |-
+    Soit $\alpha$ un nombre irrationnel. On pose
+    $$\forall x \in \mathbb{R}, \qquad f(x) = \cos(x) + \cos(\alpha x).$$
+    - a) Montrer que le seul nombre réel $x$ tel que $f(x) = 2$ est $x = 0$.
+    - b) La fonction $f$ est-elle périodique ?
+- num: 114
+  level: 3
+  content: Soient $f$ et $g$ deux fonctions de $\mathbb{R}$ dans $\mathbb{R}$, $T$ et $T'$ deux nombres réels strictement positifs. On suppose que $f$ est $T$-périodique, que $g$ est $T'$-périodique et que $\frac{T'}{T}$ est rationnel. Montrer que $f + g$ est périodique.
+- num: 115
+  level: 4
+  content: |-
+    a) Résoudre l'équation $\cos(3x) = \sin(2x)$.
+    b) En déduire la valeur de $\sin\frac{\pi}{10}$.
+- num: 116
+  level: 1
+  content: |-
+    Quelle est l'amplitude de
+    $$x \longmapsto 3\cos(x) + 4\sin(x)$$
+    ?
+- num: 117
+  level: 3
+  content: |-
+    a) Résoudre dans $\mathbb{R}$ l'équation : $\cos(x) + \sin(x) = \frac{\sqrt{3}}{2}$.
+    b) Résoudre l'inéquation d'inconnue $x \in [-\pi, \pi]$ : $\cos(x) - \sqrt{3}\sin(x) \leq 1$.
+- num: 118
+  level: 3
+  content: |-
+    Soit $(a, b) \in \mathbb{R}^2 \setminus \{(0, 0)\}$. On pose
+    $$\forall x \in \mathbb{R}, \qquad f(x) = a\cos(x) + b\sin(x).$$
+    Montrer que, si $x_0 \in \mathbb{R}$, la fonction $f$ s'annule exactement une fois sur $[x_0, x_0 + \pi[$.
+    
+    [b]Remarque[/b] Autre approche, supposant la connaissance des nombres complexes.
+    On remarque que
+    $$\forall x \in \mathbb{R}, \qquad (a - ib)e^{ix} = (a\cos(x) + b\sin(x)) + i(a\sin(x) - b\cos(x)),$$
+    ce qui entraîne que
+    $$\forall x \in \mathbb{R}, \quad a\cos(x) + b\sin(x) = \operatorname{Re}((a - ib) e^{ix}).$$
+    Ainsi, si on écrit $a + ib$ sous forme trigonométrique :
+    $$a + ib = \sqrt{a^2 + b^2} e^{i\varphi}\qquad\text{i.e.} a - ib = \sqrt{a^2 + b^2} e^{-i\varphi},$$
+    il vient
+    $$\forall x \in \mathbb{R}, \qquad a\cos(x) + b\sin(x) = \operatorname{Re}\left(\sqrt{a^2 + b^2}e^{i(x-\varphi)}\right) = \sqrt{a^2 + b^2}\cos(x - \varphi).$$
+- num: 119
+  level: 1
+  content: Sous des hypothèses convenables, exprimer $\tan(x + y)$ en fonction de $\tan(x)$ et de $\tan(y)$.
+- num: 120
+  level: 3
+  content: |-
+    cos($x$) et sin($x$) en fonction de tan($x/2$). Soient $x$ dans $\mathbb{R}$ non congru à $\pi$ modulo $2\pi$, $t = \tan(x/2)$. Vérifier que
+    $$\cos(x) = \frac{1 - t^2}{1 + t^2}, \qquad \sin(x) = \frac{2t}{1 + t^2}.$$
+    Ces formules montrent en particulier que $\cos(x)$ et $\sin(x)$ sont des fractions rationnelles (c'est-à-dire des quotients de polynômes) en $\tan(x/2)$.
+- num: 121
+  level: 3
+  content: |-
+    À l'aide de l'exercice précédent, montrer que les points du cercle trigonométrique dont les deux coordonnées sont rationnelles sont $(-1, 0)$ et les $\left(\frac{1 - t^2}{1 + t^2}, \frac{2t}{1 + t^2}\right)$ avec $t \in \mathbb{Q}$.
+    
+    Il est parfois commode d'utiliser la fonction cotangente, définie comme suit. Pour $x$ réel non multiple entier de $\pi$, on pose
+    $$\cot(x) = \frac{\cos(x)}{\sin(x)}.$$
+    Ainsi, pour $x$ réel non multiple entier de $\frac{\pi}{2}$, on a
+    $$\cot(x) = \frac{1}{\tan(x)}.$$
+    On laisse au lecteur le soin d'étudier la fonction cotan sur le modèle de tan.
+- num: 122
+  level: 1
+  content: |-
+    Trouver la limite en $+\infty$ des fonctions :
+    $$a: x \mapsto e^{-\sqrt{x}}, \qquad b: x \mapsto \frac{x+7}{4x+3}, \qquad c: x \mapsto \frac{x^2+5}{x^3-1}, \qquad d: x \mapsto \frac{\sin(x)}{x},$$
+    $$e: x \mapsto \cos(x^2) \ e^{-x}, \qquad f: x \mapsto \frac{\ln(\ln(x))}{\ln(x)}, \qquad g: x \mapsto (2 + \sin(x)) \ x.$$
+- num: 123
+  level: 1
+  content: |-
+    Trouver la limite en 0 des fonctions :
+    $$a: x \mapsto \frac{\cos(e^x)}{2 + \ln(x)}, \quad b: x \mapsto \frac{\ln(x)}{\sqrt{x}}, \quad c: x \mapsto x \ln(x), \quad d: x \mapsto \sqrt{x} \ln(x).$$
+- num: 124
+  level: 2
+  content: |-
+    Trouver la limite en $+\infty$ des fonctions :
+    $$a: x \mapsto \frac{\lfloor x \rfloor}{x}, \qquad b: x \mapsto x - \sqrt{x^2 - x - 1}.$$
+- num: 125
+  level: 2
+  content: |-
+    Pour $x \in \mathbb{R}^{+*}$, soit :
+    $$f(x) = \sin(1/x).$$
+    - a) Tracer sommairement le graphe de $f$. Quelle est la limite de $f(x)$ lorsque $x$ tend vers $+\infty$ ?
+    - b) La fonction $f$ a-t-elle une limite en 0 ?
+    - c) Quelle est la limite de $xf(x)$ lorsque $x$ tend vers 0 ?
+- num: 126
+  level: 2
+  content: |-
+    Trouver la limite (finie ou infinie) des suites définies par les formules ci-après :
+    $$a_n = \frac{2n+5}{6n+7}, \quad b_n = \frac{n^2-5n+6}{n\sqrt{n}}, \quad c_n = \frac{5+3\sin^2(n)}{\sqrt{n+2}+3}, \quad d_n = \sqrt{n+\cos(n)} - \sqrt{n},$$
+    $$e_n = -2n^2 + (-1)^n, \quad f_n = \sqrt{n} - \sin(2n)^2 - 7, \quad g_n = \frac{1 + 5\sin^3(n)}{3n - 7\sqrt{n} + \cos(n)}.$$
+- num: 127
+  level: 2
+  content: |-
+    En utilisant éventuellement des taux d'accroissement, trouver les limites suivantes :
+    $$\frac{\cos x - 1}{x}, \quad \frac{\sin(5x)}{x}, \quad \frac{\ln(1 + 2x)}{\sin(4x)} \text{ lorsque } x \text{ tend vers } 0,$$
+    $$\frac{\ln x}{x-1} \text{ lorsque } x \text{ tend vers } 1,$$
+    $$x \ln \left(1 + \frac{2}{x}\right) \text{ lorsque } x \text{ tend vers } +\infty.$$
+- num: 128
+  level: 3
+  content: |-
+    Une formule de Viète). Soit $x \in \mathbb{R}$. Pour $n \in \mathbb{N}$, soit
+    $$P_n(x) = \prod_{k=1}^n \cos\left(\frac{x}{2^k}\right).$$
+    - a) En utilisant l'exercice 106 de 4.1, déterminer la limite de la suite $(P_n(x))_{n>0}$.
+    - b) Pour $n$ dans $\mathbb{N}^*$, soit :
+    $$u_n = \sqrt{2 + \sqrt{2 + \sqrt{2 + \dots + \sqrt{2}}}}$$
+    ($n$ radicaux).
+    Pour $n$ dans $\mathbb{N}^*$, on pose :
+    $$v_n = \prod_{k=1}^n u_k.$$
+    En utilisant la question précédente et l'exercice 105 de 4.1, montrer que
+    $$\frac{v_n}{2^n} \longrightarrow \frac{2}{\pi}.$$
+    Cette formule a été découverte par Viète (1593). On trouvera en 8.6 une autre expression de $\pi$ comme « produit infini », due à Wallis.
+- num: 129
+  level: 3
+  content: |-
+    a) Déterminer la limite de $f(x) = \frac{1 - \cos(x)}{x}$ en 0.
+    b) En utilisant la formule de duplication pour $\cos$, déterminer la limite de $f$ en 0.
+    Soit $x$ dans $\mathbb{R}$. Déterminons la limite de
+    $$u_n(x) = \left(1 + \frac{x}{n}\right)^n$$
+    quand l'entier $n$ tend vers $+\infty$. Pour $n > -x$, $1 + \frac{x}{n} > 0$, de sorte que :
+    $$u_n(x) = \exp\left(n \ln\left(1 + \frac{x}{n}\right)\right) = \exp\left(x \frac{\ln(1 + y_n)}{y_n}\right)$$
+    où $y_n = \frac{x}{n}$.
+    Or, la forme indéterminée
+    $$\frac{\ln(1+y)}{y}$$
+    est le taux d'accroissement en 0 de la fonction $y \mapsto \ln(1 + y)$. Elle tend donc vers la dérivée de cette fonction en 0, qui est égale à 1. En composant par exp, on obtient :
+    $$\left(1 + \frac{x}{n}\right)^n \underset{n \to +\infty}{\longrightarrow} e^x.$$
+- num: 130
+  level: 3
+  content: |-
+    Soit $k \in \mathbb{N}$. Déterminer la limite de la suite $(u_n)_{n\geq 0}$ définie par :
+    $$\forall n \in \mathbb{N}, \qquad u_n = \frac{\binom{n}{k}}{n^k}.$$
+    On pourra commencer par les cas $k = 0, 1, 2$. Dans le cas général, observer que $n \mapsto \binom{n}{k}$ est une application polynomiale de degré $k$, dont on précisera le coefficient dominant.
+- num: 131
+  level: 3
+  content: |-
+    Trouver la limite en $+\infty$ de
+    $$f(x) = \frac{50x + x \ln x}{x \ln(x) + 3}, \quad g(x) = \frac{e^{-x} + \sqrt{x} + e^x + \cos x}{x^{20} + 2x^{2021}}, \quad h(x) = \frac{e^x - 1}{x^6 + 2e^x + e^{x/2}},$$
+    $$i(x) = \frac{\ln(1+x)}{\ln(x)}, \quad j(x) = \exp\left(-3\sqrt{x} + x - \ln(x^2 + 1) + \cos(x)\right),$$
+    $$k(x) = \sqrt{x} \left(\sqrt{x+1} - \sqrt{x}\right).$$
+- num: 132
+  level: 3
+  content: |-
+    Déterminer les limites des suites définies par les formules
+    $$a_n = \frac{n^n}{2^{n^2}}, \quad b_n = \frac{(\ln(n))^{n^2}}{\sqrt{n}^n}, \quad c_n = \frac{a^{b^n}}{b^{a^n}} \quad \text{où} \quad (a, b) \in \mathbb{N}^{*2} \text{ et } a < b.$$
+    On peut compléter la liste des croissances comparées par le résultat suivant, qui assure que « la suite $(n!)_{n>0}$ l'emporte sur toute suite géométrique », que nous utiliserons marginalement dans la suite, et dont nous donnons deux démonstrations.
+    **Théorème 3** (Croissance comparée des suites géométriques et factorielle). Soit $a \in \mathbb{R}^{+*}$. Alors
+    $$\frac{a^n}{n!} \underset{n \to +\infty}{\longrightarrow} 0.$$
+    Preuve 1. L'idée est que l'on passe de $a^n$ à $a^{n+1}$ en multipliant par $a$ qui est fixe, de $n!$ à $(n+1)!$ en multipliant par $n+1$ qui tend vers $+\infty$. Pour mettre en forme l'argument, on pose, si $n \in \mathbb{N}$, $u_n = \frac{a^n}{n!}$ et on note que
+    $$\forall n \in \mathbb{N}, \qquad \frac{u_{n+1}}{u_n} = \frac{a}{n+1}.$$
+    Pour $n \ge 2a - 1$, on a donc $\frac{u_{n+1}}{u_n} \le \frac{1}{2}$. Notons $N$ le plus petit entier supérieur ou égal à $2a - 1$. Ainsi
+    $$\forall n \ge N, \qquad \frac{u_{n+1}}{u_n} \le \frac{1}{2}.$$
+    D'où, par une récurrence laissée au lecteur
+    $$\forall n \ge N, \qquad u_n \le \left(\frac{1}{2}\right)^{n-N} u_N.$$
+    Le majorant tend vers 0 et $(u_n)_{n\geq 0}$ est à valeurs dans $\mathbb{R}^+$, ce qui entraîne le résultat.
+    Preuve 2. On utilise le théorème de la limite monotone : la suite $\left(\frac{u_{n+1}}{u_n}\right)_{n\geq 0}$ est à valeurs dans $\mathbb{R}^{+*}$, décroissante à partir d'un certain rang. Elle converge donc vers un réel $\ell \geq 0$. Si $\ell$ était strictement positif, on aurait
+    $$\frac{u_{n+1}}{u_n} \underset{n \to +\infty}{\longrightarrow} \frac{\ell}{\ell} = 1,$$
+    contradiction avec
+    $$\frac{u_{n+1}}{u_n} = \frac{a}{n+1} \underset{n \to +\infty}{\longrightarrow} 0.$$
+    Il s'ensuit que $\ell = 0$.
+- num: 133
+  level: 2
+  content: |-
+    La suite réelle $(u_n)_{n\geq 0}$ est définie par ses deux premiers termes $u_0$ et $u_1$ et la relation de récurrence
+    $$\forall n \in \mathbb{N}, \quad u_{n+2} = \frac{1}{2} (u_n + u_{n+1}).$$
+    On pose
+    $$\forall n \in \mathbb{N}, \qquad v_n = u_{n+1} - u_n.$$
+    - a) Montrer que $(v_n)_{n\geq 0}$ est géométrique. Exprimer $v_n$ en fonction de $v_0$ et $n$.
+    - b) Exprimer $u_n$ en fonction de $u_0$, $u_1$ et $n$. En déduire que $(u_n)_{n\geq 0}$ converge vers une limite que l'on explicitera.
+    - c) Reprendre cet exercice à l'aide de l'exercice 11 de **1.3**.
+- num: 134
+  level: 2
+  content: |-
+    La suite réelle $(u_n)_{n\geq 0}$ est définie par ses deux premiers termes $u_0$ et $u_1$, tous deux strictement positifs, et la relation de récurrence
+    $$\forall n \in \mathbb{N}, \qquad u_{n+2} = \sqrt{u_n u_{n+1}}.$$
+    On pose
+    $$\forall n \in \mathbb{N}, \quad v_n = \ln(u_n).$$
+    Justifier la définition de $(v_n)_{n\geq 0}$. En utilisant $(v_n)_{n\geq 0}$ et en utilisant l'exercice précédent, montrer que $(u_n)_{n\geq 0}$ converge vers une limite que l'on explicitera.
+- num: 135
+  level: 3
+  content: |-
+    La suite $(u_n)_{n\geq 0}$ est définie par $u_0 \in \mathbb{R}$ et
+    $$\forall n \in \mathbb{N}, \qquad u_{n+1} = u_n + \sqrt{n+1} + \sin(u_n).$$
+    - a) Montrer que $(u_n)_{n\geq 1}$ est à valeurs dans $\mathbb{R}^+$.
+    - b) Montrer que $u_n \longrightarrow +\infty$.
+- num: 136
+  level: 3
+  content: |-
+    La suite $(u_n)_{n\geq 0}$ est définie par $u_0 \in \mathbb{R}$ et
+    $$\forall n \in \mathbb{N}, \qquad u_{n+1} = u_n + \cos(nu_n) + 2.$$
+    Minorer $u_n$ en fonction de $n$ et $u_0$ afin de montrer que $u_n \longrightarrow +\infty$.
+- num: 137
+  level: 3
+  content: |-
+    Déterminer, en utilisant un encadrement, la limite de la suite $(u_n)_{n\geq 1}$ définie par
+    $$\forall n \in \mathbb{N}^*, \qquad u_n = \frac{1}{n^2} \sum_{k=1}^n \left\lfloor \frac{k^2}{n} \right\rfloor.$$
+- num: 138
+  level: 3
+  content: |-
+    Pour $n \in \mathbb{N}^*$, on note $N_n$ le nombre de chiffres de l'écriture décimale de $n$ : $N_n$ vaut 1 si $1 \leq n \leq 9$, 2 si $10 \leq n \leq 99$, etc. Déterminer la limite de la suite $(u_n)_{n\geq 1}$ définie par :
+    $$\forall n \in \mathbb{N}^*, \qquad u_n = \frac{N_n}{\ln(n)}.$$
+    On exprimera $N_n$ à l'aide des fonctions partie entière et logarithme décimal.
+- num: 139
+  level: 3
+  content: |-
+    Déterminer la limite de la suite $(u_n)_{n\geq 1}$ définie par
+    $$\forall n \in \mathbb{N}^*, \qquad u_n = \sum_{k=1}^n \frac{1}{n + \sqrt{k}}.$$
+- num: 140
+  level: 4
+  content: |-
+    Flocon de von Koch). On construit une suite $(F_n)_{n\geq 1}$ de polygones de la manière suivante. On prend pour $F_1$ un triangle équilatéral dont les côtés ont pour longueur 1. Si $n \in \mathbb{N}^*$, on passe de $F_n$ à $F_{n+1}$ en partageant chaque segment du pourtour de $F_n$ en trois segments égaux, puis en substituant au segment central une réunion de deux segments égaux formant avec le segment supprimé un triangle équilatéral dirigé vers l'extérieur. Pour $n \in \mathbb{N}^*$, soient $c_n$, $\ell_n$, $p_n$ et $a_n$ le nombre de côtés, la longueur d'un côté, le périmètre et l'aire de $F_n$.
+    - a) Dessiner sommairement $F_1, F_2, F_3$.
+    - b) Pour $n \in \mathbb{N}^*$, exprimer $c_n, \ell_n$ et $p_n$ en fonction de $n$. Déterminer la limite de $(p_n)_{n \geq 1}$.
+    - c) Calculer $a_1$. Montrer que
+    $$\forall n \in \mathbb{N}^*, \qquad a_{n+1} = a_n + \frac{3\sqrt{3}}{16} \left(\frac{4}{9}\right)^n.$$
+    Montrer que $(a_n)_{n\geq 1}$ converge vers une limite finie que l'on calculera.
+- num: 141
+  level: 4
+  content: |-
+    Soit $\alpha \in \mathbb{R}$. Pour $n \in \mathbb{N}$, on pose $u_n = \cos(n\alpha)$, $v_n = \sin(n\alpha)$.
+    Dans les questions a) et b), on suppose que $\alpha \notin \pi \mathbb{Z}$.
+    - a) On suppose que $(u_n)_{n\geq 0}$ converge. Pour $n\in\mathbb{N}$, exprimer $v_n$ en fonction de $u_{n+1}$ et $u_n$. En déduire que $(v_n)_{n\geq 0}$ converge.
+    - b) On note $\ell$ et $\ell'$ les limites respectives de $(u_n)_{n\geq 0}$ et $(v_n)_{n\geq 0}$. En considérant les suites $(u_{n+1})_{n\geq 0}$ et $(v_{n+1})_{n\geq 0}$, donner deux relations entre $\ell$ et $\ell'$.
+    - c) Conclure que la suite $(u_n)_{n\geq 0}$ converge si et seulement si $\alpha \in 2\pi\mathbb{Z}$ et que $(v_n)_{n\geq 0}$ converge si et seulement si $\alpha \in \pi\mathbb{Z}$.
+- num: 142
+  level: 4
+  content: |-
+    a) Soit $m \in \mathbb{N}^*$. Montrer qu'il existe exactement un entier naturel $k$ tel que l'écriture décimale de $2^k$ comporte $m$ chiffres et commence par 1.
+    b) Soit, pour $n \in \mathbb{N}^*$, $N_n$ le nombre de $k \in \{0, \dots, n-1\}$ tels que l'écriture décimale de $2^k$ commence par 1. Déterminer la limite de la suite $\left(\frac{N_n}{n}\right)_{n \geq 1}$.
+- num: 143
+  level: 5
+  content: |-
+    Déterminer la limite de $(u_n)_{n>0}$ où
+    $$\forall n \in \mathbb{N}, \qquad u_n = \frac{1}{n!} \sum_{k=0}^{n} k!.$$
+- num: 144
+  level: 5
+  content: Si $n \in \mathbb{N}^*$, soit $N_n$ le nombre d'entiers de la forme $\left\lfloor \frac{n}{k} \right\rfloor$ avec $k \in \{1, \dots, n\}$. Montrer que $\left(\frac{N_n}{\sqrt{n}}\right)_{n \geq 1}$ converge vers une limite à préciser.
+- num: 145
+  level: 1
+  content: |-
+    Pour chacune des fonctions ci-après, déterminer l'ensemble de définition et calculer la dérivée.
+    
+    - $a : x \mapsto x^3 \cos(5x + 1)$
+    - $b : x \mapsto e^{\cos x}$
+    - $c : x \mapsto x \ln(x)$
+    - $d : x \mapsto \ln(e^x + 1)$
+    - $e : x \mapsto e^{x^3 + 2x^2 + 3x + 4}$
+    - $f : x \mapsto e^{\sqrt{x^2+x+1}}$
+    - $g : x \mapsto \ln(e^x + \sin(x))$ (pour cet exemple, on n'explicitera pas l'ensemble de définition)
+    - $h : x \mapsto \dfrac{x}{x^2 + 1}$
+    - $i : x \mapsto \dfrac{\cos(2x)}{x^2 - 2}$
+    - $j : x \mapsto \ln(\cos(2x))$
+    - $k : x \mapsto \dfrac{x}{\sin(x)}$
+    - $\ell : x \mapsto \ln\!\left(x - \sqrt{x^2 - 1}\right)$
+    - $m : x \mapsto \ln\!\sqrt{\dfrac{x+1}{x-1}}$
+    - $n : x \mapsto \ln(\ln(x))$
+    - $o : x \mapsto \ln(\ln(\ln(x)))$
+    - $p : x \mapsto \dfrac{\cos(x^2)}{\ln(\sqrt{1 + e^x})}$
+- num: 146
+  level: 2
+  content: Soient $f$ et $g$ deux fonctions deux fois dérivables de $\mathbb{R}$ dans $\mathbb{R}$. On pose $h = g \circ f$. Si $x \in \mathbb{R}$, donner une expression de $h''(x)$.
+- num: 147
+  level: 1
+  content: |-
+    Pour $n \in \mathbb{N}$, montrer que
+    $$\forall x \in \mathbb{R}, \qquad \cos^{(n)}(x) = \cos\left(x + \frac{n\pi}{2}\right).$$
+- num: 148
+  level: 2
+  content: |-
+    Soient $n \in \mathbb{N}^*$, $f$ une fonction $n$ fois dérivable de $\mathbb{R}$ dans $\mathbb{R}$, $(a, b) \in \mathbb{R}^2$, $g$ la fonction définie sur $\mathbb{R}$ par
+    $$\forall x \in \mathbb{R}, \qquad g(x) = f(ax + b).$$
+    Pour $0 \leq k \leq n$ et $x \in \mathbb{R}$, donner une expression de $g^{(k)}(x)$.
+- num: 149
+  level: 2
+  content: |-
+    Soit $f$ la fonction de $\mathbb{R}$ dans $\mathbb{R}$ définie par
+    $$\forall x \in \mathbb{R}^*, \qquad f(x) = \frac{1}{x}.$$
+    Donner une expression simple de $f^{(n)}(x)$ pour $n \in \mathbb{N}$ et $x \in \mathbb{R}^*$.
+- num: 150
+  level: 3
+  content: |-
+    Soit $f$ la fonction de $\mathbb{R}$ dans $\mathbb{R}$ définie par
+    $$\forall x \in \mathbb{R}, \qquad f(x) = e^{-x^2}.$$
+    Montrer que, pour tout $n \in \mathbb{N}$, il existe un polynôme $P_n$ à coefficients réels tel que
+    $$\forall x \in \mathbb{R}, \qquad f^{(n)}(x) = P_n(x) e^{-x^2}.$$
+    Expliciter $P_0$, $P_1$, $P_2$.
+- num: 151
+  level: 1
+  content: |-
+    Soit $f$ une fonction dérivable de $\mathbb{R}$ dans $\mathbb{R}$.
+    - a) On suppose $f$ paire. Que dire de $f'$ ?
+    - b) Même question si $f$ est impaire.
+    - c) Même question si $f$ est périodique de période $T$, où $T \in \mathbb{R}^{+*}$.
+- num: 152
+  level: 3
+  content: |-
+    a) Déterminer deux réels $a$ et $b$ tels que :
+    $$\forall x \in \mathbb{R} \setminus \{-1, 0\}, \qquad \frac{1}{x(x+1)} = \frac{a}{x} + \frac{b}{x+1}.$$
+    b) Pour $n$ dans $\mathbb{N}^*$, calculer en utilisant a) la dérivée $n$-ième de
+    $$f: x \in \mathbb{R} \setminus \{-1, 0\} \mapsto \frac{1}{x(x+1)}.$$
+- num: 153
+  level: 3
+  content: |-
+    Si $f$ est une fonction dérivable sur l'intervalle $I$ de $\mathbb{R}$ et à valeurs dans $\mathbb{R}^*$, on appelle *dérivée logarithmique* de $f$ la fonction $\frac{f'}{f}$.
+    - a) Soient $u$ et $v$ deux fonctions dérivables sur $I$ et à valeurs dans $\mathbb{R}^*$. Exprimer la dérivée logarithmique de $uv$ en fonctions de celles de $u$ et $v$.
+    - b) Généraliser la question précédente à un produit de $n$ facteurs.
+    - c) Soient $n$ dans $\mathbb{N}^*$, $a_1 < \cdots < a_n$ des nombres réels et $P$ la fonction polynôme définie par :
+    $$\forall x \in \mathbb{R}, \qquad P(x) = \prod_{i=1}^{n} (x - a_i).$$
+    Calculer la dérivée logarithmique de $P$ sur chacun des intervalles où cette fonction est définie. La dérivée logarithmique d'un produit est donc plus lisible que la dérivée : les produits parasites ont disparu.
+    Les deux exercices ci-après sont de nature un peu différente.
+- num: 154
+  level: 2
+  content: Soit $f$ une fonction de $\mathbb{R}$ dans $\mathbb{R}$ dérivable au point 0. Déterminer la limite de $\dfrac{f(x^2) - f(0)}{x}$ lorsque $x$ tend vers 0.
+- num: 155
+  level: 4
+  content: |-
+    Soit $f$ la fonction de $\mathbb{R}$ dans $\mathbb{R}$ définie par $f(0) = 0$ et
+    $$\forall x \in \mathbb{R}^*, \qquad f(x) = x^2 \cos(1/x).$$
+    - a) Calculer $f'(x)$ si $x \in \mathbb{R}^*$.
+    - b) En revenant à la définition, montrer que $f$ est dérivable en 0 et calculer $f'(0)$.
+    - c) Montrer que la fonction $f'$ n'est pas continue en 0.
+- num: 156
+  level: 1
+  content: |-
+    Soient $a$ un nombre réel non nul, $x_1$ et $x_2$ deux nombres réels tels que $x_1 < x_2$, $f$ la fonction :
+    $$x \in \mathbb{R} \longmapsto ax^2.$$
+    Montrer que la tangente au graphe de $f$ au point d'abscisse $\dfrac{x_1 + x_2}{2}$ est parallèle à la droite joignant les points du graphe de $f$ d'abscisses $x_1$ et $x_2$.
+- num: 157
+  level: 2
+  content: |-
+    a) Pour $n \in \mathbb{N}^*$, déterminer l'équation de la droite $D_n$, tangente au graphe de la fonction $\ln$ au point $n$.
+    b) Soit $x_n$ l'abscisse du point d'intersection de $D_n$ et de l'axe $Ox$. Déterminer $x_n$. Quelle est la limite de $(x_n)_{n\geq 1}$ ?
+- num: 158
+  level: 3
+  content: Soient $f$ et $g$ deux fonctions de $\mathbb{R}$ dans $\mathbb{R}$ dérivables en 0. On suppose que les graphes des trois fonctions $f$, $g$, $\frac{fg}{2}$ ont même tangente au point d'abscisse 0. Quelles sont les équations possibles pour cette tangente ?
+- num: 159
+  level: 4
+  content: |-
+    Droites tangentes à une parabole). Soient $a$ un réel non nul, $f$ la fonction :
+    $$x \in \mathbb{R} \longmapsto ax^2.$$
+    Si $p$ et $q$ sont deux nombres réels, on note $\Delta_{p,q}$ la droite d'équation $y = px + q$. Donner une condition nécessaire et suffisante sur $p$ et $q$ pour que $\Delta_{p,q}$ soit tangente au graphe de $f$.
+- num: 160
+  level: 2
+  content: |-
+    a) Soient $f$ une fonction dérivable sur un intervalle $I$ de $\mathbb{R}$, $x_0$ un élément de $I$ tel que $f'(x_0) \neq 0$. Calculer l'abscisse du point $x_1$ en lequel la tangente au graphe de $f$ au point d'abscisse $x_0$ coupe l'axe $(Ox)$.
+    b) On suppose que $a$ est un nombre réel positif, que $f$ est la fonction définie par
+    $$\forall x \in \mathbb{R}, \qquad f(x) = x^2 - a.$$
+    Avec les notations précédentes, vérifier que
+    $$x_1 = \frac{1}{2} \left( x_0 + \frac{a}{x_0} \right).$$
+- num: 161
+  level: 3
+  content: |-
+    Soit $a$ dans $\mathbb{R}^{+*}$. La suite $(u_n)_{n\geq 0}$ est définie par son premier terme $u_0$, élément de $\mathbb{R}^{+*}$, et par la relation de récurrence :
+    $$\forall n \in \mathbb{N}, \qquad u_{n+1} = \frac{1}{2} \left( u_n + \frac{a}{u_n} \right) = f_a(u_n)$$
+    où la fonction $f_a$ est définie par
+    $$\forall x \in \mathbb{R}^{+*}, \qquad f_a(x) = \frac{1}{2} \left( x + \frac{a}{x} \right).$$
+    - a) Étudier $f_a$ et donner sommairement l'allure de son graphe.
+    - b) Justifier que la suite $(u_n)_{n>0}$ est bien définie et à valeurs dans $\mathbb{R}^{+*}$.
+    - c) Établir les inégalités :
+    $$\forall x \in \mathbb{R}^{+*}, \quad f_a(x) \ge \sqrt{a},$$
+    $$\forall x \in [\sqrt{a}, +\infty[, \quad f_a(x) \le x.$$
+    - d) Montrer que la suite $(u_n)_{n\geq 1}$ est décroissante, puis que cette suite converge vers $\sqrt{a}$.
+    - e) Pour $n$ dans $\mathbb{N}$, on pose
+    $$v_n = \frac{u_n - \sqrt{a}}{u_n + \sqrt{a}}.$$
+    Montrer que
+    $$\forall n \in \mathbb{N}, \qquad v_{n+1} = v_n^2.$$
+    - f) Exprimer $v_n$ en fonction de $n$.
+    - g) Montrer que
+    $$\forall n \in \mathbb{N}^*, \qquad 0 \le u_n - \sqrt{a} \le \left(u_1 + \sqrt{a}\right) \left(\frac{u_0 - \sqrt{a}}{u_0 + \sqrt{a}}\right)^{2^n}.$$
+    Conclure que $(u_n)_{n\geq 0}$ converge vers $\sqrt{a}$.
+    h) On prend $a = 2$, $u_0 = 1$. Représenter graphiquement la fonction $f_2$ et les premiers termes de la suite $(u_n)_{n\geq 0}$. Écrire l'inégalité de la question précédente dans ce cas. Comment choisir $n$ pour obtenir une valeur approchée à $10^{-5}$ près de $\sqrt{2}$ ? Faire les calculs correspondants.
+    L'algorithme de calcul approché d'une racine carrée étudié dans l'exercice précédent remonte à l'Antiquité (Héron). Il a été généralisé au dix-septième siècle par Newton et Raphson en la méthode de Newton, qui donne des approximations rapidement convergentes des solutions d'une équation $f(x) = 0$. Décrivons-en brièvement le principe. On se propose de calculer numériquement une racine $\ell$ de l'équation dont on connaît une première approximation. On considère une suite $(x_n)_{n\geq 0}$ vérifiant :
+    $$\forall n \in \mathbb{N}, \quad x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)},$$
+    le point de départ $x_0$ étant choisi aussi près de $\ell$ que le permet l'estimation dont on dispose. La signification géométrique de cette relation de récurrence est décrite dans l'exercice 160. On montre que, si $x_0$ est assez près de $\ell$, alors $(x_n)_{n\geq 0}$ converge vers $\ell$. La convergence est de plus très rapide. Dans l'exercice précédent, on voit que, pour l'exemple choisi, l'erreur $|u_n - \sqrt{a}|$ est majorée par une quantité de la forme
+    $$e_n := Ck^{2^n}$$
+    avec $C > 0$ et $k < 1$. Ce type d'estimation vaut en fait de manière très générale. Comme
+    $$e_{n+1} = \frac{e_n^2}{C},$$
+    on voit qu'à peu de choses près, le nombre de décimales correctes double à chaque étape (« convergence quadratique »). La preuve du résultat général est accessible en première année post-bac.
+    La méthode de Newton a été considérablement généralisée au vingtième siècle. Elle garde une grande importance en analyse.
+- num: 162
+  level: 1
+  content: |-
+    Étudier la fonction $f$ définie par
+    $$\forall x \in ]1, +\infty[, \qquad f(x) = \frac{x}{\sqrt{x^2 - 1}}.$$
+- num: 163
+  level: 2
+  content: |-
+    a) Étudier la fonction $f$ définie par
+    $$\forall x \in ]1, +\infty[, \qquad f(x) = \ln(1 + e^x).$$
+    b) Montrer que $f(x) - x \xrightarrow[x \to +\infty]{} 0$. Interpréter géométriquement.
+- num: 164
+  level: 3
+  content: |-
+    a) Étudier la fonction $f: x \in \mathbb{R}^{+*} \longmapsto \frac{\ln x}{x}$.
+    b) En utilisant a), déterminer les couples $(a,b)$ d'éléments de $\mathbb{N}^*$ vérifiant $a < b$ et
+    $$a^b = b^a.$$
+- num: 165
+  level: 3
+  content: |-
+    Les fonctions ch (cosinus hyperbolique) et sh (sinus hyperbolique) sont définies sur $\mathbb{R}$ par :
+    $$\forall x \in \mathbb{R}, \quad \text{ch}(x) = \frac{e^x + e^{-x}}{2}, \quad \text{sh}(x) = \frac{e^x - e^{-x}}{2}.$$
+    - a) Étudier ces deux fonctions ; en tracer les graphes.
+    - b) Montrer que ch réalise une bijection de $\mathbb{R}^+$ sur $[1,+\infty[$ et exprimer la bijection réciproque.
+    - c) Montrer que sh réalise une bijection de $\mathbb{R}$ sur $\mathbb{R}$ et exprimer la bijection réciproque.
+    - d) Pour $x$ dans $\mathbb{R}$, calculer
+    $$\text{ch}^2(x) - \text{sh}^2(x).$$
+    Une application immédiate de l'étude des fonctions est la détermination du nombre de solutions d'une équation et le positionnement des racines. La lecture du tableau de variations d'une fonction dérivable $f$ permet en effet de déterminer le nombre de solutions d'une équation de la forme
+    $$f(x) = \lambda, \qquad \lambda \in \mathbb{R}.$$
+    Exemple. Une étude d'équation.
+    Soit $p$ un nombre réel. Quel est le nombre de solutions réelles de l'équation
+    $$(E_p) \qquad x^5 - 5x = p \, ?$$
+    On pose, pour $x$ dans $\mathbb{R}$,
+    $$f(x) = x^5 - 5x.$$
+    On a :
+    $$\forall x \in \mathbb{R}, \quad f'(x) = 5(x^4 - 1) = 5(x^2 - 1)(x^2 + 1) = 5(x - 1)(x + 1)(x^2 + 1).$$
+    Cette égalité rend apparent le signe de $f'(x)$. La fonction $f$ est strictement croissante sur $]-\infty,-1]$, strictement décroissante sur $[-1,1]$, strictement croissante sur $[1,+\infty[$. En utilisant les relations
+    $$f(-1) = 4 = -f(1), \quad f(x) \xrightarrow[x \to +\infty]{} +\infty, \quad f(x) \xrightarrow[x \to -\infty]{} -\infty$$
+    le tableau de variations donne les résultats ci-après :
+    - si $p < -4$, l'équation $(E_p)$ admet une unique solution réelle, qui appartient à $]-\infty,-1]$ ;
+    - si $p \in ]-4,4[$, l'équation $(E_p)$ admet trois solutions réelles : une dans $]-\infty,-1[$, une dans $]-1,1[$, une dans $]1,+\infty[$ ;
+    - si $p > 4$, l'équation $(E_p)$ admet une unique solution réelle, qui appartient à $[1, +\infty[$ ;
+    - si $p = -4$ ou $p = 4$, l'équation $(E_p)$ possède deux solutions distinctes.
+- num: 166
+  level: 2
+  content: Si $m \in \mathbb{R}$, quel est le nombre de réels $x$ tels que $e^x = mx^2$ ?
+- num: 167
+  level: 3
+  content: |-
+    Pour $m \in \mathbb{R}^{+*}$, on note $f_m$ et $g_m$ les fonctions définies par
+    $$\forall x \in \mathbb{R}^{+*}, \qquad f_m(x) = 1 - x + \frac{m}{x} (1 + \ln(x)), \quad g_m(x) = x^2 + m \ln(x).$$
+    - a) Montrer que $g_m$ s'annule en un unique réel que l'on notera $\alpha_m$ et que l'on ne cherchera pas à calculer.
+    - b) Étudier les variations de $f_m$.
+    - c) Soit $P = (x, y)$ un point du plan, avec $x > 0$. En discutant selon la position de $P$, déterminer le nombre de $m \in \mathbb{R}^{+*}$ tels que le graphe de $f_m$ passe par $P$.
+    Dans l'exercice suivant, on détermine le nombre de racines réelles d'une équation de degré 3 de la forme $x^3 + px + q = 0$ ; on obtient ainsi un analogue du résultat classique relatif au trinôme du second degré.
+- num: 168
+  level: 3
+  content: |-
+    Le nombre de racines réelles d'une équation de degré 3 \*). Soient $p$ et $q$ deux réels et, pour $x$ dans $\mathbb{R}$ :
+    $$f(x) = x^3 + px + q.$$
+    On se propose de déterminer le nombre de réels $x$ tels que $f(x) = 0$.
+    - a) On suppose $p \geq 0$. Tracer le tableau de variations de $f$ et conclure dans ce cas.
+    - b) On suppose $p < 0$. Tracer le tableau de variations de $f$.
+    - c) On suppose $p < 0$. Soient $x_1$ et $x_2$ les points d'annulation de $f'$. Calculer $f(x_1) \times f(x_2)$ en fonction de $p$ et $q$.
+    - d) Déterminer, en fonction de la quantité
+    $$\Delta = -(4p^3 + 27q^2),$$
+    le nombre de racines réelles de l'équation $f(x)=0$. On montrera en particulier que, si $\Delta<0$, l'équation admet une unique racine réelle.
+- num: 169
+  level: 3
+  content: Soient $n \ge 2$ un entier, $p$ et $q$ deux nombres réels. Montrer que l'équation $x^n + px + q = 0$ admet au plus deux racines réelles si $n$ est pair, au plus trois si $n$ est impair.
+- num: 170
+  level: 4
+  content: |-
+    Nombre de racines de $P' - \alpha P$ si $P$ est un polynôme réel de degré $n$ ayant $n$ racines distinctes \*). Soient $n \in \mathbb{N}^*$, $a_1 < \cdots < a_n$ des réels et $P$ la fonction polynôme définie par :
+    $$\forall x \in \mathbb{R}, \qquad P(x) = \prod_{i=1}^{n} (x - a_i).$$
+    - a) Dresser le tableau de variations de $\frac{P'}{P}$. On utilisera l'exercice 153.
+    - b) Pour $\alpha$ dans $\mathbb{R}$, quel est le nombre de racines de l'équation
+    $$P'(x) - \alpha P(x) = 0 ?$$
+    Remarque. Les rôles de la continuité et de la stricte monotonie.
+    La méthode d'étude des équations $f(x) = \lambda$ utilisée dans ce paragraphe repose implicitement sur les deux points suivants.
+    - Le théorème des valeurs intermédiaires, dont l'énoncé est le suivant :
+    « Soient $f$ une fonction continue sur un intervalle $I$ de $\mathbb{R}$, $a$ et $b$ deux éléments de $I$, $\gamma$ un nombre réel compris entre $f(a)$ et $f(b)$. Alors l'équation
+    $$f(x) = \gamma$$
+    admet une solution dans $[a, b]$. »
+    - Le fait ci-après :
+    « Soit $f$ une fonction strictement monotone sur un intervalle $I$ de $\mathbb{R}$, $\gamma$ un nombre réel. Alors l'équation
+    $$f(x) = \gamma$$
+    admet au plus une solution dans $I$. »
+    Ce second point est évident : si, par exemple, $f$ est strictement croissante sur $I$ et si $x < y$, alors $f(x) < f(y)$, ce qui montre qu'il ne peut exister deux éléments distincts de $I$ d'image $\gamma$.
+    Le théorème des valeurs intermédiaires est nettement plus profond. La combinaison des deux résultats entraîne l'énoncé ci-après.
+    « Soit $f$ une fonction continue et strictement monotone sur un intervalle $I$, $a$ et $b$ deux points de $I$, $\gamma$ un élément de $[f(a), f(b)]$. Alors l'équation
+    $$f(x) = \gamma$$
+    admet une unique solution dans $[a, b]$. »
+    C'est la combinaison de cet énoncé, de la continuité d'une fonction dérivable et du lien entre stricte monotonie et signe de la dérivée qui est utilisée ci-dessus.
+- num: 171
+  level: 2
+  content: |-
+    Soit $f$ une fonction continue sur un intervalle $I$ de $\mathbb{R}$ telle que
+    $$\forall x \in \mathbb{R}, \qquad f(x)^2 = 1.$$
+    Montrer que $f$ est constante.
+    Sans hypothèse de monotonie, le théorème des valeurs intermédiaires permet d'établir qu'une équation de la forme $u(x) = 0$ où $u$ est une fonction continue sur un intervalle $I$ de $\mathbb{R}$ admet au moins une solution : il suffit d'exhiber deux éléments $a$ et $b$ de $I$ tels que $u(a) \leq 0$, $u(b) \geq 0$. Les exercices ci-après illustrent cette méthode.
+- num: 172
+  level: 3
+  content: Soient $a$ et $b$ deux nombres réels tels que $a < b$, $f$ une application continue de $[a, b]$ dans $[a, b]$. Montrer que $f$ admet un point fixe, i.e. qu'il existe $x$ dans $[a, b]$ tel que $f(x) = x$. On écrira cette équation sous la forme $g(x) = 0$ pour une certaine fonction $g$.
+- num: 173
+  level: 3
+  content: |-
+    Montrer que, pour tout $n \in \mathbb{N}^*$, l'équation
+    $$x^{3}\sin(x)\ln(x+1) + e^{x}\cos(x) = 2$$
+    admet au moins une solution dans $]n\pi, (n+1)\pi[$.
+    Une inégalité peut se traduire par la positivité d'une certaine fonction $f$. L'étude de $f$ permet souvent d'accéder au signe de $f$ via l'étude de ses variations.
+    **Exemple** (\*). Une inégalité souvent utile.
+    Démontrons l'inégalité :
+    $$(1) \qquad \forall x \in \mathbb{R}, \qquad e^x \ge x + 1,$$
+    que vous aurez souvent l'occasion d'utiliser. On pose, pour $x$ dans $\mathbb{R}$ :
+    $$f(x) = e^x - x - 1.$$
+    L'inégalité proposée s'écrit :
+    $$\forall x \in \mathbb{R}, \quad f(x) \ge 0.$$
+    Il s'agit donc de déterminer le signe de $f$. La connaissance des variations de $f$ permet de répondre à cette question. On a :
+    $$\forall x \in \mathbb{R}, \qquad f'(x) = e^x - 1.$$
+    Puisque exp est strictement croissante, $f'$ est $<0$ sur $\mathbb{R}^{-*}$, nulle en 0, $>0$ sur $\mathbb{R}^{+*}$. Par suite, $f$ est strictement décroissante sur $\mathbb{R}^{-}$, strictement croissante sur $\mathbb{R}^{+}$. Elle est donc partout supérieure ou égale à $f(0) = 0$. C'est le résultat désiré. Interprétation de l'inégalité établie : le graphe de la fonction exp est au-dessus de sa tangente au point d'abscisse 0.
+    La preuve précédente montre en outre que, pour $x \neq 0$ :
+    $$e^x > x + 1.$$
+    Une remarque pour conclure. Puisque la fonction ln est strictement croissante sur $\mathbb{R}^{+*}$, on peut réécrire l'inégalité précédente sous la forme :
+    $$\forall x \in ]-1, +\infty[, \quad \ln(x+1) < x,$$
+    avec égalité si et seulement si $x = 0$. Posant $y = x + 1$, on obtient :
+    $$\forall y \in \mathbb{R}^{+*}, \quad \ln(y) \le y - 1$$
+    avec égalité si et seulement si $y=1$. Interprétation géométrique : le graphe de la fonction ln est au-dessous de sa tangente au point d'abscisse 1.
+    La fonction exp a pour dérivée seconde exp à valeurs dans $\mathbb{R}^+$. Il s'ensuit que exp est convexe. La droite d'équation $y = x + 1$, qui est la tangente au graphe de $f$ au point d'abscisse 0, est donc en dessous de ce graphe, d'où une nouvelle démonstration de (1).
+- num: 174
+  level: 2
+  content: |-
+    Une inégalité utile \*). Montrer l'inégalité :
+    $$\forall x \in \mathbb{R}^+, \quad \sin(x) \le x.$$
+    En déduire que
+    $$\forall x \in \mathbb{R}, \quad |\sin(x)| \le |x|.$$
+- num: 175
+  level: 3
+  content: |-
+    En utilisant la fonction $f: x \mapsto \ln(\operatorname{ch}(x)) - \frac{x^2}{2}$, montrer que
+    $$\forall x \in \mathbb{R}, \qquad \operatorname{ch}(x) \le e^{\frac{x^2}{2}}.$$
+- num: 176
+  level: 4
+  content: |-
+    Montrer que, pour $n \in \mathbb{N}^*$ et $x \in [0,2]$,
+    $$\left(1 + \frac{x}{n}\right)^n \le \frac{2+x}{2-x}.$$
+    L'exercice ci-après, consacré à l'étude d'une fonction classique, récapitule plusieurs techniques.
+- num: 177
+  level: 4
+  content: |-
+    La fonction sinus cardinal \*). La fonction sinus cardinal, notée ici $\sin_c$, est définie par $\sin_c(0) = 1$ et
+    $$\forall x \in \mathbb{R}^*, \quad \sin_c(x) = \frac{\sin(x)}{x}.$$
+    - a) Étudier la parité de $\sin_c$.
+    - b) Montrer que $\sin_c$ est continue en 0. Quelle est sa limite en $\pm \infty$ ?
+    - c) Pour $x \in \mathbb{R}^*$, calculer $\sin_c'(x)$.
+    On admettra que $\sin_c$ est également dérivable en 0, de dérivée nulle.
+    - d) Montrer que, pour tout $n \in \mathbb{Z}$, la fonction tan admet un unique point fixe sur l'intervalle $\left[n\pi - \frac{\pi}{2}, n\pi + \frac{\pi}{2}\right]$, que l'on note $x_n$.
+    - e) Montrer que les $x_n$ pour $n \in \mathbb{Z}$ sont les points en lesquels $\sin_c'$ s'annule.
+    - f) Selon la parité de $n$, tracer le tableau de variations de $\sin_c$ sur l'intervalle $\left]n\pi - \frac{\pi}{2}, n\pi + \frac{\pi}{2}\right[$.
+    Les deux exercices ci-après sont plus théoriques en ce qu'ils font intervenir des fonctions « générales ».
+- num: 178
+  level: 4
+  content: |-
+    Soient $a$ et $b$ deux nombres réels tels que $a < b$, $f$ et $g$ deux fonctions dérivables de $[a,b]$ dans $\mathbb{R}$ telles que $f(a) \leq g(a)$ et que
+    $$\forall x \in [a, b], \qquad f'(x) \le g'(x).$$
+    En considérant $h := g - f$, montrer que
+    $$\forall x \in [a, b], \qquad f(x) \le g(x).$$
+- num: 179
+  level: 3
+  content: |-
+    Inégalité des accroissements finis \*). Soient $a$ et $b$ deux nombres réels tels que $a < b$, $m$ et $M$ deux nombres réels, $f$ une fonction dérivable sur $[a,b]$, à valeurs dans $\mathbb{R}$.
+    a) On suppose que
+    $$\forall x \in [a, b], \qquad m \le f'(x) \le M.$$
+    Montrer que
+    $$m(b-a) \le f(b) - f(a) \le M(b-a).$$
+    On pourra considérer les fonctions
+    $$g: x \longmapsto f(x) - Mx, \qquad h: x \longmapsto f(x) - mx.$$
+    b) Soit $K \in \mathbb{R}^+$. On suppose que
+    $$\forall x \in [a, b], \qquad |f'(x)| \le K.$$
+    Montrer que
+    $$|f(b) - f(a)| \le K |b - a|,$$
+    puis que
+    $$\forall (x, y) \in [a, b]^2, \qquad |f(y) - f(x)| \le K |y - x|.$$
+- num: 180
+  level: 4
+  content: |-
+    Soient $a$ et $b$ deux nombres réels tels que $a < b$, $K \in [0, 1[$ et $f$ une fonction dérivable de $[a, b]$ dans $[a, b]$ telle que
+    $$(1) \quad \forall x \in [a, b], \qquad |f'(x)| \le K.$$
+    On sait depuis l'exercice 172 que $f$ admet un point fixe $c \in [a, b]$. Soit $(u_n)_{n\geq 0}$ une suite définie par $u_0 \in [a, b]$ et
+    $$\forall n \in \mathbb{N}, \qquad u_{n+1} = f(u_n).$$
+    En utilisant l'exercice précédent, montrer que
+    $$\forall n \in \mathbb{N}, \qquad |u_n - c| \le K^n |u_0 - c|.$$
+    Qu'en déduit-on sur la suite $(u_n)_{n\geq 0}$ ?
+    On peut appliquer la variation des fonctions à la recherche d'extrema. Voici quelques exemples.
+- num: 181
+  level: 1
+  content: |-
+    Soit $n$ dans $\mathbb{N}^*$. Calculer le maximum de la fonction $f_n$ définie sur $\mathbb{R}^+$ par :
+    $$\forall x \in \mathbb{R}^+, \qquad f_n(x) = x^n e^{-x}.$$
+- num: 182
+  level: 1
+  content: |-
+    Soit $\lambda$ dans $\mathbb{R}^{+*}$. Déterminer le minimum de la fonction $f$ définie sur $\mathbb{R}^{+*}$ par
+    $$\forall x \in \mathbb{R}^{+*}, \qquad f_{\lambda}(x) = \frac{\lambda x^2}{2} - \ln(x).$$
+- num: 183
+  level: 5
+  content: |-
+    Déterminer le maximum de la fonction $f$ définie sur $\mathbb{R}^+$ par
+    $$\forall x \in \mathbb{R}^{+*}, \qquad f(x) = \ln(1+x) \ln\left(1+\frac{1}{x}\right).$$
+- num: 184
+  level: 1
+  content: Déterminer les fonctions de $\mathbb{R}$ dans $\mathbb{R}$, $n$ fois dérivables sur $\mathbb{R}$ et dont la dérivée $n$-ième est identiquement nulle.
+- num: 185
+  level: 3
+  content: |-
+    Pour quelles valeurs du nombre réel $\lambda$ la fonction $f$ définie par
+    $$\forall x \in \mathbb{R}, \qquad f_{\lambda}(x) = \cos(x)^6 + \sin(x)^6 - \lambda \cos(4x)$$
+    est-elle constante ?
+- num: 186
+  level: 2
+  content: |-
+    Soient un pendule simple de masse $m$ et de longueur $\ell$, $\theta$ l'angle que fait le pendule avec la « verticale descendante » ; alors $\theta$ dépend du temps $t$ et obéit à l'équation différentielle :
+    $$\theta''(t) + \frac{g}{\ell}\sin(\theta(t)) = 0.$$
+    L'énergie du pendule au temps $t$ est donnée par la formule :
+    $$E(t) = \frac{m\ell^2\theta'(t)^2}{2} - mg\ell\cos(\theta(t)).$$
+    Montrer que $E$ est constante (*conservation de l'énergie*).
+- num: 187
+  level: 2
+  content: |-
+    Soit $f$ une fonction dérivable de $\mathbb{R}$ dans $\mathbb{R}$.
+    a) En considérant la fonction $g$ définie sur $\mathbb{R}$ par :
+    $$\forall x \in \mathbb{R}, \qquad g(x) = f(x) - f(-x),$$
+    montrer que $f$ est paire si et seulement si $f'$ est impaire.
+    b) Montrer que $f$ est impaire si et seulement si $f'$ est paire et $f(0) = 0$.
+- num: 188
+  level: 3
+  content: |-
+    Soient $f$ une fonction dérivable de $\mathbb{R}$ dans $\mathbb{R}$, $T$ un élément de $\mathbb{R}^{+*}$.
+    a) On suppose qu'il existe $\lambda$ dans $\mathbb{R}$ et une fonction $g$ de $\mathbb{R}$ dans $\mathbb{R}$ périodique de période $T$ telle que :
+    $$\forall x \in \mathbb{R}, \qquad f(x) = g(x) + \lambda x.$$
+    Montrer que $f'$ est périodique de période $T$.
+    b) Formuler et démontrer une réciproque du résultat établi en a).
+- num: 189
+  level: 3
+  content: |-
+    Soit $f$ une fonction de $\mathbb{R}$ dans $\mathbb{R}$ telle que
+    $$\forall (x,y) \in \mathbb{R}^2, \qquad |f(y) - f(x)| \le (y - x)^2.$$
+    Montrer que $f$ est constante.
+    La caractérisation des fonctions constantes entraîne la conséquence suivante, vue en terminale, mais dont nous rappelons la démonstration.
+    **Théorème 4** (L'équation différentielle $y' = \lambda y$). *Si $\lambda \in \mathbb{R}$, les fonctions $f$ dérivables sur $\mathbb{R}$, à valeurs dans $\mathbb{R}$ et telles que :*
+    $$(1) \qquad \forall x \in \mathbb{R}, \quad f'(x) = \lambda f(x)$$
+    *sont les fonctions de la forme*
+    $$x \in \mathbb{R} \longmapsto Ce^{\lambda x}, \qquad C \in \mathbb{R}.$$
+    Preuve. Soit $f$ une fonction dérivable sur $\mathbb{R}$. Puisque exp ne s'annule pas sur $\mathbb{R}$, on peut écrire
+    $$\forall x \in \mathbb{R}, \qquad f(x) = e^{\lambda x} g(x)$$
+    où $g$ est une fonction de $\mathbb{R}$ dans $\mathbb{R}$. Nous allons voir que (1) équivaut au fait que $g$ est constante, ce qui donnera le résultat désiré.
+    L'égalité :
+    $$\forall x \in \mathbb{R}, \qquad g(x) = f(x) e^{-\lambda x}$$
+    montre que la fonction $g$ est dérivable sur $\mathbb{R}$. On a alors :
+    $$\forall x \in \mathbb{R}, \qquad g'(x) = e^{\lambda x} \left( f'(x) - \lambda f(x) \right).$$
+    Puisque exp ne s'annule pas sur $\mathbb{R}$, $f$ vérifie l'équation différentielle (1) si et seulement si $g'$ est nulle, c'est-à-dire si $g$ est constante.
+    - 1. Signification de l'équation différentielle précédente.
+    Interprétons $f(t)$ comme la valeur au temps $t$ d'une certaine quantité. Dire que $f$ vérifie une équation différentielle de la forme (1), c'est dire que la variation instantanée de $f$ est proportionnelle à $f$. La simplicité de ce modèle est une des raisons de l'ubiquité de l'exponentielle en sciences. Certains exemples ont été vus en Terminale (radioactivité, croissance d'une population).
+    - 2. Solution prenant une valeur donnée en un point donné.
+    Pour tout $x_0$ de $\mathbb{R}$ et tout $y_0$ de $\mathbb{R}$, il existe une unique solution de (1) prenant la valeur $y_0$ en $x_0$, correspondant au choix :
+    $$C = e^{-\lambda x_0} y_0.$$
+    C'est le premier exemple d'un phénomène fondamental : la détermination d'une fonction par une équation différentielle d'ordre 1 et une condition initiale.
+- num: 190
+  level: 1
+  content: |-
+    Une certaine quantité d'une substance décroît exponentiellement en fonction du temps en obéissant à la loi :
+    $$\forall t \in \mathbb{R}^+, \qquad N(t) = Ce^{-Kt},$$
+    où les constantes $C$ et $K$ sont $> 0$. Déterminer le temps de demi-vie, c'est-à-dire l'instant $t$ tel que
+    $$N(t) = \frac{C}{2}.$$
+- num: 191
+  level: 2
+  content: |-
+    Une bactérie se développe avec un taux d'accroissement proportionnel à la population, c'est-à-dire que le nombre de bactéries à l'instant $t$ obéit à l'équation différentielle :
+    $$\forall t \in \mathbb{R}^+, \qquad N'(t) = KN(t)$$
+    où $K$ est une constante $> 0$. La population passe de $10^6$ individus à $2 \cdot 10^6$ en 12 minutes. Combien de temps faut-il pour passer de $10^6$ individus à $10^8$ ?
+    Le problème géométrique proposé dans l'exercice suivant (dit « problème de de Beaune ») est anecdotique ; c'est cependant une des origines de l'exponentielle.
+- num: 192
+  level: 3
+  content: |-
+    Déterminer les fonctions $f$ dérivables sur $\mathbb{R}$ vérifiant la condition suivante : pour tout réel $x$, la tangente au graphe de $f$ en $x$ n'est pas parallèle à l'axe $(Ox)$ et, si $N(x)$ désigne le point d'intersection de cette tangente et de $(Ox)$, la distance de $N(x)$ à la projection orthogonale du point d'abscisse $x$ du graphe de $f$ sur l'axe $(Ox)$ est constante.
+    Il est recommandé de faire un dessin.
+- num: 193
+  level: 3
+  content: |-
+    On se propose de déterminer les fonctions $f$ dérivables de $\mathbb{R}$ dans $\mathbb{R}$ telles que
+    $$\forall (x,y) \in \mathbb{R}^2, \qquad f(x+y) = f(x) f(y).$$
+    a) Soit $f$ une fonction vérifiant les conditions précédentes. Montrer que
+    $$\forall x \in \mathbb{R}, \qquad f'(x) = f'(0) f(x).$$
+    b) Conclure.
+    L'exercice ci-après généralise le précédent, sans utiliser les équations différentielles.
+- num: 194
+  level: 3
+  content: |-
+    On considère une fonction continue $f$ de $\mathbb{R}$ dans $\mathbb{R}$ telle que
+    $$\forall (x,y) \in \mathbb{R}^2, \qquad f(x+y) = f(x) f(y).$$
+    - a) Montrer que $f$ est à valeurs dans $\mathbb{R}^+$.
+    - b) On suppose que $f$ s'annule en un point de $\mathbb{R}$. Montrer que $f$ est identiquement nulle.
+    - c) On suppose que $f$ est à valeurs dans $\mathbb{R}^{+*}$. Qu'en déduit-on à l'aide de l'exercice 24 de **1.5** ?
+    Revenons aux équations différentielles, en élargissant un peu l'étude. On se donne encore un nombre réel $\lambda$, et une fonction $g$ continue sur un intervalle $I$, à valeurs dans $\mathbb{R}$. On cherche les fonctions $f$ dérivables sur $I$ et telles que
+    $$(2) \qquad \forall x \in I, \quad f'(x) - \lambda f(x) = g(x).$$
+    Le théorème 4 couvre le cas où $g$ est la fonction nulle. Nous n'aborderons pas l'étude générale de (2) et nous contenterons de la très utile remarque suivante. Supposons connue une solution $f_0$ de (2). Alors, (2) équivaut à
+    $$\forall x \in I, \qquad (f - f_0)'(x) = \lambda(f - f_0)(x),$$
+    c'est-à-dire au fait que $f$ est de la forme
+    $$x \in I \longmapsto f_0(x) + Ce^{\lambda x}, \qquad C \in \mathbb{R}.$$
+    Autrement dit, dès que l'on connaît une solution particulière de (2), on sait résoudre (2).
+- num: 195
+  level: 1
+  content: |-
+    a) Trouver les fonctions réelles $f$ dérivables sur $\mathbb{R}$ telles que
+    $$\forall x \in \mathbb{R}, \qquad f'(x) - 2f(x) = 1.$$
+    On cherchera une solution particulière constante.
+    b) Trouver les fonctions $f$ dérivables sur $\mathbb{R}$ telles que
+    $$\forall x \in \mathbb{R}, \qquad f'(x) + f(x) = x.$$
+    On cherchera une solution particulière affine.
+- num: 196
+  level: 2
+  content: |-
+    Soit $\lambda \in \mathbb{R}$. On cherche les fonctions réelles $f$ dérivables sur $\mathbb{R}$ telles que
+    $$\forall x \in \mathbb{R}, \qquad f'(x) - \lambda f(x) = e^x.$$
+    - a) Traiter le cas $\lambda \neq 1$. On cherchera une solution particulière de la forme $x \mapsto Ce^x$.
+    - b) Traiter le cas $\lambda = 1$. On cherchera une solution particulière de la forme $x \mapsto Cxe^x$.
+- num: 197
+  level: 2
+  content: |-
+    Trouver les fonctions réelles $f$ dérivables sur $\mathbb{R}$ telles que
+    $$\forall x \in \mathbb{R}, \qquad f'(x) + 3f(x) = \sin(x).$$
+    On cherchera une solution particulière de la forme $x \mapsto a\sin(x) + b\cos(x)$.
+- num: 198
+  level: 4
+  content: |-
+    Distance d'un point à un graphe). Soient $f$ une fonction dérivable de $\mathbb{R}$ dans $\mathbb{R}$, $M_0$ un point de $\mathbb{R}^2$ n'appartenant pas au graphe de $f$, de coordonnées $(x_0, y_0)$. Pour $x$ dans $\mathbb{R}$, on note $M(x)$ le point du graphe de $f$ d'abscisse $x$, c'est-à-dire le point de coordonnées $(x, f(x))$. On suppose que la distance de $M_0$ au graphe de $f$ est atteinte au point de paramètre $x_1$, ce qui signifie que la fonction :
+    $$\varphi: x \mapsto \left\| \overrightarrow{M_0 M(x)} \right\|$$
+    est minimale en $x_1$.
+    Pour $x$ dans $\mathbb{R}$, exprimer $\psi(x) = \varphi(x)^2$ en fonction de $x, x_0, y_0, f(x)$. Calculer ensuite $\psi'(x)$. En déduire que la droite $(M_0 M(x_1))$ est perpendiculaire à la tangente au graphe de $f$ au point d'abscisse $x_1$.
+    Il est recommandé de faire un dessin.
+- num: 199
+  level: 2
+  content: |-
+    a) Pour quels nombres réels $\alpha$ la fonction $\varphi_{\alpha}$ est-elle convexe sur $\mathbb{R}^{+*}$ ? b) En déduire que, si $\alpha > 1$ :
+    $$\forall x \in ]-1, +\infty[, \quad (1+x)^{\alpha} \ge 1 + \alpha x.$$
+- num: 200
+  level: 1
+  content: Déterminer la limite de $\frac{x^{\alpha}-1}{x-1}$ lorsque $x$ tend vers 1.
+- num: 201
+  level: 1
+  content: |-
+    Soit $\alpha$ dans $\mathbb{R}$. Pour $n$ de $\mathbb{N}$,
+    calculer la dérivée n-ième de $\varphi_{\alpha}$.
+- num: 202
+  level: 4
+  content: |-
+    Soient $\alpha \in \mathbb{R}^{+*}$, $f$ une fonction de $\mathbb{R}^{+*}$ dans $\mathbb{R}$. En imitant éventuellement la démonstration du théorème 4 de **6.4.2**, montrer que les deux conditions suivantes sont équivalentes.
+    - la fonction $f$ est dérivable sur $\mathbb{R}^{+*}$ et vérifie
+    $$\forall x \in \mathbb{R}^{+*}, \qquad f'(x) = \frac{\alpha}{x} f(x),$$
+    - il existe $C \in \mathbb{R}$ tel que
+    $$\forall x \in \mathbb{R}^{+*}, \qquad f(x) = C \ x^{\alpha}.$$
+- num: 203
+  level: 2
+  content: |-
+    La suite $(u_n)_{n\geq 0}$ est définie par $u_0 \in \mathbb{R}^{+*}$ et
+    $$\forall n \in \mathbb{N}, \qquad u_{n+1} = \sqrt{u_n}.$$
+    Exprimer $u_n$ en fonction de $u_0$ et $n$, puis déterminer la limite de $(u_n)_{n \geq 0}$.
+    L'inégalité de Bernoulli est le cas particulier de l'inégalité précédente où $\alpha \in \mathbb{N}$ et $x \in \mathbb{R}^+$.
+- num: 204
+  level: 2
+  content: |-
+    Soit $a$ un élément de $\mathbb{R}^{+*}$. On note $\psi_a$ la fonction définie sur $\mathbb{R}$ par :
+    $$\forall x \in \mathbb{R}, \qquad \psi_a(x) = a^x = \exp\left(\ln(a) x\right).$$
+    - a) Calculer la dérivée de $\psi_a$.
+    - b) Déterminer les limites de $\psi_a(x)$ lorsque $x$ tend vers $+\infty$, lorsque $x$ tend vers $-\infty$. On discutera selon la position de $a$ par rapport à 1.
+      - c) Tracer les graphes de $\psi_2$, de $\psi_{1/2}$.
+- num: 205
+  level: 1
+  content: Soit $a > 0$. Déterminer la limite de $\frac{a^x - 1}{x}$ lorsque $x$ tend vers 0.
+- num: 206
+  level: 2
+  content: |-
+    a) Soient $I$ un intervalle de $\mathbb{R}$, $u$ une fonction dérivable de $I$ dans $\mathbb{R}^{+*}$, $v$ une fonction dérivable de $I$ à valeurs dans $\mathbb{R}$. Pour $x$ dans $\mathbb{R}$, on pose :
+    $$w(x) = u(x)^{v(x)}.$$
+    Calculer la dérivée de $w$.
+    b) Écrire l'équation de la tangente au graphe de la fonction $f: x \in \mathbb{R}^{+*} \longmapsto x^x$ au point d'abscisse 1.
+- num: 207
+  level: 3
+  content: |-
+    Un problème d'optimisation géométrique). On considère une boîte fermée en forme de cylindre droit. La base est un disque de rayon $r > 0$, la hauteur du cylindre est $h > 0$. On note $S$ l'aire latérale de la boîte (incluant les deux bases), $V$ son volume.
+    a) Justifier les relations :
+    $$S = 2\pi (r^2 + rh), \qquad V = \pi r^2 h.$$
+    b) On suppose que $V$ est fixé. En utilisant la relation $S = 2\pi\left(r^2 + \frac{V}{\pi r}\right)$ et en étudiant la fonction :
+    $$f: r \in \mathbb{R}^{+*} \longmapsto r^2 + \frac{V}{\pi r},$$
+    dire comment choisir $r$ et $h$ pour que $S$ soit minimale.
+- num: 208
+  level: 3
+  content: |-
+    Soit $\alpha$ un élément de $[0,1[$.
+    a) En étudiant une fonction judicieuse, montrer que
+    $$\forall x \in \mathbb{R}^+, \qquad (1+x)^{\alpha} < 1 + x^{\alpha}.$$
+    b) Soient $x$ et $y$ dans $\mathbb{R}^+$ avec $y > x$. Montrer que $y^{\alpha} - x^{\alpha} \leq (y - x)^{\alpha}$.
+- num: 209
+  level: 3
+  content: |-
+    L'inégalité de Young). Soit $p \in ]1, +\infty[$.
+    a) Montrer qu'il existe un unique réel $q$ (que l'on appelle parfois exposant conjugué de $p$) tel que $\frac{1}{p} + \frac{1}{q} = 1$. Vérifier que $q$ est $> 1$. Déterminer $q$ pour $p = 2$, puis pour $p = 4$.
+    b) On fixe $y$ dans $\mathbb{R}^{+*}$. Étudier les variations de la fonction $f$ définie par
+    $$\forall x \in \mathbb{R}^{+*}, \qquad f(x) = \frac{x^p}{p} + \frac{y^q}{q} - xy.$$
+    c) Conclure que
+    $$\forall (x,y) \in \mathbb{R}^{+*2}, \qquad xy \le \frac{x^p}{p} + \frac{y^q}{q}.$$
+- num: 210
+  level: 1
+  content: |-
+    Déterminer la limite de $\frac{(1{,}01)^x}{x^{2022}}$ en $+\infty$.
+    Comparons enfin deux fonctions puissances, en $+\infty$ et en 0, ce qui complètera les inégalités obtenues dans le paragraphe précédent.
+    - Lorsque $x$ tend vers $+\infty$, $x^{\alpha}$ est d'autant plus grand que $\alpha$ est grand. En effet, si $\alpha < \beta$, $\alpha - \beta < 0$ de sorte que :
+    $$\frac{x^{\alpha}}{x^{\beta}} = x^{\alpha-\beta} \underset{x \to +\infty}{\longrightarrow} 0.$$
+    - Lorsque $x$ tend vers $0^+$, $x^\alpha$ est d'autant plus grand que $\alpha$ est petit. En effet, si $\alpha < \beta$, $\alpha - \beta < 0$ de sorte que :
+    $$\frac{x^{\alpha}}{x^{\beta}} = x^{\alpha - \beta} \xrightarrow[x \to 0^{+}]{} + \infty.$$
+- num: 211
+  level: 1
+  content: |-
+    Trouver la limite en $+\infty$ de
+    $$f(x) = e^{-\sqrt{x}}x^2, \quad g(x) = e^{-x^2}x^{10000}, \quad h(x) = \ln(x)^8 e^{-x}, \quad i(x) = \frac{1{,}0001^x}{x^{2021}}, \quad j(x) = \frac{\ln(\ln(x))}{\ln(x)}.$$
+- num: 212
+  level: 2
+  content: |-
+    Soit $\alpha \in \mathbb{R}^{+*}$. En posant $y = \frac{1}{x}$, trouver la limite en $0^+$ de
+    $$f_{\alpha}(x) = x^{\alpha} \ln(x).$$
+- num: 213
+  level: 2
+  content: |-
+    En appliquant la méthode de démonstration du théorème 3 de **5.5**, montrer que, si $a \in \mathbb{R}^{+*}$ et $\alpha \in \mathbb{R}^{+*}$, alors
+    $$\frac{a^n}{(n!)^{\alpha}} \underset{n \to +\infty}{\longrightarrow} 0.$$
+- num: 214
+  level: 4
+  content: Soient $n \in \mathbb{N}^*$, $x_1, \ldots, x_n$ des éléments de $\mathbb{R}^{+*}$. La moyenne harmonique de $(x_1, \ldots, x_n)$ est le réel $H$ tel que $\frac{1}{H}$ soit la moyenne arithmétique du n-uplet $\left(\frac{1}{x_1}, \ldots, \frac{1}{x_n}\right)$. En d'autres termes : $H = \frac{n}{\sum_{i=1}^n \frac{1}{x_i}}$. En appliquant le théorème 7 à $\left(\frac{1}{x_1}, \ldots, \frac{1}{x_n}\right)$, montrer que $H \leq \sqrt[n]{\prod_{i=1}^n x_i}$, et qu'il y a égalité si et seulement si les $x_i$ sont tous égaux.
+- num: 215
+  level: 4
+  content: |-
+    L'inégalité arithmético-géométrique, démonstration de Cauchy \*). Pour $n$ dans $\mathbb{N}^*$, on se propose d'établir la propriété suivante, que l'on appelle $\mathcal{P}_n$ : pour tout n-uplet $(x_1,\ldots,x_n)$ d'éléments de $\mathbb{R}^{+*}$, on a
+    $$\frac{1}{n}\sum_{i=1}^{n}x_{i} \geq \sqrt[n]{\prod_{i=1}^{n}x_{i}},$$
+    avec égalité si et seulement si les $x_i$ sont tous égaux. La démonstration proposée dans cet exercice est due à Cauchy.
+    On note $A$ l'ensemble des $n$ de $\mathbb{N}^*$ tels que $\mathcal{P}_n$ soit vraie.
+    - a) Montrer que $\mathcal{P}_2$ est vraie.
+    - b) Soit $n$ dans $\mathbb{N}^*$. Montrer que, si $\mathcal{P}_n$ est vraie, il en est de même de $\mathcal{P}_{2n}$.
+    - c) Soit $n$ dans $\mathbb{N}^*$. Montrer que, si $\mathcal{P}_{n+1}$ est vraie, il en est de même de $\mathcal{P}_n$. On pourra, si $x_1, \ldots, x_n$ sont des éléments de $\mathbb{R}^{+*}$, poser :
+    $$x_{n+1} = \frac{1}{n} \sum_{i=1}^{n} x_i.$$
+    d) Conclure à l'aide de l'exercice 13 de 1.3.
+    Dû à Muirhead au début du vingtième siècle.
+    L'inégalité arithmético-géométrique a de nombreuses conséquences. Les deux exercices suivants en sont des applications à des problèmes d'optimisation géométrique.
+- num: 216
+  level: 3
+  content: |-
+    Les arêtes d'un parallélépipède rectangle ont pour longueurs $a$, $b$, $c$. Le volume du parallélépipède est noté $V$, son aire latérale (i.e. la somme des aires des six faces) est notée $S$.
+    - a) Calculer $V$ et $S$ en fonction de $a$, $b$, $c$.
+    - b) Montrer que
+    $$\frac{ab+bc+ca}{3} \geq V^{2/3}.$$
+    À quelle condition y a-t-il égalité ?
+    - c) Quel est le volume maximal d'un parallélépipède d'aire latérale $S$ donnée ? Pour quels parallélépipèdes est-il atteint ?
+- num: 217
+  level: 4
+  content: |-
+    Soit $ABC$ un triangle. On note $a$, $b$, $c$ les longueurs respectives des côtés $BC$, $CA$, $AB$. Le demi-périmètre de $ABC$ est noté $p$ : $p = \frac{a + b + c}{2}$. L'aire de $ABC$ est notée $S$.
+    Le but des trois premières questions est d'établir la formule de Héron :
+    $$S^2 = p(p-a)(p-b)(p-c).$$
+    a) Au moins une des hauteurs du triangle est intérieure au triangle. Supposons que ce soit le cas de la hauteur issue de $A$, dont on note $H$ le pied. On pose $x = BH$. Montrer que
+    $$x^{2} + h^{2} = c^{2}$$
+    et que $(a - x)^{2} + h^{2} = b^{2}$.
+    b) Montrer que
+    $$16S^2 = 4a^2h^2 = 4a^2c^2 - 4a^2x^2.$$
+    - c) Établir la formule de Héron.
+    - d) En déduire l'inégalité :
+    $$S \le \frac{p^2}{3\sqrt{3}},$$
+    l'égalité ayant lieu si et seulement si le triangle est équilatéral. Ainsi, parmi les triangles de périmètre fixé, l'aire maximale est atteinte pour les triangles équilatéraux.
+    - La quantité $S^2$ est homogène à la puissance quatrième d'une longueur ; il est donc raisonnable d'espérer un produit de quatre combinaisons linéaires de $a, b, c$.
+    - L'aire $S$ s'annule si le triangle est aplati, ce qui donne trois facteurs linéaires $a + b - c$, $b + c - a$ et $c + a - b$.
+    - Le produit des trois facteurs précédents est invariant lorsqu'on permute $a, b, c$, l'aire $S$ aussi. Le facteur manquant est donc également invariant, donc proportionnel à $a + b + c$.
+    - À ce stade, il est raisonnable de supposer qu'il existe une constante absolue $C > 0$ telle que, pour tout triangle, on ait
+    $$S^{2} = C(a+b+c)(a+b-c)(b+c-a)(c+a-b).$$
+    Pour déterminer $C$, on prend le plus simple des triangles rectangles : $a = 3$, $b = 4$, $c = 5$ et donc $S = 6$. On obtient $C = \frac{1}{16}$. C'est la formule voulue.
+- num: 218
+  level: 3
+  content: |-
+    Trouver les limites quand $x$ tend vers $+\infty$ de :
+    $$f(x) = \left(1 + \frac{1}{x^2}\right)^x, \quad g(x) = \left(1 + \frac{1}{x}\right)^{x^2}.$$
+- num: 219
+  level: 3
+  content: |-
+    Trouver la limite quand $x$ tend vers $+\infty$ de
+    $$f(x) = \frac{\ln(x)^x}{x^{\ln(x)}}.$$
+- num: 220
+  level: 4
+  content: |-
+    Est-il toujours vrai que $0^0 = 1$ ?) a) Montrer que $x^x$ tend vers 1 lorsque $x$ tend vers $0^+$.
+    - b) Indiquer un exemple de fonction $u$ de $]0,1[$ dans $\mathbb{R}^{+*}$ tendant vers 0 en 0 et telle que $u(x)^x$ ne tende pas vers 1 lorsque $x$ tend vers $0^+$.
+    - c) Indiquer un exemple de fonction $v$ de $]0,1[$ dans $\mathbb{R}^{+*}$ tendant vers 0 en 0 et telle que $x^{v(x)}$ ne tende pas vers 1 lorsque $x$ tend vers $0^+$.
+- num: 221
+  level: 4
+  content: |-
+    Soient $a$ et $b$ deux éléments de $\mathbb{R}^{+*}$, $f$ la fonction de $\mathbb{R}$ dans $\mathbb{R}$ définie par
+    $$\forall x \in \mathbb{R}, \qquad f(x) = \left(\frac{a^x + b^x}{2}\right)^{1/x}.$$
+    Déterminer la limite de $f$ en 0.
+- num: 222
+  level: 2
+  content: |-
+    Calculer les primitives des fonctions suivantes :
+    - $a: x \in \mathbb{R} \mapsto \cos(3x) + 2\sin(5x),$
+    - $b: x \in \mathbb{R} \mapsto 6 e^{-4x}$.
+    $$\begin{split} &c:x\in\mathbb{R}\mapsto\cos(x)\sin(x),\\ &d:x\in\mathbb{R}\mapsto x^2e^{-x^3},\\ &e:x\in\mathbb{R}\mapsto\frac{x}{x^2+1},\\ &f:x\in\mathbb{R}\mapsto e^x\,e^{e^x},\\ &g:x\in\mathbb{R}^+\mapsto\sqrt{x},\\ &h:x\in]-1,1[\mapsto\frac{3x}{\sqrt{1-x^2}},\\ &i:x\in\mathbb{R}\mapsto(1-2x)^5,\\ &j:x\in]-\infty,1[\mapsto\frac{x^2}{x^3-1},\\ &k:x\in\mathbb{R}\mapsto\frac{1}{1+2e^{-x}},\\ &l:x\in]1,+\infty[\mapsto\frac{(\ln(x))^\alpha}{x},\,\text{où}\,\alpha\in\mathbb{R},\\ &m:x\in]-1,+\infty[\mapsto\frac{1}{(x+1)^n},\,\text{où}\,n\in\mathbb{N}^*,\\ &n:x\in\Big]-\frac{\pi}{2},\frac{\pi}{2}\Big[\mapsto\tan(x),\\ &p:x\in\mathbb{R}^{+*}\mapsto\frac{\sin(x)-x\cos(x)}{x^2}. \end{split}$$
+- num: 223
+  level: 2
+  content: |-
+    En utilisant les relations obtenues dans l'exemple 2 de 2.3 et dans l'exercice 46, calculer :
+    $$I = \int_1^3 \frac{\mathrm{d}t}{t(t+1)}, \qquad J = \int_2^5 \frac{\mathrm{d}t}{t(t+1)(t+2)}.$$
+- num: 224
+  level: 2
+  content: |-
+    Pour $p$ et $q$ dans $\mathbb{N}^*$, calculer :
+    $$\int_0^{2\pi} \cos(pt) \cos(qt) \, dt , \quad \int_0^{2\pi} \sin(pt) \sin(qt) \, dt.$$
+- num: 225
+  level: 3
+  content: |-
+    Pour $n \in \mathbb{N}^*$, $f_n$ désigne la fonction de $[0, \pi]$ dans $\mathbb{R}$ définie par
+    $$\forall t \in [0, \pi[, \quad f_n(t) = \frac{\sin\left(\left(n + \frac{1}{2}\right)t\right)}{\sin\left(\frac{t}{2}\right)}.$$
+    - a) Pour $n \in \mathbb{N}$, montrer, en utilisant le fait que $\frac{\sin(u)}{u}$ tend vers 1 lorsque $u$ tend vers 0, que la fonction $f_n$ admet une limite que l'on précisera en 0. Ceci permet de prolonger $f_n$ en une fonction continue sur $[0,\pi]$, encore notée $f_n$ et de poser $I_n = \int_0^{\pi} f_n(t) \, dt$.
+      - b) Si $n \in \mathbb{N}$, calculer $I_{n+1} - I_n$, puis $I_n$.
+- num: 226
+  level: 3
+  content: |-
+    Pour $x \in [0,1[$, calculer
+    $$F(x) = \int_0^x \ln\left(\frac{1+t}{1-t}\right) dt.$$
+    Quelle est la limite de la fonction $F$ lorsque $x$ tend vers 1 par valeurs inférieures ?
+- num: 227
+  level: 1
+  content: |-
+    Soient $a$ et $b$ deux réels tels que $a < b$, $f$ une fonction continue de $[a,b]$ dans $\mathbb{R}$. La valeur moyenne de $f$ sur $[a,b]$ est le nombre réel
+    $$\frac{1}{b-a} \int_a^b f(t) \, \mathrm{d}t.$$
+    - a) Quelle est la valeur moyenne d'une fonction constante sur $[a,b]$ ? Montrer que si $f$ est une fonction affine, sa valeur moyenne sur $[a,b]$ est $f\left(\frac{a+b}{2}\right)$.
+    - b) Montrer que la valeur moyenne de $f$ sur $[a,b]$ appartient à $[m,M]$ où $m$ (resp. $M$) est le minimum (resp. maximum) de $f$ sur $[a,b]$.
+- num: 228
+  level: 2
+  content: |-
+    Soit $f$ une fonction continue de $[1, +\infty[$ dans $\mathbb{R}$ telle que
+    $$\forall t \in [1, +\infty[, \quad f(t) \ge \frac{1}{t}.$$
+    Montrer que
+    $$\int_{1}^{x} f(t) \, dt \underset{x \to +\infty}{\longrightarrow} +\infty.$$
+- num: 229
+  level: 4
+  content: |-
+    Soient $f$ et $g$ deux fonctions continues et croissantes de $[0,1]$ dans $\mathbb{R}$.
+    - a) Pour $(x,y) \in [0,1]^2$, quel est le signe de $(f(y) - f(x))(g(y) - g(x))$ ?
+    - b) En déduire que
+    $$\int_{0}^{1} f(t) \, dt \times \int_{0}^{1} g(t) \, dt \le \int_{0}^{1} f(t)g(t) \, dt.$$
+    - c) Donner une version discrète (i.e. portant sur des sommes) de cette inégalité.
+    - On a en fait mieux : sous l'hypothèse proposée, on a
+    $$\int_{a}^{b} f(t) \, dt = \int_{a}^{b} g(t) \, dt$$
+    si et seulement si $f$ et $g$ sont égales sur $[a, b]$.
+    L'exercice ci-après est la version intégrale du théorème 2 de 3.4.
+- num: 230
+  level: 4
+  content: |-
+    L'inégalité de Cauchy-Schwarz pour les intégrales \*). Soient $a$ et $b$ deux réels tels que $a < b$, $f$ et $g$ deux fonctions continues de $[a,b]$ dans $\mathbb{R}$. On se propose d'établir l'inégalité :
+    $$\left| \int_a^b f(t) \ g(t) \ \mathrm{d}t \right| \le \sqrt{\int_a^b f^2(t) \ \mathrm{d}t} \ \sqrt{\int_a^b g^2(t) \ \mathrm{d}t}.$$
+    Pour $x$ réel, on pose
+    $$S(x) = \int_{a}^{b} (f(t) + x g(t))^{2} \, dt.$$
+    Vérifier que la fonction $S$ est polynomiale de degré $\leq 2$ et à valeurs dans $\mathbb{R}^+$. Conclure en considérant le discriminant de ce trinôme.
+- num: 231
+  level: 5
+  content: |-
+    L'inégalité de Hölder pour les intégrales \*). Les notations $p$, $q$ sont celles de l'exercice 209 de 7.1 (inégalité de Young), dont on utilise également le résultat. Soient $a$ et $b$ deux réels tels que $a < b$, $f$ et $g$ deux fonctions continues de $[a,b]$ dans $\mathbb{R}$. On se propose de démontrer l'inégalité de Hölder :
+    $$\left| \int_a^b f(t) \ g(t) \ \mathrm{d}t \right| \leq \left( \int_a^b |f(t)|^p \ \mathrm{d}t \right)^{1/p} \left( \int_a^b |g(t)|^q \ \mathrm{d}t \right)^{1/q}.$$
+    On remarquera que, pour $p = 2$, on obtient l'inégalité de Cauchy-Schwarz (exercice précédent).
+    a) En utilisant l'inégalité de Young, montrer que, pour $\lambda$ dans $\mathbb{R}^{+*}$ :
+    $$\left| \int_a^b f(t) \ g(t) \ \mathrm{d}t \right| \le \frac{\lambda^p}{p} \int_a^b |f(t)|^p \ \mathrm{d}t + \frac{1}{q\lambda^q} \int_a^b |g(t)|^q \ \mathrm{d}t.$$
+    b) Déterminer le minimum de la fonction :
+    $$\psi: \lambda \in \mathbb{R}^{+*} \longmapsto \frac{\lambda^p}{p} \int_a^b |f(t)|^p \, dt + \frac{1}{q\lambda^q} \int_a^b |g(t)|^q \, dt.$$
+    Conclure.
+- num: 232
+  level: 3
+  content: |-
+    Soient $f$ une fonction continue de $\mathbb{R}^+$ dans $\mathbb{R}$, $G$ la fonction de $\mathbb{R}^+$ dans $\mathbb{R}$ définie par $G(0) = f(0)$ et
+    $$\forall x \in \mathbb{R}^{+*}, \qquad G(x) = \frac{1}{x} \int_0^x f(t) \, \mathrm{d}t.$$
+    - a) Montrer que $G$ est dérivable sur $\mathbb{R}^{+*}$, donner une expression de $G'(x)$ pour $x \in \mathbb{R}^{+*}$.
+    - b) Montrer que $G$ est continue en 0. On pourra reconnaître en $G(x)$ un taux d'accroissement.
+- num: 233
+  level: 2
+  content: |-
+    Soient $f$ une fonction continue de l'intervalle $I$ de $\mathbb{R}$ dans $\mathbb{R}$, $u$ et $v$ deux fonctions dérivables définies sur l'intervalle $J$ et à valeurs dans l'intervalle $I$. Calculer la dérivée de la fonction $G$ définie sur $J$ par :
+    $$\forall x \in J, \qquad G(x) = \int_{u(x)}^{v(x)} f(t) \, dt.$$
+    On notera que, si $F$ est une primitive de $f$, alors
+    $$\forall x \in J, \qquad G(x) = F(v(x)) - F(u(x)).$$
+- num: 234
+  level: 3
+  content: |-
+    Montrer que
+    $$\forall x \in \mathbb{R}^{+*}, \qquad \int_{1/x}^{x} \frac{\ln(t)}{1+t^2} \, dt = 0.$$
+- num: 235
+  level: 3
+  content: |-
+    Pour $x \in \mathbb{R}^+$, on pose
+    $$f(x) = \int_{x}^{2x} e^{-t^2} \, \mathrm{d}t.$$
+    - a) Étudier les variations de $f$ sur $\mathbb{R}^+$.
+    - b) Montrer que
+    $$\forall x \in \mathbb{R}^+, \qquad 0 \le f(x) \le x e^{-x^2}.$$
+    En déduire la limite de $f$ en $+\infty$.
+- num: 236
+  level: 4
+  content: |-
+    Pour $x \in \mathbb{R}^*$, on pose
+    $$f(x) = \int_{x}^{2x} \frac{e^t}{t} \, \mathrm{d}t.$$
+    - a) Étudier les variations de $f$ sur chacun des deux intervalles $\mathbb{R}^{+*}$ et $\mathbb{R}^{-*}$.
+    - b) Montrer que
+    $$\forall x \in \mathbb{R}^{+*}, \qquad f(x) \ge \frac{e^x}{2}.$$
+    En déduire la limite de $f$ en $+\infty$.
+    - c) Montrer, à l'aide d'un encadrement, que $f(x)$ tend vers 0 lorsque $x$ tend vers $-\infty$.
+    - d) Trouver une constante $C > 0$ telle que
+    $$\forall t \in [-1, 1], \qquad |e^t - 1| \le C|t|.$$
+    - e) Déduire de d) la limite de $f$ en 0.
+    Le lecteur ne doit pas se laisser impressionner par ces hypothèses, dont le rôle est de garantir que la fonction $G$ est bien définie et dérivable sur $I$.
+- num: 237
+  level: 1
+  content: |-
+    Calculer, pour $x \in \mathbb{R}^{+*}$ :
+    $$\int_{1}^{x} t^{2} \ln(t) \, dt, \qquad \int_{1}^{x} (\ln(t))^{2} \, dt.$$
+- num: 238
+  level: 2
+  content: |-
+    Calculer, pour $n \in \mathbb{N}$ et $x \in \mathbb{R}^{+*}$ :
+    $$\int_1^x t^n \ln(t) \, \mathrm{d}t.$$
+- num: 239
+  level: 2
+  content: |-
+    Calculer :
+    $$\int_0^x t^2 \sin(t) \, \mathrm{d}t.$$
+    Plus généralement, donner une méthode permettant de calculer les primitives de fonctions de la forme $x \mapsto p(x) \sin(x)$ ou $x \mapsto p(x) \cos(x)$ où $p$ est un polynôme.
+- num: 240
+  level: 2
+  content: |-
+    Calculer :
+    $$\int_0^x t e^t \, dt, \qquad \int_0^x t^2 e^t \, dt.$$
+    Plus généralement, donner une méthode permettant de calculer les primitives de fonctions de la forme $x \mapsto p(x) e^x$ où $p$ est un polynôme.
+- num: 241
+  level: 2
+  content: |-
+    Calculer, si $a$ et $b$ sont deux réels non nuls et $x$ un réel :
+    $$f(x) = \int_0^x e^{at} \cos(bt) \, \mathrm{d}t.$$
+    On intègrera successivement deux fois par parties.
+    L'intégration par parties permet le calcul de certaines intégrales par récurrence. Voici un exemple.
+- num: 242
+  level: 3
+  content: |-
+    Pour $p$ et $q$ dans $\mathbb{N}^*$, on pose
+    $$B(p,q) = \int_0^1 x^{p-1} (1-x)^{q-1} \, dx.$$
+    - a) On suppose que $q \ge p \ge 1$. Exprimer $B(p,q)$ en fonction de $B(p-1,q+1)$, $p$ et $q$.
+    - b) Exprimer $B(p,q)$ en fonction de $p$ et $q$, d'abord si $q \ge p$, puis si $q \le p$.
+- num: 243
+  level: 4
+  content: |-
+    Le lemme de Riemann-Lebesgue). Soient $a$ et $b$ deux réels tels que $a < b$, $f$ une application définie sur $[a,b]$, à valeurs réelles, dérivable et à dérivée continue. Pour $\lambda$ dans $\mathbb{R}^{+*}$, démontrer :
+    $$\left| \int_a^b f(t) \sin(\lambda t) \, dt \right| \le \frac{1}{\lambda} \left( |f(a)| + |f(b)| + \int_a^b |f'(t)| \, dt \right).$$
+    En déduire que
+    $$\int_{a}^{b} f(t) \sin(\lambda t) \, dt \underset{\lambda \to +\infty}{\longrightarrow} 0.$$
+    Le résultat subsiste pour une fonction continue. La preuve, plus délicate, est accessible en première année post-bac.
+- num: 244
+  level: 2
+  content: |-
+    Soit $f$ une fonction continue de $[0,1]$ dans $\mathbb{R}^+$. Pour $n \in \mathbb{N}$, on pose
+    $$I_n = \int_0^1 f(t) \ t^n \, \mathrm{d}t.$$
+    Déterminer le signe de $I_n$, puis le sens de variation de la suite $(I_n)_{n \geq 0}$.
+- num: 245
+  level: 3
+  content: |-
+    Soit $f$ une fonction continue de $[0,1]$ dans $\mathbb{R}$. Pour $n \in \mathbb{N}$, on pose
+    $$I_n = \int_0^1 f(t) \ t^n \, \mathrm{d}t.$$
+    On admet qu'il existe $M \in \mathbb{R}^+$ tel que
+    $$\forall t \in [0, 1], \quad |f(t)| \le M.$$
+    Majorer $|I_n|$ et montrer que la suite $(I_n)_{n \geq 0}$ converge vers 0.
+    Ce point sera justifié en première année post-bac : toute fonction continue sur un segment (intervalle fermé borné) est bornée et atteint ses bornes. Vous pouvez le constater expérimentalement sur les fonctions usuelles ou étudiées dans les exercices ; en fait, ces fonctions sont toutes « monotones par morceaux », ce qui entraîne facilement le résultat : mais une fonction continue n'est pas nécessairement monotone par morceaux.
+- num: 246
+  level: 3
+  content: |-
+    Pour $n \in \mathbb{N}$, on pose $I_n = \int_0^1 \frac{e^{nt}}{1 + e^t} \, dt$.
+    - a) Calculer $I_1$.
+    - b) Déterminer le minimum de $\frac{1}{1 + e^t}$ pour $t \in [0, 1]$. En déduire une minoration de $I_n$ et la limite de $(I_n)_{n \geq 0}$.
+      - c) Pour $n \in \mathbb{N}$, calculer $I_n + I_{n+1}$.
+      - d) Calculer $I_0$ et $I_2$.
+      - e) Montrer que la suite $(I_n)_{n \geq 0}$ est croissante.
+      - f) Déduire des questions c) et e) la limite de la suite $(n e^{-n} I_n)_{n \geq 0}$.
+- num: 247
+  level: 3
+  content: |-
+    Pour $n \in \mathbb{N}^*$, on pose
+    $$I_n = \int_1^e (\ln(t))^n \, \mathrm{d}t.$$
+    - a) Calculer $I_1$.
+    - b) Si $n \in \mathbb{N}^*$, déterminer le signe de $I_n$.
+    - c) Montrer que
+    $$\forall n \in \mathbb{N}^*, \qquad I_{n+1} = e - (n+1)I_n.$$
+    - d) Déduire des questions b) et c) la limite de la suite $(I_n)_{n \geq 1}$.
+    - e) Montrer que la suite $(I_n)_{n \geq 1}$ est décroissante.
+    - f) Déterminer la limite de la suite $(nI_n)_{n \geq 1}$. On pourra déduire des questions précédentes un encadrement judicieux de $I_n$.
+- num: 248
+  level: 4
+  content: |-
+    a) Montrer, pour $n$ dans $\mathbb{N}$ :
+    $$W_{n+1} \le W_n.$$
+    b) En utilisant la relation de récurrence obtenue dans l'exemple 3 ci-dessus, déduire de a) :
+    $$\frac{n+1}{n+2} W_n \le W_{n+1}.$$
+    - c) Déterminer la limite de $\frac{W_{n+1}}{W_n}$ lorsque $n$ tend vers $+\infty$.
+    - d) Conclure que :
+    $$\left(\frac{2 \cdot 4 \cdot 6 \cdots (2k)}{3 \cdot 5 \cdot 7 \cdots (2k-1)}\right)^2 \times \frac{1}{2k+1} \underset{k \to +\infty}{\longrightarrow} \frac{\pi}{2},$$
+    puis que :
+    $$\prod_{k=1}^{n} \left( 1 - \frac{1}{4k^2} \right) \underset{n \to +\infty}{\longrightarrow} \frac{2}{\pi} \quad \text{et que} \quad \prod_{k=1}^{n} \left( 1 - \frac{1}{(2k+1)^2} \right) \underset{n \to +\infty}{\longrightarrow} \frac{\pi}{4}.$$
+    Du produit de Wallis, on déduit le comportement asymptotique précis du $\binom{2n}{n}$, à comparer avec l'encadrement obtenu dans l'exercice de **3.1**, très utile dans certaines questions de probabilités.
+- num: 249
+  level: 3
+  content: |-
+    Comportement asymptotique de $\binom{2n}{n}$ \*). Déduire de l'exercice précédent la relation
+    $$\sqrt{n} \frac{\binom{2n}{n}}{4^n} \underset{n \to +\infty}{\longrightarrow} \frac{1}{\sqrt{\pi}}.$$
+    1. D'où vient la formule de Wallis ?
+    Le contexte du travail de Wallis mérite d'être mentionné. Son point de départ est l'expression intégrale de l'aire d'un quart de cercle de rayon 1 :
+    $$\frac{\pi}{4} = \int_0^1 \sqrt{1 - x^2} \, \mathrm{d}x.$$
+    Wallis calcule d'abord, pour $p$ et $q$ dans $\mathbb{N}^*$, l'intégrale
+    $$W(p,q) = \int_0^1 \left(1 - x^{1/p}\right)^q \, dx$$
+    et obtient
+    $$W(p,q) = \frac{p! \ q!}{(p+q)!} = \frac{p}{p+q} W(p-1,q).$$
+    Il « interpole » ensuite cette relation de récurrence au cas où $p$ et $q$ sont des demi-entiers ce qui lui permet d'exprimer
+    $$W\left(\frac{1}{2}, \frac{1}{2}\right) = \frac{\pi}{4}$$
+    en fonction de $W\left(p+\frac{1}{2},\frac{1}{2}\right)$ pour tout entier naturel $p$. Un encadrement équivalent en substance aux résultats des questions a) et b) et un passage à la limite le conduisent alors à la dernière relation de l'exercice.
+    Le théorème du changement de variable étudié en première année post-bac montre que
+    $$W_n = W\left(\frac{1}{2}, \frac{n-1}{2}\right),$$
+    ce qui fait le lien avec l'approche de Wallis.
+    2. Lien avec les coefficients binomiaux
+    On a :
+    $$\forall (p,q) \in \mathbb{N}^2, \qquad W(p,q) = \frac{1}{\binom{p+q}{p}}.$$
+    Les calculs de Wallis peuvent donc s'interpréter comme une extrapolation des coefficients binomiaux à des demi-entiers. Ce sera le point de départ de Newton pour l'étude de la « série du binôme ».
+- num: 250
+  level: 2
+  content: |-
+    Compléter les détails de la preuve du cas $x \leq 0$.
+    L'exercice suivant, plus théorique, établit l'irrationalité du nombre $e$.
+- num: 251
+  level: 3
+  content: |-
+    Pour $n \in \mathbb{N}$, on pose
+    $$u_n = \sum_{k=0}^n \frac{1}{k!}.$$
+    a) Pour $n \in \mathbb{N}$, justifier l'encadrement :
+    $$0 < e - u_n < \frac{e}{(n+1)!}.$$
+    b) On raisonne par l'absurde et on suppose $e$ rationnel. On peut donc écrire :
+    $$e = \frac{p}{q}, \qquad (p,q) \in \mathbb{N}^{*2}.$$
+    Vérifier que, pour $n \geq q$, le réel $n!(e - u_n)$ est un entier appartenant à $\left]0, \frac{e}{n+1}\right[$. Obtenir alors une contradiction. La démonstration précédente, plus sophistiquée que celle de l'irrationalité de $\sqrt{2}$, reste assez simple. Elle a été découverte par Fourier en 1815. $^{40}$ Les preuves d'irrationalité sont en fait souvent délicates. Ainsi, le nombre $\pi$ est irrationnel, mais les démonstrations de ce résultat connues actuellement sont sensiblement plus compliquées que celle de l'exercice précédent.
+    La première étape de la preuve du développement en série entière de $\exp$ se généralise en la formule de Taylor avec reste intégral, qui est un résultat important de première année post-bac.
+- num: 252
+  level: 4
+  content: |-
+    Formule de Taylor avec reste intégral \*). Soit $f$ une fonction de $\mathbb{R}$ dans $\mathbb{R}$ admettant des dérivées de tous ordres. Montrer que, pour $n$ dans $\mathbb{N}$, on a :
+    $$\forall x \in \mathbb{R}, \qquad f(x) = \sum_{k=0}^{n} \frac{f^{(k)}(0)}{k!} x^{k} + \int_{0}^{x} \frac{(x-t)^{n}}{n!} f^{(n+1)}(t) \, dt.$$
+- num: 253
+  level: 4
+  content: |-
+    Une suite qui converge vers $\ln(2)$). Soit $n$ dans $\mathbb{N}$.
+    a) Montrer que, pour $t \in \mathbb{R} \setminus \{-1\}$ :
+    $$\sum_{k=0}^{n} (-1)^k t^k = \frac{1}{1+t} + \frac{(-1)^n t^{n+1}}{1+t}.$$
+    b) En déduire que
+    $$\sum_{k=0}^{n} \frac{(-1)^k}{k+1} = \ln(2) + (-1)^n \int_0^1 \frac{t^{n+1}}{1+t} \, \mathrm{d}t.$$
+    c) Montrer que
+    $$0 \le \int_0^1 \frac{t^{n+1}}{1+t} \, \mathrm{d}t \le \frac{1}{n+2}.$$
+    d) Conclure :
+    $$\sum_{k=0}^{n} \frac{(-1)^k}{k+1} \underset{n \to +\infty}{\longrightarrow} \ln(2).$$
+    e) Plus généralement, montrer que, si $0 < x < 1$, alors
+    $$\sum_{k=0}^{n} \frac{(-1)^k x^{k+1}}{k+1} \underset{n \to +\infty}{\longrightarrow} \ln(1+x).$$
+    Donner une estimation de la « vitesse de convergence », c'est-à-dire de l'erreur :
+    $$\left| \ln(1+x) - \sum_{k=0}^{n} \frac{(-1)^k x^{k+1}}{k+1} \right|.$$
+    f) Étendre ce résultat au cas $-1 < x \le 0$.
+    Le résultat de la question e) a été utilisé aux débuts du calcul infinitésimal pour calculer des valeurs approchées des logarithmes. Il montre que la vitesse de convergence de la suite considérée est d'autant plus grande que $x$ est proche de 0. Ainsi, pour calculer $\ln(2)$, utiliser la formule vue en d) est maladroit : la convergence est très lente, « en $\frac{1}{n}$ », de sorte qu'il faut calculer environ 100 termes de la suite pour avoir deux chiffres significatifs. On contourne cette difficulté en écrivant $\ln(2)$ à l'aide de logarithmes de nombres proches de 1. Première idée :
+    $$\ln(2) = -\ln\left(\frac{1}{2}\right).$$
+    Mais il est encore plus judicieux d'observer, comme l'a fait Newton, que
+    $$2 = \frac{1{,}2^2}{0{,}9 \times 0{,}8},$$
+    d'où :
+    $$\ln(2) = 2\ln(1{,}2) - \ln(0{,}9) - \ln(0{,}8).$$
+    Puisque les trois nombres réels $0{,}8$, $0{,}9$ et $1{,}2$ sont proches de 1, les convergences correspondantes sont très rapides.
+- num: 254
+  level: 4
+  content: |-
+    Série de Grégory-Leibniz pour $\pi$). a) Montrer que
+    $$\forall x \in \left] -\frac{\pi}{2}, \frac{\pi}{2} \right[, \qquad \int_0^{\tan(x)} \frac{\mathrm{d}t}{1+t^2} = x.$$
+    En particulier :
+    $$\frac{\pi}{4} = \int_0^1 \frac{\mathrm{d}t}{1+t^2}.$$
+    b) Pour $n$ dans $\mathbb{N}$, établir :
+    $$\frac{\pi}{4} = \sum_{k=0}^{n} \frac{(-1)^k}{2k+1} + (-1)^{n+1} \int_0^1 \frac{t^{2n+2}}{1+t^2} \, dt.$$
+    c) Conclure :
+    $$\sum_{k=0}^{n} \frac{(-1)^k}{2k+1} \xrightarrow[n \to +\infty]{} \frac{\pi}{4}.$$
+    La formule précédente a été découverte indépendamment par Gregory et Leibniz (vers 1670). Les remarques faites après l'exercice précédent à propos du calcul de $\ln(2)$ s'appliquent : la convergence de la suite de la question c) est trop lente pour se prêter à un calcul efficace de $\pi$. Pour pallier cet inconvénient, on peut utiliser une stratégie analogue à celle expliquée ci-dessus pour $\ln(2)$ en utilisant la fonction Arctan (définie en première année post-bac) et les « formules de Machin ».
+- num: 255
+  level: 3
+  content: |-
+    La suite de Fibonacci $(F_n)_{n \geq 0}$ est définie en **1.3**. Montrer que
+    $$\sum_{n=0}^{+\infty} \frac{F_n}{2^n} = 2.$$
+- num: 256
+  level: 3
+  content: |-
+    Montrer que, pour tout $x \in ]-1, 1[$ :
+    $$\ln\left(\frac{1+x}{1-x}\right) = 2\sum_{k=0}^{+\infty} \frac{x^{2k+1}}{2k+1}.$$
+- num: 257
+  level: 4
+  content: |-
+    Pour $x$ dans $\mathbb{R}$, démontrer les formules :
+    $$\cos(x) = \sum_{k=0}^{+\infty} \frac{(-1)^k}{(2k)!} \ x^{2k}, \qquad \sin(x) = \sum_{k=0}^{+\infty} \frac{(-1)^k}{(2k+1)!} \ x^{2k+1}.$$
+    Comme $x \mapsto \frac{1+x}{1-x}$ est une bijection de $]-1, 1[$ sur $\mathbb{R}^{+*}$, on obtient ainsi une expression de $\ln(y)$ comme somme d'une série pour tout $y \in \mathbb{R}^{+*}$.
+- num: 258
+  level: 2
+  content: |-
+    Déduire de (4) un encadrement du nombre de chiffres de $100!$.
+    Elle implique facilement le résultat de l'exercice 249.
+- num: 259
+  level: 3
+  content: |-
+    Soit $\alpha$ dans $\mathbb{R}^{+*}$. On pose :
+    $$\forall n \in \mathbb{N}^*, \qquad S_n = \sum_{k=1}^n k^{\alpha}.$$
+    Encadrer $S_n$ par la méthode des rectangles et en déduire que
+    $$\frac{S_n}{n^{\alpha+1}} \xrightarrow[n \to +\infty]{} \frac{1}{\alpha+1}.$$
+    Ainsi, $(S_n)$ tend vers $+\infty$ « à peu près comme $\frac{n^{\alpha+1}}{\alpha+1}$ ». Si $\alpha$ est un entier, ce résultat est en accord avec la remarque suivant l'exercice 47 de **2.3**.
+- num: 260
+  level: 4
+  content: |-
+    Convergence des séries de Riemann \*). Soit $\alpha \in ]1, +\infty[$. On pose :
+    $$\forall n \in \mathbb{N}^*, \qquad S_n = \sum_{k=1}^n \frac{1}{k^{\alpha}}.$$
+    a) Montrer que :
+    $$\forall n \in \mathbb{N}^*, \qquad S_n \leq \frac{\alpha}{\alpha - 1}.$$
+    b) Montrer que la suite $(S_n)_{n\geq 1}$ est convergente et que sa limite appartient à l'intervalle
+    $$\left[\frac{1}{\alpha-1}, \frac{\alpha}{\alpha-1}\right].$$
+    En utilisant le vocabulaire de l'exercice précédent : la série de terme général $\frac{1}{n^{\alpha}}$ converge.
+    c) En utilisant l'exemple 1 ou une comparaison somme-intégrale, montrer que, si $\alpha \in ]0,1]$,
+    $$S_n \xrightarrow[n \to +\infty]{} +\infty.$$
+    Remarque : Les nombres $\zeta(\alpha)$
+    L'exercice précédent montre que la série de terme général $\frac{1}{n^{\alpha}}$ converge si et seulement si $\alpha > 1$. Pour $\alpha \in ]1, +\infty[$, on note $\zeta(\alpha)$ sa somme :
+    $$\forall \alpha \in ]1, +\infty[, \qquad \zeta(\alpha) = \sum_{k=1}^{+\infty} \frac{1}{k^{\alpha}}.$$
+    Vous rencontrerez certainement dans la suite de vos études la fonction ainsi définie, appelée « fonction $\zeta$ (zeta) de Riemann ». Euler a établi les très belles formules :
+    $$\zeta(2) = \frac{\pi^2}{6}, \quad \zeta(4) = \frac{\pi^4}{90}, \quad \zeta(6) = \frac{\pi^6}{945}, \quad \dots, \quad \zeta(12) = \frac{691\pi^{12}}{6825 \times 93555}$$
+    et a montré, plus généralement, que pour $p$ dans $\mathbb{N}^*$, $\zeta(2p)$ est de la forme $\pi^{2p} r_p$ où $r_p$ est un rationnel. Le problème proposé dans le paragraphe suivant établit la première de ces égalités.
+- num: 261
+  level: 4
+  content: |-
+    On pose, pour $n \ge 2$ entier, $S_n = \sum_{k=2}^n \frac{1}{k \ln(k)}$. Encadrer $S_n$ et en déduire que
+    $$\frac{S_n}{\ln(\ln(n))} \xrightarrow[n \to +\infty]{} 1.$$
+- num: 262
+  level: 4
+  content: |-
+    Un résultat général de comparaison somme-intégrale). a) On suppose $f$ croissante sur $[1, +\infty[$, à valeurs dans $\mathbb{R}^{+*}$. Établir l'implication
+    $$\frac{f(n)}{\int_{1}^{n} f(t) \, dt} \underset{n \to +\infty}{\longrightarrow} 0 \implies \frac{\sum_{k=1}^{n} f(k)}{\int_{1}^{n} f(t) \, dt} \underset{n \to +\infty}{\longrightarrow} 1.$$
+    b) On prend $f = \exp$. Calculer
+    $$\sum_{k=1}^{n} f(k) \qquad \text{et} \qquad \int_{1}^{n} f(t) \, \mathrm{d}t.$$
+    Le résultat de a) s'applique-t-il ?
+    L'exercice ci-après précise le comportement de la suite $(H_n)_{n\geq 1}$ des nombres harmoniques.
+- num: 263
+  level: 3
+  content: |-
+    Montrer que la suite $(H_n - \ln(n))_{n \ge 1}$ est décroissante. En déduire que cette suite est convergente.
+    La limite de la suite précédente, appelée constante d'Euler et traditionnellement notée $\gamma$, est conjecturée irrationnelle depuis Euler. Une démonstration semble hors de portée pour l'instant.
