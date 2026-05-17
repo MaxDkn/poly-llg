@@ -3,33 +3,25 @@ exercices:
   level: 2
   content: |-
     Montrer que
-
     $$
-
     \forall n\in\mathbb{N}^{*},\qquad 1^{3}+2^{3}+\dots+n^{3}= \left(\frac{n(n+1)}{2}\right)^{2}.
     $$
 - num: 2
   level: 2
   content: |-
     Montrer que, si $n\in\mathbb{N}^{*}$, il existe un entier impair $\lambda_{n}$ tel que
-
     $$
-
     5^{2^{n}} = 1 + \lambda_{n}\,2^{\,n+2}.
     $$
 - num: 3
   level: 1
   content: |-
     Soient $a$ et $b$ deux réels. Soit la suite réelle $(u_n)_{n\ge 0}$ définie par
-
     $$
     \forall n\in\mathbb{N},\qquad u_{n+1}=a u_n+b.
     $$
-
     On se propose de calculer $u_n$ en fonction de $n$ et $u_0$.
-
     a) Traiter le cas $a=1$.
-
     On suppose désormais $a\neq 1$.
 
     b) Résoudre l’équation $x=a x+b$. On note $\ell$ la solution. Dans la question suivante, il est inutile (voire toxique) de remplacer $\ell$ par sa valeur ; seule est utile l’équation
@@ -51,21 +43,17 @@ exercices:
   level: 1
   content: |-
     La suite réelle $(t_n)_{n\ge0}$ est définie par $t_0=1$ et
-
     $$
     \forall n\in\mathbb{N},\qquad t_{n+1}=\frac{\sqrt{t_n}}{e}.
     $$
-
     En appliquant l’exercice précédent à la suite $(\ln(t_n))_{n\ge0}$, exprimer $t_n$ en fonction de $n$ et étudier la convergence de $(t_n)_{n>0}$.
 - num: 5
   level: 1
   content: |-
     La suite $(x_n)_{n\ge0}$ est définie par $x_0=1$ et, pour chaque $n\in\mathbb{N}$,
-
     $$
     x_{n+1}=x_0+x_1+\dots+x_n.
     $$
-
     Pour $n\in\mathbb{N}$, exprimer $x_n$ en fonction de $n$.
 - num: 6
   level: 1
@@ -105,7 +93,6 @@ exercices:
     Soit $(u_n)_{n\ge 0}$ la suite définie par
 
     $$
-
     u_0 = 0.
     $$
 
@@ -176,12 +163,9 @@ exercices:
     i) $\forall n\in A,\;2n\in A$, et
     ii) $\forall n\in\mathbb{N}^{*},\;n+1\in A\Rightarrow n\in A$.
     a) Montrer que
-
     $$
-
     \forall m\in\mathbb{N},\qquad 2^{m}\in A.
     $$
-
     b) Montrer que $A = \mathbb{N}^{*}$.
 - num: 14
   level: 1

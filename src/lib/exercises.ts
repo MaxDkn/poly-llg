@@ -9,7 +9,7 @@ export type Exercise = {
 };
 
 export function getExercises(): Exercise[] {
-  const filePath = path.join(process.cwd(), "exercices.yml");
+  const filePath = path.join(process.cwd(), "data/exercices.yml");
   const raw = fs.readFileSync(filePath, "utf8");
   const data = yaml.load(raw) as { exercices: Exercise[] };
   return data.exercices;

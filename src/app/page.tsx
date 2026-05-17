@@ -1,49 +1,27 @@
-"use client";
-import { useAuth } from "@/components/AuthProvider";
-import { useState } from "react";
-import { createSubmission } from "@/lib/firestore";
+import { getExercises } from "@/lib/exercises";
+import { groupExercisesByChapter, slugify } from "@/lib/chapiters";
+import HomeChapterCards from "@/components/HomeChapterCards";
 
-export default function Home() {
-  const { user, loading, signIn, logOut } = useAuth();
-  const [result, setResult] = useState<string>("");
-
-  const testSubmission = async () => {
-    if (!user) return;
-    try {
-      const ref = await createSubmission({
-        userId: user.uid,
-        exerciseNum: 4,
-        answer: "La réponse est $4$.",
-        status: "pending",
-      });
-      setResult(`✅ Soumission créée : ${ref.id}`);
-    } catch (e) {
-      setResult(`❌ Erreur : ${e}`);
-    }
-  };
-
-  if (loading) return <p className="p-8">Chargement...</p>;
+export default function HomePage() {
+  const exercises = getExercises();
+  const groups = groupExercisesByChapter(exercises);
+  const chapters = groups.map((g, i) => ({
+    index: i + 1,
+    title: g.title,
+    slug: slugify(g.title),
+    count: g.exercises.length,
+    exerciseNums: g.exercises.map((e) => e.num),
+  }));
 
   return (
-    <main className="p-8 space-y-4">
-      {user ? (
-        <>
-          <p>Connecté : <strong>{user.displayName}</strong></p>
-          <div className="flex gap-3">
-            <button onClick={testSubmission} className="bg-purple-600 text-white px-4 py-2 rounded">
-              Tester soumission
-            </button>
-            <button onClick={logOut} className="bg-red-500 text-white px-4 py-2 rounded">
-              Déconnexion
-            </button>
-          </div>
-          {result && <p className="mt-4 font-mono text-sm">{result}</p>}
-        </>
-      ) : (
-        <button onClick={signIn} className="bg-blue-600 text-white px-4 py-2 rounded">
-          Se connecter avec Google
-        </button>
-      )}
+    <main className="flex flex-col items-center flex-1 px-6 py-20 text-center">
+      <p className="text-xs tracking-[0.2em] uppercase text-slate-400 mb-5">
+        Louis-le-Grand · Mathématiques
+      </p>
+      <h1 className="font-[family-name:var(--font-heading)] text-6xl font-semibold text-slate-900 mb-5 tracking-tight">
+        Poly-LLG
+      </h1>
+      <HomeChapterCards chapters={chapters} />
     </main>
   );
 }

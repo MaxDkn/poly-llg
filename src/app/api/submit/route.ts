@@ -1,10 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getExercise } from "@/lib/exercises";
 import { adminDb } from "@/lib/firebaseAdmin";
+import fs from "fs";
+import path from "path";
+
 
 export async function POST(req: NextRequest) {
   try {
-    const { userId, exerciseNum, answer } = await req.json();
+    const { userId, exerciseNum, answer, history = [] } = await req.json();
 
     const exercise = getExercise(exerciseNum);
     if (!exercise) {
@@ -49,14 +52,23 @@ export async function POST(req: NextRequest) {
           messages: [
             {
               role: "system",
-              content: `Tu es un professeur de mathématiques bienveillant.
-Réponds UNIQUEMENT avec JSON :
-{"correct": true|false, "feedback": "texte"}`,
+              content: fs.readFileSync(path.join(process.cwd(), "data/correcteur.md"), "utf-8"),
             },
+            // Previous attempts
+            ...history.flatMap((h: { answer: string; feedback: string | null; status: string }) => [
+              {
+                role: "user",
+                content: `Exercice (niveau ${exercise.level}):\n${exercise.content}\n\nRéponse: ${h.answer}`,
+              },
+              {
+                role: "assistant",
+                content: JSON.stringify({ correct: h.status === "correct", feedback: h.feedback ?? "" }),
+              },
+            ]),
+            // Current attempt
             {
               role: "user",
-              content: `Exercice ${exercise.level}: ${exercise.content}
-Réponse: ${answer}`,
+              content: `Exercice (niveau ${exercise.level}):\n${exercise.content}\n\nRéponse: ${answer}`,
             },
           ],
         }),
@@ -74,14 +86,15 @@ Réponse: ${answer}`,
     const jsonMatch = raw.match(/\{[\s\S]*\}/);
     const parsed = jsonMatch ? JSON.parse(jsonMatch[0]) : null;
 
-    const feedback = parsed?.feedback || "Erreur de lecture du feedback";
     const isCorrect = !!parsed?.correct;
+    const feedback = parsed?.feedback || "Impossible de lire la correction.";
 
     await adminDb
       .collection("submissions")
       .doc(submissionId)
       .update({
-        status: parsed.correct ? "correct" : "incorrect",
+        status: isCorrect ? "correct" : "incorrect",
+        feedback,
       });
 
     await adminDb
@@ -90,14 +103,14 @@ Réponse: ${answer}`,
       .collection("messages")
       .add({
         role: "assistant",
-        content: parsed.feedback,
+        content: feedback,
         createdAt: new Date(),
       });
 
     return NextResponse.json({
       submissionId,
-      correct: parsed.correct,
-      feedback: parsed.feedback,
+      correct: isCorrect,
+      feedback,
     });
   } catch (e: any) {
     console.error(e);

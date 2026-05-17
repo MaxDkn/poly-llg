@@ -1,0 +1,193 @@
+exercices:
+- num: 1
+  level: 2
+  content: |-
+    Montrer que
+    $$
+    \forall n\in\mathbb{N}^{*},\qquad 1^{3}+2^{3}+\dots+n^{3}= \left(\frac{n(n+1)}{2}\right)^{2}.
+    $$
+- num: 2
+  level: 2
+  content: |-
+    Montrer que, si $n\in\mathbb{N}^{*}$, il existe un entier impair $\lambda_{n}$ tel que
+    $$
+    5^{2^{n}} = 1 + \lambda_{n}\,2^{\,n+2}.
+    $$
+- num: 3
+  level: 1
+  content: |-
+    Soient $a$ et $b$ deux réels. Soit la suite réelle $(u_n)_{n\ge 0}$ définie par
+    $$
+    \forall n\in\mathbb{N},\qquad u_{n+1}=a u_n+b.
+    $$
+    On se propose de calculer $u_n$ en fonction de $n$ et $u_0$.
+
+    a) Traiter le cas $a=1$.
+
+    On suppose désormais $a\neq 1$.
+
+    b) Résoudre l’équation $x=a x+b$. On note $\ell$ la solution. Dans la question suivante, il est inutile (voire toxique) de remplacer $\ell$ par sa valeur ; seule est utile l’équation
+
+    $$
+    \ell = a\ell + b.
+    $$
+
+    c) On pose, pour $n\in\mathbb{N}$,
+
+    $$
+    v_n = u_n - \ell.
+    $$
+
+    Montrer que $(v_n)_{n\ge 0}$ est une suite géométrique. Conclure.
+
+    d) À quelles conditions portant sur $a$ et $u_0$ la suite $(u_n)_{n\ge 0}$ est-elle convergente ?
+- num: 4
+  level: 1
+  content: |-
+    La suite réelle $(t_n)_{n\ge0}$ est définie par $t_0=1$ et
+    $$
+    \forall n\in\mathbb{N},\qquad t_{n+1}=\frac{\sqrt{t_n}}{e}.
+    $$
+    En appliquant l’exercice précédent à la suite $(\ln(t_n))_{n\ge0}$, exprimer $t_n$ en fonction de $n$ et étudier la convergence de $(t_n)_{n>0}$.
+- num: 5
+  level: 1
+  content: |-
+    La suite $(x_n)_{n\ge0}$ est définie par $x_0=1$ et, pour chaque $n\in\mathbb{N}$,
+    $$
+    x_{n+1}=x_0+x_1+\dots+x_n.
+    $$
+    Pour $n\in\mathbb{N}$, exprimer $x_n$ en fonction de $n$.
+- num: 6
+  level: 1
+  content: |-
+    Soit $c\in\mathbb{R}_{>0}$. Pour $x\in\mathbb{R}$, définissons $f(x)=\frac{x}{\sqrt{1+c x^{2}}}$.
+    Calculer $f(f(x))$, $f(f(f(x)))$ et généraliser.
+- num: 7
+  level: 1
+  content: |-
+    Soit $(u_n)_{n\ge0}$ la suite définie par
+    $$
+    u_0 = 2,\; u_1 = 5,\qquad\text{et}\qquad \forall n\in\mathbb{N},\; u_{n+2}=5u_{n+1}-6u_n.
+    $$
+    Montrer que
+    $$
+    \forall n\in\mathbb{N},\qquad u_n = 2^{n}+3^{n}.
+    $$
+- num: 8
+  level: 2
+  content: |-
+    La suite $(u_n)_{n\in\mathbb{N}}$ est définie par
+    $$
+    u_0 = 1,\; u_1 = 2,\qquad\text{et}\qquad \forall n\in\mathbb{N}^{*},\; u_{n+1}= \frac{u_n^{2}}{u_{n-1}}.
+    $$
+    « Deviner » une formule donnant $u_n$ en fonction de $n$, puis la démontrer par récurrence.
+- num: 9
+  level: 1
+  content: |-
+    Soit $(u_n)_{n\ge 0}$ la suite définie par
+    $$
+    u_0 = 0.
+    $$
+    Pour $\forall n\in\mathbb{N}$, $u_{n+1}+u_n=n$.
+    Exprimer $u_n$ en fonction de $n$.
+- num: 10
+  level: 1
+  content: |-
+    La suite $(F_n)_{n\ge0}$ est celle de l’exemple 1. Pour $n\in\mathbb{N}$ on pose :
+    $$
+    \Delta_n = F_nF_{n+2} - F_{n+1}^2.
+    $$
+    a) Calculer $\Delta_n$ pour quelques valeurs de $n$, deviner une formule donnant $\Delta_n$ et la démontrer par récurrence.
+
+    b) Calculer directement $\Delta_n$ à partir de la formule obtenue dans l’exemple 1. Pour faciliter les calculs, mieux vaut ne pas remplacer immédiatement les constantes $\alpha$ et $\beta$ par leurs expressions.
+- num: 11
+  level: 1
+  content: |-
+    Soient $a$ et $b$ deux nombres réels. On suppose que l’équation $x^{2}=a x+b$ admet deux racines réelles distinctes $\lambda$ et $\mu$. On se propose de déterminer l’ensemble $E$ des suites réelles $(u_n)_{n\ge0}$ telles que
+    $$
+    \forall n\in\mathbb{N},\qquad u_{n+2}=a u_{n+1}+b u_{n}.
+    $$
+    a) Montrer que, pour $\alpha,\beta\in\mathbb{R}$, la suite $(\alpha\lambda^{n}+\beta\mu^{n})_{n\ge0}$ appartient à $E$.
+
+    b) Soit $(u_n)_{n\ge0}\in E$. Vérifier qu’il existe deux nombres réels $\alpha$ et $\beta$ tels que
+    $$
+    \alpha+\beta = u_0,\qquad \alpha\lambda+\beta\mu = u_1.
+    $$
+    c) Avec les notations de b), montrer que
+    $$
+    \forall n\in\mathbb{N},\qquad u_n = \alpha\lambda^{n} + \beta\mu^{n}.
+    $$
+    d) Retrouver le résultat de l'exercice 7.
+- num: 12
+  level: 1
+  content: |-
+    Soient $a$ et $b$ deux nombres réels. On suppose que l’équation $x^{2}=a x+b$ admet une unique racine réelle $\lambda$. On se propose de déterminer l’ensemble $E$ des suites réelles $(u_n)_{n\ge0}$ telles que
+    $$
+    \forall n\in\mathbb{N},\qquad u_{n+2}=a u_{n+1}+b u_{n}.
+    $$
+    a) Montrer que, pour $\alpha,\beta\in\mathbb{R}$, la suite $(\alpha\lambda^{n}+\beta n\lambda^{n})_{n\ge0}$ appartient à $E$.
+
+    b) En reprenant la méthode de l exercice précédent, montrer que, si la suite $(u_n)_{n\ge0}$ appartient à $E$, il existe deux nombres réels $\alpha$ et $\beta$ tels que
+    $$
+    \forall n\in\mathbb{N},\qquad u_n = \alpha\lambda^{n} + \beta n\lambda^{n}.
+    $$
+    L'exercice suivant sera utilisé en 7.3.
+- num: 13
+  level: 1
+  content: |-
+    Soit $A\subseteq\mathbb{N}^{*}$ une partie contenant $1$ et telle que :
+    i) $\forall n\in A,\;2n\in A$, et
+    ii) $\forall n\in\mathbb{N}^{*},\;n+1\in A\Rightarrow n\in A$.
+    a) Montrer que
+    $$
+    \forall m\in\mathbb{N},\qquad 2^{m}\in A.
+    $$
+    b) Montrer que $A = \mathbb{N}^{*}$.
+- num: 14
+  level: 1
+  content: |-
+    On se propose de montrer que tout nombre rationnel de l’intervalle $(0,1)$ s’écrit comme somme d’inverses d’entiers naturels deux à deux distincts. Ce type d’écriture, utilisé par les Égyptiens dans l’Antiquité, n’a pas un très grand intérêt, mais la preuve du résultat est un bon exemple de raisonnement par récurrence.
+    a) Soit $x\in(0,1)$ un nombre rationnel. On peut alors écrire $x=\frac{m}{n}$ avec $m,n\in\mathbb{N}^{*}$ et $m<n$.
+    On effectue la division euclidienne de $n$ par $m$ : il existe $q\in\mathbb{N}^{*}$ et $r\in\{0,\dots,m-1\}$ tels que
+    $$
+    n = q m + r.
+    $$
+    On suppose que $x$ n’est pas l’inverse d’un entier, c’est-à-dire que $r\neq 0$.
+    Montrer que $x-\frac{1}{q}$ peut s’écrire sous la forme $\frac{m^\prime}{n^\prime}$ avec $n^\prime\in\mathbb{N}^{*}$ et $1\le m^\prime < m$.
+    b) En utilisant une hypothèse de récurrence judicieuse, démontrer la propriété voulue.
+    c) Constater que la démonstration précédente fournit en fait un algorithme de décomposition. Appliquer cet algorithme à $x=\frac{5}{17}$.
+- num: 15
+  level: 1
+  content: |-
+    La suite $(u_n)_{n\ge0}$ est définie par $u_0=1$ et, pour chaque $n\ge1$,
+    $$
+    u_n = u_{\lfloor n/2\rfloor} + u_{\lfloor n/3\rfloor} + u_{\lfloor n/6\rfloor}.
+    $$
+    a) Montrer que
+    $$
+    \forall n\in\mathbb{N},\qquad u_n\ge n+1.
+    $$
+    b) Trouver $C>0$ tel que
+    $$
+    \forall n\in\mathbb{N},\quad u_n < C\,(n+1).
+    $$
+- num: 16
+  level: 1
+  content: |-
+    Soit
+    $$
+    S = \{2^{k}3^{\ell} \mid (k,\ell)\in\mathbb{N}^{2}\}.
+    $$
+    Montrer que tout élément de $\mathbb{N}^{*}$ peut s’écrire $s_{1}+\dots+s_{m}$, où $m\in\mathbb{N}^{*}$, les $s_i$ appartiennent à $S$ et, pour tout couple d’indices distincts $(i,j)$, $s_i$ ne divise pas $s_j$.
+- num: 17
+  level: 2
+  content: |-
+    Soient $a,b,c,d$ des nombres rationnels tels que
+    $$
+    a + b\sqrt{2}=c + d\sqrt{2}.
+    $$
+    Montrer que $a=c$ et $b=d$.
+- num: 18
+  level: 2
+  content: |-
+    Montrer que $\sqrt{3}$ est irrationnel. Généraliser.

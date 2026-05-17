@@ -59,6 +59,28 @@ export async function getUserSubmissionsForExercise(
   return snap.docs.map(d => ({ id: d.id, ...d.data() } as Submission));
 }
 
+export async function getUserExerciseStatuses(
+  userId: string
+): Promise<Record<number, SubmissionStatus>> {
+  const q = query(
+    collection(db, "submissions"),
+    where("userId", "==", userId)
+  );
+  const snap = await getDocs(q);
+  const best: Record<number, { status: SubmissionStatus; time: number }> = {};
+  snap.docs.forEach((d) => {
+    const data = d.data() as Submission;
+    const time: number = data.submittedAt?.toMillis?.() ?? 0;
+    const existing = best[data.exerciseNum];
+    if (!existing || time > existing.time) {
+      best[data.exerciseNum] = { status: data.status, time };
+    }
+  });
+  return Object.fromEntries(
+    Object.entries(best).map(([k, v]) => [Number(k), v.status])
+  );
+}
+
 export async function addMessage(
   submissionId: string,
   message: Omit<Message, "id" | "createdAt">
