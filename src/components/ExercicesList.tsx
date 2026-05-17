@@ -48,14 +48,14 @@ export default function ExercicesList({ groups, slugs }: Props) {
               <Link
                 key={ex.num}
                 href={`/exercices/${ex.num}`}
-                className={`grid gap-x-8 items-start py-4 transition-colors group px-2 -mx-2 rounded ${
+                className={`flex flex-col gap-1 sm:grid sm:gap-x-8 sm:items-start py-4 transition-colors group px-2 -mx-2 rounded ${
                   done
                     ? "bg-emerald-50/60 hover:bg-emerald-50 border border-emerald-100"
                     : "hover:bg-slate-50"
                 }`}
                 style={{ gridTemplateColumns: "10rem 1fr" }}
               >
-                {/* Left — label fixe */}
+                {/* Titre + étoiles */}
                 <div className="flex items-baseline gap-2 flex-shrink-0">
                   <span
                     className={`font-[family-name:var(--font-heading)] text-xl font-semibold transition-colors ${
@@ -69,7 +69,7 @@ export default function ExercicesList({ groups, slugs }: Props) {
                   <Stars level={ex.level} />
                 </div>
 
-                {/* Right — énoncé tronqué, hauteur fixe */}
+                {/* Énoncé tronqué */}
                 <div
                   className="overflow-hidden text-sm text-slate-500 leading-relaxed [&_.katex]:text-[0.85em] [&_.katex-display]:my-1 [&_.katex-display]:overflow-x-auto"
                   style={{ maxHeight: "5rem" }}

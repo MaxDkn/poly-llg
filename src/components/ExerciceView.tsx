@@ -37,9 +37,7 @@ function SubmissionItem({ sub }: { sub: Submission }) {
       <div className="border-l-2 border-slate-200 pl-4">
         <div className="flex items-center justify-between mb-2">
           <p className="text-xs text-slate-400 uppercase tracking-wide">
-            Soumission (<span className={`text-xs font-medium ${sub.status === "correct" ? "text-emerald-600" : "text-red-500"}`}>
-            {sub.status === "correct" ? "Correct" : "Incorrect"}
-          </span>) {sub.createdAt ? <> · <span className="normal-case not-italic">{formatDate(sub.createdAt)}</span></> : ""}
+            {sub.createdAt ? <> · <span className="normal-case not-italic">{formatDate(sub.createdAt)}</span></> : ""}
           </p>
           
         </div>

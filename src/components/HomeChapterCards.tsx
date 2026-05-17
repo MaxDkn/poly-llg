@@ -48,7 +48,7 @@ export default function HomeChapterCards({ chapters }: Props) {
                     {solved} / {c.count} résolus
                   </span>
                 ) : (
-                  <span className="text-slate-300">—</span>
+                  <span>{c.count} exercices</span>
                 )}
               </span>
             </div>
