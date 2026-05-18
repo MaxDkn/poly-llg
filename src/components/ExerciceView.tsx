@@ -5,6 +5,13 @@ import { renderLatex } from "@/lib/latex";
 import { useBreadcrumb } from "@/context/BreadcrumbContext";
 
 type Mode = "idle" | "editing" | "draft";
+type ReportState = "idle" | "open" | "sending" | "sent";
+
+const REPORT_TYPES = [
+  "Erreur d'affichage",
+  "Erreur dans l'énoncé",
+  "Autre",
+] as const;
 
 type Submission = {
   answer: string;
@@ -103,6 +110,10 @@ export default function ExerciceView({ exerciseHtml, exerciseNum, chapterTitle, 
   const [submissions, setSubmissions] = useState<Submission[]>([]);
   const [loadingPast, setLoadingPast] = useState(true);
 
+  const [reportState, setReportState] = useState<ReportState>("idle");
+  const [reportType, setReportType] = useState<string>(REPORT_TYPES[0]);
+  const [reportComment, setReportComment] = useState("");
+
   useEffect(() => {
     setItems([
       ...(chapterTitle && chapterSlug
@@ -178,6 +189,26 @@ export default function ExerciceView({ exerciseHtml, exerciseNum, chapterTitle, 
       setMode("idle");
     } finally {
       setLoading(false);
+    }
+  };
+
+  const sendReport = async () => {
+    setReportState("sending");
+    try {
+      await fetch("/api/report", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          exerciseNum,
+          type: reportType,
+          comment: reportComment,
+          userId: user?.uid ?? null,
+        }),
+      });
+      setReportState("sent");
+      setReportComment("");
+    } catch {
+      setReportState("open");
     }
   };
 
@@ -289,6 +320,61 @@ export default function ExerciceView({ exerciseHtml, exerciseNum, chapterTitle, 
             <span className="text-slate-300">→</span>
           </button>
         )}
+
+        {/* Report */}
+        <div className="border-t border-slate-100 pt-4">
+          {reportState === "sent" ? (
+            <p className="text-xs text-slate-400">Signalement envoyé, merci.</p>
+          ) : reportState === "open" || reportState === "sending" ? (
+            <div className="flex flex-col gap-2">
+              <p className="text-xs font-medium text-slate-500">Signaler un problème</p>
+              <div className="flex flex-wrap gap-2">
+                {REPORT_TYPES.map((t) => (
+                  <button
+                    key={t}
+                    onClick={() => setReportType(t)}
+                    className={`text-xs px-3 py-1 rounded-full border transition-colors cursor-pointer ${
+                      reportType === t
+                        ? "bg-slate-800 text-white border-slate-800"
+                        : "border-slate-300 text-slate-500 hover:border-slate-500"
+                    }`}
+                  >
+                    {t}
+                  </button>
+                ))}
+              </div>
+              <textarea
+                value={reportComment}
+                onChange={(e) => setReportComment(e.target.value)}
+                placeholder="Détails (optionnel)"
+                rows={2}
+                className="border border-slate-200 rounded p-2 text-xs resize-none focus:outline-none focus:border-slate-400 bg-white text-slate-700"
+              />
+              <div className="flex items-center gap-3">
+                <button
+                  onClick={sendReport}
+                  disabled={reportState === "sending"}
+                  className="text-xs bg-slate-800 text-white px-4 py-1.5 rounded hover:bg-slate-600 disabled:opacity-40 disabled:cursor-not-allowed transition-colors cursor-pointer"
+                >
+                  {reportState === "sending" ? "Envoi…" : "Envoyer"}
+                </button>
+                <button
+                  onClick={() => { setReportState("idle"); setReportComment(""); }}
+                  className="text-xs text-slate-400 hover:text-slate-600 transition-colors cursor-pointer"
+                >
+                  Annuler
+                </button>
+              </div>
+            </div>
+          ) : (
+            <button
+              onClick={() => setReportState("open")}
+              className="text-xs text-slate-400 hover:text-slate-600 transition-colors cursor-pointer"
+            >
+              Signaler un problème
+            </button>
+          )}
+        </div>
       </div>
     </div>
   );

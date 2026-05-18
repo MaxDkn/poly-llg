@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "sync:check": "python3 scripts/sync-exercices.py --check",
+    "sync:preview": "python3 scripts/sync-exercices.py",
+    "sync:merge": "python3 scripts/sync-exercices.py --merge"
   },
   "dependencies": {
     "firebase": "^12.13.0",

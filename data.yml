@@ -382,7 +382,8 @@ exercices:
     b) Si $x \in ]{-1}, 1[$, déterminer la limite de la somme précédente lorsque $n$ tend vers $+\infty$.
 - num: 41
   level: 2
-  content: On pose, pour $n$ dans $\mathbb{N}^*$ : $u_n = \sum_{k=n}^{2n} \frac{1}{k}$. Simplifier $u_{n+1} - u_n$ et en déduire la monotonie de $(u_n)_{n \geq 1}$.
+  content: |-
+    On pose, pour $n$ dans $\mathbb{N}^*$ : $u_n = \sum_{k=n}^{2n} \frac{1}{k}$. Simplifier $u_{n+1} - u_n$ et en déduire la monotonie de $(u_n)_{n \geq 1}$.
 - num: 42
   level: 3
   content: Pour $n \in \mathbb{N}^*$, exprimer en fonction de $n$ la somme $S_n = \sum_{k=1}^{n^2} \lfloor\sqrt{k}\rfloor$.
@@ -1620,7 +1621,8 @@ exercices:
     $$\frac{a^n}{(n!)^{\alpha}} \underset{n \to +\infty}{\longrightarrow} 0.$$
 - num: 214
   level: 4
-  content: Soient $n \in \mathbb{N}^*$, $x_1, \ldots, x_n$ des éléments de $\mathbb{R}^{+*}$. La moyenne harmonique de $(x_1, \ldots, x_n)$ est le réel $H$ tel que $\frac{1}{H}$ soit la moyenne arithmétique du n-uplet $\left(\frac{1}{x_1}, \ldots, \frac{1}{x_n}\right)$. En d'autres termes : $H = \frac{n}{\sum_{i=1}^n \frac{1}{x_i}}$. En appliquant le théorème 7 à $\left(\frac{1}{x_1}, \ldots, \frac{1}{x_n}\right)$, montrer que $H \leq \sqrt[n]{\prod_{i=1}^n x_i}$, et qu'il y a égalité si et seulement si les $x_i$ sont tous égaux.
+  content: |-
+    Soient $n \in \mathbb{N}^*$, $x_1, \ldots, x_n$ des éléments de $\mathbb{R}^{+*}$. La moyenne harmonique de $(x_1, \ldots, x_n)$ est le réel $H$ tel que $\frac{1}{H}$ soit la moyenne arithmétique du n-uplet $\left(\frac{1}{x_1}, \ldots, \frac{1}{x_n}\right)$. En d'autres termes : $H = \frac{n}{\sum_{i=1}^n \frac{1}{x_i}}$. En appliquant le théorème 7 à $\left(\frac{1}{x_1}, \ldots, \frac{1}{x_n}\right)$, montrer que $H \leq \sqrt[n]{\prod_{i=1}^n x_i}$, et qu'il y a égalité si et seulement si les $x_i$ sont tous égaux.
 - num: 215
   level: 4
   content: |-
@@ -2043,3 +2045,523 @@ exercices:
   content: |-
     Montrer que la suite $(H_n - \ln(n))_{n \ge 1}$ est décroissante. En déduire que cette suite est convergente.
     La limite de la suite précédente, appelée constante d'Euler et traditionnellement notée $\gamma$, est conjecturée irrationnelle depuis Euler. Une démonstration semble hors de portée pour l'instant.
+- num: 264
+  level: 1
+  content: On lance deux dés non pipés. Est-il plus probable que la somme soit égale à 9 ou à 10 ?
+- num: 265
+  level: 1
+  content: On lance six dés non pipés. Quelle est la probabilité d'obtenir tous les nombres de 1 à 6 ?
+- num: 266
+  level: 1
+  content: On lance un dé non pipé. On répète $n$ fois l'opération, les lancers successifs étant supposés indépendants. Quelle est la probabilité $p_n$ pour que l'on obtienne au moins un 6 ? Déterminer la limite de $(p_n)_{n\geq 1}$.
+- num: 267
+  level: 2
+  content: |-
+    a) On considère un dé non pipé. La probabilité qu'en 4 lancers, le dé amène au moins un 6 est-elle supérieure à $\frac{1}{2}$ ?
+    b) On considère deux dés non pipés. La probabilité qu'en 24 lancers, les dés amènent au moins un double 6 est-elle supérieure à $\frac{1}{2}$ ?
+- num: 270
+  level: 2
+  content: Un joueur de tennis A en affronte deux autres, B et C. On suppose que C est meilleur que B. Le joueur A gagne s'il gagne au moins deux matchs consécutifs. Quel est l'ordre qui maximise sa chance de gagner entre BCB et CBC ?
+- num: 271
+  level: 2
+  content: Un jury comprend trois membres A, B, C. Les deux premiers prennent une décision juste avec probabilité $p$, le troisième avec probabilité $\frac{1}{2}$. Quelle est la probabilité qu'une décision juste soit prise en appliquant la règle de la majorité ?
+- num: 272
+  level: 2
+  content: Soit $n \in \mathbb{N}^*$. Une urne contient 10 boules noires et $n$ boules blanches. Un joueur tire 20 fois successivement et avec remise une boule de l'urne, les tirages étant indépendants. Quelle est la probabilité $p_n$ d'obtenir au moins une boule blanche au cours de ces 20 tirages ? Quels sont les $n$ tels que $p_n \geq \frac{1}{2}$ ?
+- num: 277
+  level: 2
+  content: Lors d'un examen, un étudiant a le choix entre $m$ réponses. Il connaît la réponse à la question avec probabilité $p$. S'il ignore la réponse, il choisit au hasard et de façon équiprobable parmi les $m$ réponses possibles. Sachant que l'étudiant a bien répondu, quelle est la probabilité qu'il ait connu la réponse ?
+- num: 278
+  level: 2
+  content: Un test médical est réalisé sur une population contenant une proportion $p$ de malades. Le test n'étant pas parfait, il est positif avec probabilité $p_1$ (proche de 1) sur les malades et $p_2$ (proche de 0) sur les individus sains. Déterminer la probabilité qu'un individu sur lequel le test est positif soit effectivement malade.
+- num: 281
+  level: 1
+  content: Que dire de deux événements $A$ et $B$ indépendants et incompatibles ?
+- num: 282
+  level: 2
+  content: Soient $A$ et $B$ deux événements de probabilités respectives $\frac{5}{10}$ et $\frac{7}{10}$. On suppose que la probabilité que $A$ et $B$ se produisent est $\frac{3}{10}$. Quelle est la probabilité que ni $A$ ni $B$ ne se produise ?
+- num: 288
+  level: 1
+  content: On lance deux dés non pipés, on note $X$ la variable aléatoire donnant la somme des deux résultats. Donner la loi de $X$.
+- num: 289
+  level: 2
+  content: Soient $n \in \mathbb{N}^*$, $d \in \mathbb{N}^*$ et $X$ une variable aléatoire suivant la loi uniforme sur $\{1, \ldots, n\}$. Soit $R$ la variable aléatoire égale au reste de la division euclidienne de $X$ par $d$. Donner la loi de $R$.
+- num: 291
+  level: 2
+  content: |-
+    a) Soient $n \in \mathbb{N}^*$, $X$ et $Y$ deux variables aléatoires indépendantes à valeurs dans $\{1, \ldots, n\}$, $S = \max(X, Y)$. Pour $1 \le k \le n$, exprimer $P(S \le k)$ en fonction de $P(X \le k)$ et $P(Y \le k)$. En déduire la loi de $S$.
+    b) Expliciter la loi de $S$ si $X$ et $Y$ suivent toutes deux la loi uniforme sur $\{1, \ldots, n\}$.
+- num: 295
+  level: 2
+  content: Quelle est la probabilité d'obtenir exactement 3 fois six en lançant 6 fois un dé équilibré ?
+- num: 296
+  level: 2
+  content: Un tireur a une chance sur deux d'atteindre une cible. Quelle est la probabilité de l'atteindre au moins trois fois en dix coups ?
+- num: 297
+  level: 2
+  content: Un comité de 9 personnes se réunit. Chaque participant est présent avec probabilité $\frac{1}{2}$. Quelle est la probabilité qu'au moins 6 membres soient présents ?
+- num: 298
+  level: 2
+  content: On lance $n$ fois un dé équilibré. On note $X$ le nombre de 6 obtenus. Exprimer simplement $P(X \ge 2)$. On demande une expression ne faisant pas intervenir le symbole $\sum$.
+- num: 299
+  level: 2
+  content: Un livre de 500 pages contient 50 fautes d'impression réparties aléatoirement. Quelle est la probabilité qu'une page donnée comporte au moins deux erreurs ?
+- num: 300
+  level: 2
+  content: Soit $p \in ]0,1[$. On lance une pièce pipée, ayant la probabilité $p$ de donner pile. Quelle est la probabilité d'obtenir au moins 3 piles en 5 lancers ? Au moins 5 piles en 8 lancers ?
+- num: 307
+  level: 2
+  content: |-
+    Soient $p \in ]0,1[$, $n \in \mathbb{N}^*$. Une expérience a la probabilité $p$ de réussir. On la répète $n$ fois indépendamment. Autrement dit, on se donne $n$ variables aléatoires indépendantes $X_1, \ldots, X_n$ suivant la loi de Bernoulli de paramètre $p$. On note $T$ la variable aléatoire définie de la façon suivante (instant de premier succès) :
+    - Si l'ensemble $\{i \in \{1,\dots,n\} \; ; \; X_i=1\}$ n'est pas vide, $T$ est le plus petit élément de cet ensemble. Ainsi :
+    $$(T = k) = (X_1 = \dots = X_{k-1} = 0, X_k = 1)$$
+    - Sinon, on pose $T = 0$.
+
+    Quelle est la loi de $T$ ?
+- num: 312
+  level: 1
+  content: Soit $n \in \mathbb{N}^*$. Calculer l'espérance d'une variable aléatoire $X$ suivant la loi uniforme sur $\{1, \ldots, n\}$, d'une variable aléatoire $Y$ suivant la loi uniforme sur $\{1, 2, 4, \ldots, 2^n\}$.
+- num: 313
+  level: 1
+  content: Soient $a$ et $b$ deux nombres réels tels que $a \leq b$, $X$ une variable aléatoire à valeurs dans $[a, b]$. Montrer que $\mathbf{E}(X)$ appartient à $[a, b]$.
+- num: 320
+  level: 2
+  content: Les notations sont celles de l'exercice 292. Déduire de l'exemple 1 l'espérance de $X$.
+
+- num: 330
+  level: 1
+  content: |-
+    Écrire sous forme algébrique
+    $$a = (1+i)^2$$
+    $b = (3-2i)(1-i) - (2+i)^2$, $c = \frac{3-2i}{2+5i}$, $d = \frac{4+i}{1-i} + \frac{2-i}{3-i}$, $e = \left(\frac{1+i}{i}\right)^3$.
+- num: 331
+  level: 1
+  content: Pour $n \in \mathbb{N}$, calculer $i^n$.
+- num: 332
+  level: 1
+  content: Résoudre dans $\mathbb{C}$ l'équation du premier degré $2iz + 4 = z - 4i$.
+- num: 333
+  level: 2
+  content: |-
+    Soit
+    $$z = \frac{-4}{1 + i\sqrt{3}}$$
+    Calculer $z^3$.
+- num: 334
+  level: 1
+  content: Déterminer les nombres complexes $z$ tels que $z^2 = i$.
+- num: 335
+  level: 2
+  content: |-
+    a) Quels sont les nombres complexes dont le carré est un nombre réel ?
+    b) Quels sont les nombres complexes dont le carré est un nombre imaginaire pur ?
+- num: 337
+  level: 2
+  content: |-
+    Résoudre dans $\mathbb{C}$ les équations d'inconnue $z \in \mathbb{C}$ :
+    $$z = 1 - \overline{z} + 3i$$
+    $$\frac{z + 2i}{\overline{z} + i} = 1$$
+- num: 338
+  level: 2
+  content: |-
+    Résoudre l'équation d'inconnue $z \in \mathbb{C}$ :
+    $$iz^2 - 2\overline{z} + z - i = 0$$
+- num: 343
+  level: 1
+  content: |-
+    a) Soient $z$ un nombre complexe, $M$ son image dans le plan, $M'$ le symétrique de $M$ par rapport à $(Oy)$. Quelle est l'affixe $z'$ de $M'$ ?
+    b) Même question pour $M''$, symétrique de $M$ par rapport à $O$.
+- num: 344
+  level: 1
+  content: |-
+    Décrire et représenter les images des ensembles suivants de nombres complexes :
+    $$E = \{z \in \mathbb{C} \; ; \; \operatorname{Re}(z) = 4\}, \quad F = \{z \in \mathbb{C} \; ; \; \operatorname{Im}(z) = -2\}, \quad G = \{z \in \mathbb{C} \; ; \; \operatorname{Re}(z) = \operatorname{Im}(z)\}$$
+    $$G = \{z \in \mathbb{C} \; ; \; |z - 3 + i| = 2\}, \quad H = \{z \in \mathbb{C} \; ; \; \operatorname{Im}(z) > 0\}, \quad I = \{z \in \mathbb{C} \; ; \; 2 \leq \operatorname{Re}(z) < 4\}$$
+- num: 345
+  level: 2
+  content: |-
+    a) Déterminer l'ensemble des nombres complexes $z$ tels que :
+    $$|z - i| = |z + i|$$
+    par deux méthodes :
+    - par un calcul en écrivant $z$ sous forme algébrique ;
+    - en interprétant géométriquement la relation.
+
+    b) Déterminer l'ensemble des nombres complexes $z$ tels que :
+    $$|z - i| < |z + i|$$
+- num: 346
+  level: 2
+  content: Déterminer l'ensemble des nombres complexes $z$ tels que $|z| = |z - 1| = 1$. Interpréter géométriquement.
+- num: 347
+  level: 2
+  content: Déterminer l'ensemble des nombres complexes non nuls $z$ tels que $\frac{1+z}{\overline{z}}$ soit réel. Quelle est l'image de cet ensemble ?
+- num: 348
+  level: 2
+  content: Déterminer l'ensemble des nombres complexes $z$ tels que $z^3 + 3z^2 + 3z + 9$ soit réel. Quelle est l'image de cet ensemble dans le plan complexe ?
+- num: 349
+  level: 2
+  content: Déterminer l'ensemble des nombres complexes $z$ tels que $z^2 - 2i = \overline{z}^2 + 2i$. Quelle est l'image de cet ensemble dans le plan complexe ?
+- num: 351
+  level: 2
+  content: Soient $z$ et $z'$ deux nombres complexes, $M$ et $M'$ leurs images dans le plan complexe. Montrer qu'un point appartient au segment $[MM']$ si et seulement si son affixe est de la forme $\lambda z + (1 - \lambda)z'$ avec $\lambda \in [0, 1]$.
+- num: 354
+  level: 1
+  content: Écrire sous forme algébrique $e^{i\pi/6}$ et $e^{i5\pi/6}$.
+- num: 355
+  level: 2
+  content: Retrouver l'exercice 108 de **4.1** en utilisant la formule d'Euler pour $\sin$.
+- num: 358
+  level: 1
+  content: |-
+    Soit $a \in \mathbb{C}$. Quelle est l'image de l'ensemble $\{a + 2e^{i\theta} : \theta \in \mathbb{R}\}$ ?
+- num: 359
+  level: 2
+  content: Soient $a \in \mathbb{C}$, $\alpha \in \mathbb{R}$. Quelle est l'image de l'ensemble des nombres complexes de la forme $a + re^{i\alpha}$ lorsque $r$ décrit $\mathbb{R}$ ? $\mathbb{R}^+$ ? $[0, R]$ où $R \in \mathbb{R}^{+*}$ est fixé ?
+- num: 360
+  level: 1
+  content: Soit $z = \frac{-4}{1+i\sqrt{3}}$. Écrire $z$ sous forme trigonométrique puis calculer $z^3$. Retrouver le résultat de l'exercice 333.
+- num: 361
+  level: 2
+  content: |-
+    Mettre $1 + i\sqrt{3}$ sous forme trigonométrique et trouver les entiers naturels $n$ tels que
+    $$(1+i\sqrt{3})^n \in \mathbb{R}^+$$
+- num: 362
+  level: 2
+  content: |-
+    Soit $f$ l'application de $\mathbb{C}^*$ dans $\mathbb{C}$ définie par
+    $$\forall z \in \mathbb{C}^*, \qquad f(z) = \frac{1}{z}$$
+    On identifie $\mathbb{C}$ et $\mathbb{R}^2$, un point du plan et son affixe. On considère une droite $D$ passant par $0$, un cercle $\mathcal{C}$ de centre $0$.
+
+    a) Montrer que l'image de $D \setminus \{0\}$ par $f$ est de la forme $D' \setminus \{0\}$ où $D'$ est une droite passant par $0$ que l'on précisera.
+    b) Montrer que l'image de $\mathcal{C}$ par $f$ est un cercle que l'on précisera.
+- num: 363
+  level: 2
+  content: |-
+    a) En utilisant la forme trigonométrique, déterminer les nombres complexes dont le carré est un nombre réel.
+    b) En utilisant la forme trigonométrique, déterminer les nombres complexes dont le carré est un nombre imaginaire pur.
+- num: 364
+  level: 2
+  content: |-
+    Pour $n \in \mathbb{N}$, soit
+    $$u_n = (1+i)^n + (1-i)^n$$
+    a) Écrire $(1+i)^n$ et $(1-i)^n$ sous forme trigonométrique.
+    b) En déduire une expression de $u_n$.
+    c) Pour quels $n$ a-t-on $u_n = 0$ ?
+- num: 365
+  level: 2
+  content: |-
+    On veut résoudre l'équation d'inconnue $z \in \mathbb{C}$ :
+    $$z^5 = \overline{z}$$
+    Montrer que, si $z$ vérifie cette équation, alors $z$ est nul ou de module $1$. Conclure ; on montrera en particulier que l'équation admet $7$ solutions.
+- num: 366
+  level: 2
+  content: Quels sont les nombres complexes non nuls $z$ tels que les points d'affixes $i$, $z$, $\frac{1}{z}$ soient alignés ?
+- num: 367
+  level: 2
+  content: Quels sont les nombres complexes $z$ tels que le triangle dont les sommets ont pour affixes $1$, $i$, $z$ soit rectangle en $z$ ?
+- num: 372
+  level: 2
+  content: Soit $n \in \mathbb{N}^*$. Quelle est la moyenne des cardinaux des parties de $\{1, \ldots, n\}$ ?
+- num: 374
+  level: 2
+  content: |-
+    Trouver deux fonctions polynomiales $P$ et $Q$ telles que
+    $$\forall x \in \mathbb{R}, \quad \cos(4x) = P(\cos(x)), \quad \sin(4x) = \sin(x) \, Q(\cos(x))$$
+- num: 376
+  level: 2
+  content: |-
+    a) Écrire $x \mapsto \cos^3(x)$ comme combinaison linéaire des fonctions
+    $$x \mapsto \cos(kx), \quad k \in \{0, \dots, 3\}$$
+    b) Écrire $x \mapsto \cos^4(x)$ comme combinaison linéaire des fonctions
+    $$x \mapsto \cos(kx), \quad k \in \{0, \dots, 4\}$$
+- num: 381
+  level: 2
+  content: |-
+    Soient $\alpha$ et $\beta$ deux réels, $Z = e^{i\alpha} + e^{i\beta}$.
+
+    a) En factorisant $e^{i\alpha}$ dans $Z$, trouver le module de $Z$ et, si $Z$ est non nul, un argument de $Z$.
+    b) Retrouver les formules donnant $\cos(\alpha) + \cos(\beta)$ et $\sin(\alpha) + \sin(\beta)$.
+- num: 388
+  level: 1
+  content: Écrire sous forme algébrique les racines sixièmes de $1$, puis les racines huitièmes de $1$.
+- num: 389
+  level: 2
+  content: Soit $n \in \mathbb{N}^*$. Calculer la somme des éléments de $\mathbb{U}_n$.
+- num: 393
+  level: 1
+  content: Calculer le produit des éléments de $\mathbb{U}_n$.
+- num: 402
+  level: 2
+  content: Si $Z$ est un nombre complexe non nul, placer les racines carrées de $Z$ dans le plan complexe.
+- num: 403
+  level: 2
+  content: Exprimer les racines carrées de $2i e^{-i\pi/4}$ sous forme trigonométrique.
+- num: 404
+  level: 1
+  content: Déterminer, en utilisant la forme trigonométrique, les nombres complexes $z$ tels que $z^2 = i$.
+- num: 405
+  level: 2
+  content: Résoudre dans $\mathbb{C}$ les équations $z^4 = 2i$, $z^4 = 5 - 2i$, $z^7 - (1+i)z^2 = 0$. On donnera les solutions sous forme trigonométrique et, pour les deux premières, également sous forme algébrique.
+- num: 406
+  level: 2
+  content: Montrer que si $z$ appartient à $\mathbb{C} \setminus \mathbb{R}^-$, alors $z$ admet une unique racine carrée dont la partie réelle est strictement positive.
+- num: 268
+  level: 3
+  content: |-
+    Soit $n \in \mathbb{N}^*$. On considère $n$ dés non pipés, que l'on jette simultanément $4 \cdot 6^{n-1}$ fois.
+    - a) Déterminer la probabilité $p_n$ d'obtenir au moins une fois $n$ six.
+    - b) Déterminer la limite de la suite $(p_n)_{n\geq 1}$.
+- num: 269
+  level: 3
+  content: On lance trois dés non pipés. Montrer que la probabilité d'amener un total inférieur ou égal à 10 est $\frac{1}{2}$. On essaiera de donner un argument ne nécessitant aucun calcul.
+- num: 273
+  level: 3
+  content: |-
+    Un message binaire est transmis à travers des canaux successifs. La probabilité que le message soit transmis correctement d'un opérateur à un autre est $p$, avec $0 < p < 1$. Pour $n \in \mathbb{N}^*$, soit $\pi_n$ la probabilité pour que le $n$-ième opérateur reçoive un message correct. On a donc $\pi_1 = 1$.
+
+    a) Justifier, pour $n \in \mathbb{N}^*$, la formule
+    $$\pi_{n+1} = p\pi_n + (1-p)(1-\pi_n)$$
+    b) En utilisant le protocole d'étude des suites arithmético-géométriques, exprimer $\pi_n$ en fonction de $p$ et $n$. Déterminer la limite de $(\pi_n)_{n\geq 1}$.
+- num: 274
+  level: 3
+  content: On considère une assemblée de $m$ personnes ; quelle est la probabilité que deux d'entre elles aient même anniversaire (on ne tient pas compte des années bissextiles) ? Pour quels $m$ cette probabilité est-elle supérieure à $\frac{1}{2}$ ?
+- num: 275
+  level: 3
+  content: |-
+    Soient $m$ et $n$ deux éléments de $\mathbb{N}^*$ tels que $m \leq n$. On se donne une population de $n$ personnes dans laquelle chaque personne admet exactement $m$ amis. On choisit deux individus. Quelle est la probabilité qu'ils aient au moins un ami commun ?
+
+    Application numérique : $n = 10^5$, $m = 200$.
+- num: 276
+  level: 3
+  content: |-
+    Un gène possède deux allèles notés $a$ et $A$. Les trois génotypes possibles sont donc $aa$, $aA$, $AA$, avec des probabilités respectives $x_1$, $2y_1$, $z_1$. Chaque allèle $a$ et $A$ a une probabilité $\frac{1}{2}$ d'être transmis. Les parents sont sélectionnés indépendamment.
+
+    a) On note $x_2$, $2y_2$ et $z_2$ les probabilités respectives des génotypes $aa$, $aA$, $AA$ à la seconde génération. Montrer que
+    $$x_2 = (x_1 + y_1)^2, \quad 2y_2 = (x_1 + z_1)(y_1 + z_1), \quad z_2 = (y_1 + z_1)^2$$
+    b) Montrer que la probabilité de chaque génotype est constante à partir de la seconde génération, c'est-à-dire que, si on note $x_n$, $2y_n$ et $z_n$ les probabilités respectives des génotypes $aa$, $aA$, $AA$ à la $n$-ième génération, on a, pour tout entier $n \geq 2$ :
+    $$x_n = x_2, \quad y_n = y_2, \quad z_n = z_2$$
+- num: 279
+  level: 4
+  content: |-
+    a) Soient $m \in \mathbb{N}$ et $n \in \mathbb{N}^*$. On considère $m+1$ urnes $U_0, \ldots, U_m$ telles que, pour tout $k \in \{0, \ldots, m\}$, $U_k$ contienne $k$ boules bleues et $m-k$ boules rouges. Choisissons au hasard, avec équiprobabilité, une des urnes et effectuons-y $(n+1)$ tirages avec remise. Pour $1 \leq k \leq n+1$, notons $A_{k,m}$ l'événement « pour chacun des $k$ premiers tirages, on a obtenu une boule bleue ». Exprimer $p_{n,m} = \mathbf{P}(A_{n+1,m} | A_{n,m})$.
+
+    b) On fixe $n$. Déterminer la limite de $(p_{m,n})_{m\geq 1}$ lorsque $m$ tend vers $+\infty$. On pourra utiliser la méthode des rectangles (**8.9**).
+- num: 280
+  level: 5
+  content: |-
+    Le jeu de Monty Hall se présente de la façon suivante. Trois portes sont fermées ; derrière l'une d'entre elles se trouve une voiture, derrière chacune des deux autres un porte-clés. Le candidat se place devant l'une des portes. Le présentateur, qui sait quelle est la porte cachant la voiture, ouvre alors l'une des deux portes non choisies par le candidat, derrière laquelle, bien sûr, se trouve un porte-clés. Que doit faire le candidat : garder son choix ou le modifier ?
+- num: 283
+  level: 3
+  content: Soient $A$ et $B$ deux événements. Comparer $\mathbf{P}(A)\,\mathbf{P}(B)$ et $\mathbf{P}(A \cup B)\,\mathbf{P}(A \cap B)$.
+- num: 284
+  level: 4
+  content: |-
+    Soient $A$ et $B$ deux événements avec $\mathbf{P}(B) > 0$. Montrer que
+    $$|\mathbf{P}(A \cap B) - \mathbf{P}(A|B)| \le \frac{1}{\mathbf{P}(B)} - 1, \qquad |\mathbf{P}(A) - \mathbf{P}(A \cap B)| \le 1 - \mathbf{P}(B)$$
+    En déduire que
+    $$|\mathbf{P}(A) - \mathbf{P}(A|B)| \le \frac{1}{\mathbf{P}(B)} - \mathbf{P}(B)$$
+- num: 285
+  level: 3
+  content: |-
+    Soit $n \in \mathbb{N}^*$. On se donne $n$ événements indépendants de probabilités respectives $p_1, \ldots, p_n$.
+    - a) Calculer la probabilité $\pi_n$ qu'aucun de ces événements ne se réalise.
+    - b) Montrer que
+    $$\pi_n \le \exp\left(-\sum_{i=1}^n p_i\right)$$
+- num: 286
+  level: 3
+  content: |-
+    Soit $p \in ]0, 1[$. Une expérience aléatoire réussit avec la probabilité $p$. On la répète une infinité de fois, avec indépendance. Si $n \in \mathbb{N}^*$, on note $p_n$ la probabilité que l'expérience ait réussi au moins une fois lors des $n$ premières répétitions.
+    - a) On note $N_p$ le plus petit $n$ tel que $p_n \geq \frac{1}{2}$. Exprimer $N_p$.
+    - b) Quelle est la limite de $p_{N_p}$ lorsque $p$ tend vers $0$ ?
+- num: 287
+  level: 3
+  content: |-
+    Soit $n \in \mathbb{N}^*$. Une expérience aléatoire peut produire $n$ résultats distincts notés $1, \ldots, n$, de probabilités respectives $p_1, \ldots, p_n$. On la répète deux fois de manière indépendante. On note $p$ la probabilité que les deux résultats soient égaux.
+    - a) Exprimer $p$ en fonction des $p_i$, $1 \le i \le n$.
+    - b) En utilisant l'inégalité de Cauchy-Schwarz de **3.4**, montrer que $p \ge \frac{1}{n}$. Caractériser le cas d'égalité.
+- num: 290
+  level: 3
+  content: Soit $n \in \mathbb{N}^*$. On se donne $n$ variables aléatoires indépendantes $X_1, \ldots, X_n$ suivant chacune la loi uniforme sur $\{1, \ldots, n\}$. On note $E_n$ l'événement « il existe $i \in \{1, \ldots, n\}$ tel que $X_i = 1$ ». Déterminer la probabilité $p_n$ de $E_n$. Quelle est la limite de $(p_n)_{n\geq 1}$ ?
+- num: 292
+  level: 3
+  content: Soient $n$, $n'$ et $m$ trois éléments de $\mathbb{N}^*$ tels que $n' \leq n$ et $m \leq n$, $E = \{1, \ldots, n\}$ et $E' = \{1, \ldots, n'\}$. Du point de vue de la modélisation, $E$ représente une population de $n$ individus, $E'$ une sous-population de $n'$ individus. On choisit aléatoirement une partie de $E$ de cardinal $m$. On note $X$ la variable aléatoire égale au cardinal de $X \cap E'$. Déterminer la loi de $X$.
+- num: 293
+  level: 4
+  content: Soient $n \in \mathbb{N}^*$ et $k \in \{0, \ldots, n\}$. Un mathématicien a deux boîtes de $n$ allumettes, une dans chaque poche. Chaque fois qu'il fume, il choisit au hasard une poche avec probabilité $\frac{1}{2}$, jusqu'à se rendre compte que l'une des deux boîtes est vide. On note $X$ la variable aléatoire donnant le nombre d'allumettes restant dans l'autre boîte à cet instant. Déterminer la loi de $X$.
+- num: 294
+  level: 4
+  content: |-
+    On se donne deux dés. Pour $1 \leq i \leq 6$, on note $p_i$ (resp. $q_i$) la probabilité d'obtenir $i$ en lançant le premier dé (resp. le second). Les lancers sont supposés indépendants. On note $S$ la variable aléatoire donnant la somme des deux lancers.
+    - a) Exprimer $\mathbf{P}(S = 2)$ et $\mathbf{P}(S = 12)$ en fonction de $p_1$, $q_1$, $p_6$ et $q_6$.
+    - b) Exprimer $\mathbf{P}(S = 7)$ en fonction de $p_1, \ldots, p_6$ et $q_1, \ldots, q_6$, puis montrer que
+    $$\mathbf{P}(S = 7) \ge 2\sqrt{\mathbf{P}(S = 2)\,\mathbf{P}(S = 12)}$$
+    - c) Montrer que $S$ ne suit pas la loi uniforme sur $\{2, \ldots, 12\}$.
+- num: 301
+  level: 3
+  content: Soient $n$ et $n'$ deux éléments de $\mathbb{N}^*$ tels que $n' \leq n$. On note $E = \{1, \ldots, n\}$, $E' = \{1, \ldots, n'\}$. On effectue $n$ tirages dans $E$ avec remise, de sorte que chaque élément de $E$ ait la probabilité $\frac{1}{n}$ d'être tiré et que les tirages soient indépendants. Soit $X$ le nombre de tirages ayant donné un élément de $E'$. Quelle est la loi de $X$ ?
+- num: 302
+  level: 3
+  content: Une population de $n$ élèves passe un examen constitué de deux épreuves indépendantes. La probabilité de réussite à la première (resp. deuxième) épreuve est $p_1$ (resp. $p_2$). Les deux épreuves donnent des résultats indépendants. Quelle est la loi de la variable aléatoire $X$ donnant le nombre de candidats ayant réussi les deux épreuves ? On pourra écrire $X$ comme somme de variables de Bernoulli indépendantes.
+- num: 303
+  level: 3
+  content: |-
+    Soit $p \in [0,1]$. Un système de communication comporte $n$ composants. Chaque composant fonctionne avec la probabilité $p$, indépendamment des autres. Le système fonctionne si au moins la moitié des composants sont opérationnels.
+    - a) Quelle est la loi du nombre de composants opérationnels ?
+    - b) Si $k \in \mathbb{N}^*$, on note $\pi_k$ la probabilité pour qu'un système ayant exactement $2k-1$ composants fonctionne. Exprimer $\frac{\pi_{k+1}}{\pi_k}$.
+    - c) Soit $k \in \mathbb{N}^*$. À quelle condition sur $p$ a-t-on $\pi_{k+1} \geq \pi_k$ ?
+- num: 304
+  level: 3
+  content: On reprend les notations de l'exercice précédent. On considère deux appareils, l'un ayant deux composants, l'autre quatre. On suppose que les deux appareils ont la même probabilité de fonctionner. Déterminer $p$, puis la probabilité commune de fonctionnement.
+- num: 305
+  level: 3
+  content: |-
+    Soient $p \in ]0,1[$, $n \in \mathbb{N}^*$, $X$ une variable aléatoire suivant la loi binomiale $\mathcal{B}(n,p)$.
+
+    a) Pour $k \in \{0, \ldots, n-1\}$, donner une expression simplifiée de
+    $$u_k = \frac{\mathbf{P}(X = k+1)}{\mathbf{P}(X = k)}$$
+    - b) À quelle condition le quotient précédent est-il supérieur ou égal à $1$ ?
+    - c) Quelles sont la ou les valeurs de $k$ maximisant $\mathbf{P}(X=k)$ ? Expliciter le cas $p = \frac{1}{2}$.
+    - d) Quelle est l'allure de l'histogramme de $X$ ?
+- num: 306
+  level: 4
+  content: |-
+    Soient $\lambda \in \mathbb{R}^+$, $(\lambda_n)_{n\geq 1}$ une suite d'éléments de $\mathbb{R}^+$ convergeant vers $\lambda$ et, pour $n \in \mathbb{N}^*$, $X_n$ une variable aléatoire suivant la loi binomiale de paramètres $n$ et $\frac{\lambda_n}{n}$. Montrer que
+    $$\forall k \in \mathbb{N}, \qquad \mathbf{P}(X_n = k) \xrightarrow[n \to +\infty]{} e^{-\lambda} \frac{\lambda^k}{k!}$$
+- num: 308
+  level: 3
+  content: |-
+    On joue à pile ou face avec une pièce ayant la probabilité $p \in ]0,1[$ de donner pile. On se donne $a$ et $b$ dans $\mathbb{N}$ non tous deux nuls et une séquence $S$ de $\ell = a + b$ éléments de $\{P, F\}$, contenant $a$ lettres $P$ et $b$ lettres $F$.
+    - a) Soit $m \in \mathbb{N}^*$. On lance $m\ell$ fois la pièce. Montrer que la probabilité que la séquence $S$ n'apparaisse pas est inférieure ou égale à $(1 - p^a q^b)^m$.
+    - b) Soit $m \geq \ell$ un entier. On lance $n$ fois la pièce. Montrer que la probabilité que la séquence $S$ n'apparaisse pas est inférieure ou égale à $(1 - p^a q^b)^{\lfloor n/\ell \rfloor}$. Quelle est la limite de cette suite lorsque $n$ tend vers $+\infty$ ?
+- num: 309
+  level: 4
+  content: |-
+    Pour $n \in \mathbb{N}^*$, soit $p_n$ la probabilité de n'avoir jamais observé deux piles consécutifs en lançant $n$ fois une pièce équilibrée.
+    - a) Calculer $p_1$ et $p_2$.
+    - b) Montrer que
+    $$\forall n \in \mathbb{N}^*, \qquad p_{n+2} = \frac{p_{n+1}}{2} + \frac{p_n}{4}$$
+    - c) Résoudre l'équation $x^2 = \frac{x}{2} + \frac{1}{4}$. On notera $\lambda$ la racine positive, $\mu$ la racine négative.
+    - d) En utilisant l'exercice 11 de **1.3**, déterminer l'ensemble $E$ des suites réelles $(u_n)_{n\geq 0}$ telles que
+    $$\forall n \in \mathbb{N}, \qquad u_{n+2} = \frac{u_{n+1}}{2} + \frac{u_n}{4}$$
+    - e) Pour $n \in \mathbb{N}$, exprimer $p_n$ en fonction de $n$.
+- num: 310
+  level: 4
+  content: |-
+    Soit $(X_k)_{k\geq 1}$ une suite de variables aléatoires indépendantes telle que
+    $$\forall k \geq 1, \quad \mathbf{P}(X_k = 1) = p, \quad \mathbf{P}(X_k = -1) = 1 - p := q$$
+    Pour $n \in \mathbb{N}^*$, soit
+    $$S_n = \sum_{k=1}^n X_k$$
+    a) Montrer que, si $n \in \mathbb{N}^*$, $S_n$ est à valeurs dans l'ensemble des entiers relatifs de valeur absolue bornée par $n$ et de même parité que $n$.
+
+    b) On suppose $n$ pair : $n = 2\ell$, avec $\ell \in \mathbb{N}^*$. Montrer que la loi de $S_n$ est donnée par
+    $$\forall j \in \{-\ell, \dots, \ell\}, \qquad \mathbf{P}(S_{2\ell} = 2j) = \binom{2\ell}{\ell+j} p^{\ell+j} q^{\ell-j}$$
+    - c) Pour quelle valeur de $p$ la probabilité $\mathbf{P}(S_{2\ell} = 0)$ est-elle maximale ?
+    - d) Montrer que
+    $$\mathbf{P}(S_{2\ell} = 0) \le (4pq)^{\ell}$$
+    - e) On suppose que $p \neq \frac{1}{2}$. Montrer que $4pq < 1$, puis que
+    $$\mathbf{P}(S_{2\ell}=0) \underset{\ell \to +\infty}{\longrightarrow} 0$$
+- num: 311
+  level: 5
+  content: |-
+    On se place dans le cadre de l'exercice précédent, avec de plus $p = \frac{1}{2}$. Ainsi $(X_k)_{k\geq 1}$ est une suite de variables aléatoires indépendantes telle que
+    $$\forall k \geq 1, \quad \mathbf{P}(X_k = 1) = \mathbf{P}(X_k = -1) = \frac{1}{2}$$
+    a) En utilisant l'exercice 249 de **8.6**, montrer que
+    $$\mathbf{P}(S_{2\ell}=0) \underset{\ell \to +\infty}{\longrightarrow} 0$$
+    b) Soit $m \in \mathbb{N}^*$. En utilisant la question précédente et l'exercice 68 de **3.1**, montrer que
+    $$\mathbf{P}(|S_{2\ell}| \le m) \xrightarrow[\ell \to +\infty]{} 0$$
+- num: 314
+  level: 3
+  content: |-
+    a) Soient $n \in \mathbb{N}^*$ et $x \in \mathbb{R}$. En utilisant la dérivation, donner une expression simple de
+    $$\sum_{k=1}^{n} kx^{k-1}$$
+    b) Les notations sont celles de l'exercice 307. Calculer $\mathbf{E}(T)$.
+- num: 315
+  level: 4
+  content: |-
+    On fixe un entier $a \geq 2$ et on se donne $a$ boules numérotées de $1$ à $a$ réparties dans deux boîtes. On considère l'opération suivante. À chaque seconde à partir de l'instant $0$, on choisit uniformément un entier de $\{1, a\}$ et on déplace la boule portant ce numéro d'une boîte dans l'autre. On suppose que les tirages effectués à des instants distincts sont indépendants. Si $n \in \mathbb{N}$, on note $X_n$ le nombre de boules dans la première urne à l'instant $n$ et $Y_n = X_{n+1} - X_n$.
+
+    a) Montrer, pour $n \in \mathbb{N}$ :
+    $$\mathbf{E}(Y_n) = 1 - \frac{2}{a}\,\mathbf{E}(X_n) \quad \text{et} \quad \mathbf{E}(X_{n+1}) = \left(1 - \frac{2}{a}\right)\mathbf{E}(X_n) + 1$$
+    b) En utilisant le protocole d'étude des suites arithmético-géométriques, exprimer $\mathbf{E}(X_n)$ en fonction de $\mathbf{E}(X_0)$, $a$ et $n$. Déterminer la limite de $(\mathbf{E}(X_n))_{n\geq 1}$. Comment expliquer ce résultat ?
+- num: 316
+  level: 3
+  content: |-
+    Soit $X$ une variable aléatoire à valeurs dans $\mathbb{N}$.
+
+    a) Pour $k \in \mathbb{N}$, justifier la relation
+    $$\mathbf{P}(X=k) = \mathbf{P}(X \ge k) - \mathbf{P}(X \ge k+1)$$
+    b) On note $n$ la plus grande valeur que prend $X$. Montrer que
+    $$\mathbf{E}(X) = \sum_{k=1}^{n} \mathbf{P}(X \ge k)$$
+- num: 317
+  level: 3
+  content: On reprend les notations de l'exercice 286 et on note $U_n$ le nombre d'expériences ayant réussi à l'instant $n$. Calculer $\mathbf{E}(U_n)$ et exprimer $N_p'$, le plus petit $n$ tel que $\mathbf{E}(U_n) \geq \frac{1}{2}$. Quelle est la limite de $p N_p'$ lorsque $p$ tend vers $0$ ?
+- num: 318
+  level: 4
+  content: |-
+    Soient $X$ une variable aléatoire à valeurs dans $\mathbb{R}^+$ et $a \in \mathbb{R}^{+*}$. Montrer que
+    $$\mathbf{P}(X \ge a) \le \frac{\mathbf{E}(X)}{a}$$
+- num: 319
+  level: 4
+  content: |-
+    a) Soit $X$ une variable aléatoire réelle. En utilisant l'inégalité de Cauchy-Schwarz (**3.4**), montrer que
+    $$\mathbf{E}(X)^2 \le \mathbf{E}(X^2)$$
+    b) Soit $x \in [-1, 1]$. Montrer qu'il existe une variable aléatoire réelle telle que
+    $$\mathbf{E}(X) = x \quad \text{et} \quad \mathbf{E}(X^2) = 1$$
+    On pourra considérer les variables aléatoires à valeurs dans $\{-1, 1\}$.
+- num: 321
+  level: 3
+  content: |-
+    Soient $X$ une variable aléatoire, $n \in \mathbb{N}^*$, $X_1, \ldots, X_n$ des variables aléatoires indépendantes suivant la loi de $X$ et
+    $$S_n = \sum_{k=1}^n X_k$$
+    - a) Exprimer $\mathbf{E}(S_n)$ en fonction de $n$ et $\mathbf{E}(X)$.
+    - b) Exprimer $\mathbf{E}(S_n^2)$ en fonction de $n$, $\mathbf{E}(X)$ et $\mathbf{E}(X^2)$.
+- num: 322
+  level: 3
+  content: |-
+    On reprend les notations de l'exercice précédent.
+
+    a) On suppose $\mathbf{E}(X) = 0$. Montrer, en appliquant l'inégalité de Markov (exercice 318) à $S_n^2$ que, pour $a \in \mathbb{R}^{+*}$ :
+    $$\mathbf{P}(|S_n| \ge a\sqrt{n}) \le \frac{\mathbf{E}(X^2)}{a^2}$$
+    b) On revient au cas général. En considérant $Y := X - \mathbf{E}(X)$, montrer que, pour tout $a \in \mathbb{R}^{+*}$ :
+    $$\mathbf{P}(|S_n - n\mathbf{E}(X)| \ge a\sqrt{n}) \le \frac{\mathbf{V}(X)}{a^2}$$
+    où $\mathbf{V}(X) = \mathbf{E}(X^2) - \mathbf{E}(X)^2$ est la variance de $X$.
+- num: 323
+  level: 4
+  content: On considère une assemblée de $n$ personnes. On ignore les années bissextiles. Sous les hypothèses d'indépendance des dates d'anniversaire des personnes et d'équiprobabilité de la date de naissance de chaque personne, quelle est l'espérance du nombre de paires de personnes ayant même anniversaire ? Pour $1 \le i < j \le n$, on introduira la variable aléatoire de Bernoulli $X_{i,j}$ égale à $1$ si les personnes $i$ et $j$ ont même anniversaire.
+- num: 324
+  level: 4
+  content: Une population est formée de $2n$ individus répartis en $n$ couples. Parmi ces $2n$ individus, $m$ choisis aléatoirement et de manière équiprobable meurent. Quel est l'espérance du nombre de couples survivants ? En numérotant les couples de $1$ à $n$, on introduira, pour $1 \le i \le n$, la variable de Bernoulli $X_i$ égale à $1$ si le couple $i$ survit.
+- num: 325
+  level: 4
+  content: |-
+    Soit $n \geq 2$ un entier. Une entreprise suit la stratégie suivante pour recruter ses $n$ employés. L'employé $1$ fonde l'entreprise et recrute l'employé $2$ ; l'un des deux employés $1$ et $2$ recrute l'employé $3$ ; l'un des trois employés $1$, $2$ et $3$ recrute l'employé $4$ et ainsi de suite. On suppose que, si $1 \leq i \leq n-1$, chaque employé parmi $1, \ldots, i$ a la même probabilité de recruter l'employé $i+1$.
+    - a) Si $1 \le i \le n$, quelle est la probabilité que l'employé $i$ ne recrute personne ?
+    - b) Soit $N$ le nombre d'employés n'ayant recruté personne. Calculer $\mathbf{E}(N)$.
+- num: 326
+  level: 4
+  content: On se donne $n$ boules numérotées de $1$ à $n$, $n$ urnes également numérotées de $1$ à $n$. On place une boule dans chaque urne, les choix étant équiprobables. Quelle est l'espérance du nombre de boules placées dans l'urne portant leur numéro ? Pour $1 \le i \le n$, on introduira la variable de Bernoulli $X_i$ égale à $1$ si la boule $i$ est placée dans l'urne $i$.
+- num: 327
+  level: 5
+  content: |-
+    Soient $n \in \mathbb{N}^*$, $\sigma$ une permutation aléatoire de $\{1,\ldots,n\}$ suivant la loi uniforme sur l'ensemble des $n!$ permutations de $\{1,\ldots,n\}$. Pour $1 \leq i \leq n$, on dit que $\sigma$ admet un record en $i$ si $\sigma(i)$ est strictement supérieur aux $i-1$ entiers $\sigma(1), \ldots, \sigma(i-1)$.
+    - a) Si $1 \le i \le n$, soit $X_i$ la variable indicatrice de l'événement « $\sigma$ admet un record en $i$ ». Déterminer la loi de $X_i$.
+    - b) Soit $N$ le nombre de records de $\sigma$. Calculer $\mathbf{E}(N)$.
+- num: 328
+  level: 5
+  content: |-
+    On reprend les notations de l'exercice 311. Pour $n \in \mathbb{N}^*$, on note $R_n$ le nombre de $k \in \{1, \ldots, n\}$ tels que $S_k = 0$.
+
+    a) Montrer que
+    $$\forall n \in \mathbb{N}^*, \qquad \mathbf{E}(R_{2n}) = \sum_{k=0}^n \frac{\binom{2k}{k}}{4^k}$$
+    b) En déduire que
+    $$\forall n \in \mathbb{N}^*, \qquad \mathbf{E}(R_{2n}) = \frac{(2n+1)\binom{2n}{n}}{4^n} - 1$$
+    c) En utilisant l'exercice 249 de **8.6**, déterminer la limite de la suite $\left(\frac{\mathbf{E}(R_{2n})}{\sqrt{2n}}\right)_{n\geq 1}$, puis celle de la suite $\left(\frac{\mathbf{E}(R_n)}{\sqrt{n}}\right)_{n\geq 1}$.
+- num: 329
+  level: 5
+  content: |-
+    On reprend les notations de l'exercice 310 et on suppose que $p \neq \frac{1}{2}$.
+
+    a) Montrer que
+    $$\forall n \in \mathbb{N}^*, \quad \mathbf{E}(R_{2n}) = \sum_{k=0}^n \binom{2k}{k} (pq)^k$$
+    b) Montrer que
+    $$\forall n \in \mathbb{N}^*, \quad \mathbf{E}(R_{2n}) \le \sum_{k=0}^n (4pq)^k$$
+    - c) En déduire que la suite $(\mathbf{E}(R_{2n}))_{n\geq 1}$ est majorée.
+    - d) Montrer finalement que la suite $(\mathbf{E}(R_n))_{n\geq 1}$ est croissante et majorée, donc convergente.
